@@ -1,0 +1,11 @@
+---
+layout: post
+title: "Try again"
+date: 2011-11-24 23:29
+comments: true
+categories: [折腾, Octopress]
+---
+
+
+今天大概重装octopress四次了吧，一直没成功，不过没关系，继续努力。
+先这样吧，装好在叙。

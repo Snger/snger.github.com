@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Hello，Octopress"
+date: 2011-11-27 23:25
+comments: true
+categories: [Octopress, 折腾, ]
+---
+  __嗨，经过N次失败，多次重装，我的Ocporess终于上线啦！！！__  
+  上一次使用Ubuntu还得追溯去年。今年因为在twitter关注比较多Ubuntu的消息，又恰好对WINDOWS7的高内存不满，于是又切回Ubuntu。手头还保留着Ubuntu10.10的CD，又想着待Ubuntu12.4出来时再更新，于是就先把Ubuntu10.10装上了。  
+  日常使用Ubuntu10.10还是不错的，没想到待想使用Octopress时，状况百出。  
+  先是看了几个中文帖教程，一路做下来很顺利，结果就是不能更新博客，后面顺着这些博客找到在twitter上活跃的 [@yorkxin](https://twitter.com/#!/yorkxin)、 [@GregoryALussier](https://twitter.com/#!/GregoryALussier) 、 [@xdite](https://twitter.com/#!/xdite) 这几位达人，问了很多相关问题，也学习了许多知识，这里一并感谢了。  <!-- more -->
+  悲剧的是有些隐藏的问题一直没有发现，于是一直没办法更新博客。  
+  再重装ruby、RVM及相关组件大概5次后，觉得不可能是这方面的问题，于是在找回相关Ubuntu平台的帖，仔细琢磨，最后终于顺藤找到这个帖[rails error, couldn't parse YAML](http://stackoverflow.com/questions/4980877/rails-error-couldnt-parse-yaml),虽然找不到最佳答案中所说的文件，却发现_问题的关键在YAML语法错误_。  
+  测试多次后，在 .yml 文件找到两个错；自己新写的博文也有一个错误，至此，悲剧的折腾终于告一段落。留下此文简单记录下轨迹。

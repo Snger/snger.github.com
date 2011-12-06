@@ -1,0 +1,12 @@
+---
+layout: post
+title: "Vim发布二十周年"
+date: 2011-11-06 14:24
+comments: true
+categories: Vim
+---
+从 [Solidot:奇客的资讯，重要的东西](http://solidot.org.feedsportal.com/c/33236/f/556826/s/19c80822/l/0Lopensource0Bsolidot0Borg0Carticle0Bpl0Dsid0F110C110C0A30C0A5532430Gamp0Pfrom0Frss/story01.htm)转载 作者：blackhat
+
+1991年11月2日，Vim文本编辑器公开发布了第一个版本。昨天是它的二十周年庆。Vim最初是为Amiga平台开发的Vi编辑器克隆，但迅速被移植到其它平台，并最终成为最流行的Vi兼容文本编辑器。Vi的开发始于1970年代末，作者是BSD开发者、太阳微系统公司联合创始人BillJoy。它是类UNIX系统的标准编辑器。Vi克隆出现于80年代末和90年代初，主要原因是Vi的许可证不能自由分发，而克隆则因为采用了没有限制的许可证而得到广泛使用。早期的两个著名克隆是Stevie和Elvis。Vim作者BramMoolenaar对Amiga平台上的Vi克隆不甚满意，他开始在Stevie基础上开发新的文本编辑器。第一个公开发布的版本是1.14版，使用了宽松的公共版权许可证。名字Vim最初指Vi IMitation，后来变为Vi IMproved，代表是Vi的升级版。
+
+VIM官方网站：<http://www.vim.org>
