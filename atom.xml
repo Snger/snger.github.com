@@ -1,0 +1,1185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[The Same Summer.]]></title>
+  <link href="http://Snger.github.com/atom.xml" rel="self"/>
+  <link href="http://Snger.github.com/"/>
+  <updated>2011-12-27T22:32:14+08:00</updated>
+  <id>http://Snger.github.com/</id>
+  <author>
+    <name><![CDATA[Snger]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[一些在github中开源的淘宝项目]]></title>
+    <link href="http://Snger.github.com/blog/2011/12/27/taobaopages/"/>
+    <updated>2011-12-27T20:54:00+08:00</updated>
+    <id>http://Snger.github.com/blog/2011/12/27/taobaopages</id>
+    <content type="html"><![CDATA[<p>因为现在的工作与淘宝相关，于是在github中搜索是否有淘宝相关的项目，页面见<a href="https://github.com/search?langOverride=&amp;q=taobao&amp;repo=&amp;start_value=2&amp;type=Repositories">&#8220;Search Taobao in Github.com&#8221;</a><br/>
+其中最值得注意的自然是由淘宝前端攻城师们发起创建的一个开源 JS 类库——KISSY。<a href="http://docs.kissyui.com/">KISSY项目主页</a>、<a href="https://github.com/kissyteam">KISSY在github的托管页面</a>。<br/>
+另一個值得關注的項目是由支付宝前端样式解决方案小组的项目——<a href="http://aliceui.com/">Alice</a>,<a href="https://github.com/sofish/Alice">Github託管頁面</a>.<br/>
+在淘寶店鋪中經常使用的<a href="http://www.linezing.com/">“淘寶量子統計”</a>據說<a href="http://chenxiaoyu.org/2011/10/30/nginx-modules.html">“完全是lua扩展“</a>,我還沒研究，有興趣的可以看看。<br/>
+<a href="http://cubee.github.com/doc/">cubee</a>是一套整洁实用的UI控件库,在淘寶中使用比較多，現在已經停止維護，相關的項目是<a href="https://github.com/taobao-wd/taobao-wd.github.com">淘宝北京前端Demo Gallery</a>，可以跟進看看。<br/>
+一個已放棄的淘寶數據採集項目——<a href="https://github.com/mangege/taobaotop">淘宝top数据采集</a>.</p>
+
+<h2>其他一些規範的開源代碼：<a href="https://github.com/ForrestShi/taobaoshop">Taobaoshop-Simple app to demo the Taobao plugin</a>、<a href="https://github.com/chengdh/taobao-book-rails2">淘宝快手书商应用</a>、<a href="https://github.com/moxing/tbNinja/tree/master/src">tbNinja-taobao seller service</a>、<a href="https://github.com/gckjdev/Taobao_Miaosha">Taobao_Miaosha</a>、<a href="https://github.com/gckjdev/Taobao_Zhekou">Taobao_Zhekou</a>。  </h2>
+
+<p>最後，當然是我的開源項目啦，<a href="https://github.com/Snger/TaobaoPages">TaobaoPages</a>。<br/>
+一直覺得開源使互聯網世界更加美好。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[beginners]]></title>
+    <link href="http://Snger.github.com/blog/2011/12/09/beginners/"/>
+    <updated>2011-12-09T10:21:00+08:00</updated>
+    <id>http://Snger.github.com/blog/2011/12/09/beginners</id>
+    <content type="html"><![CDATA[<p>昨天看到<a href="https://twitter.com/#!/roamlog">@roamlog</a>的一篇文章，描述了部分计算机领域学习者的心态和轨迹，转载过来用以自醒。</p>
+
+<hr />
+
+<p><a href="http://readful.com/post/13920193592/rails-is-not-for-beginners">关于《Rails Is Not For Beginners》，我有话要说</a></p>
+
+<p>阅读此文前，请先阅读我之前写的<a href="http://readful.com/post/13916777418/rails-is-not-for-beginners">《Rails Is Not For Beginners》</a>，当然最好也把文章里的那些链接也点一遍，把评论啥的也看一遍。</p>
+
+<p>我非常同意 DHH 的观点，learnability（易学性） 和 usability（可用性） 是个两难的问题，Rails 优先考虑 usability 是完全正确的，至于 learnability 我个人觉得 rails 已经做得很不错了。</p>
+
+<p>拿 Sinatra 和 Rails 比其实是件蛮搞笑的事情，Sinatra 充其量就是一个高级一点的玩具，拿来写个 Demo 有时都可能不够用，稍微复杂一点，就办不到了，或需要付出相当的时间和精力去搞定。</p>
+
+<p>针对国内环境，针对「Rails Is Not For Beginners」这个话题，我倒想展开来说几句。</p>
+
+<p>首先，Rails 对于 Windows 的支持，可以说是比较差的，但因为国内相当部分人都是使用 Windows 操作系统，就这一点就足够说 Rails Is Not For Beginners。<!-- more --></p>
+
+<p>当然了这几年，情况要好一些，有 <a href="http://railsinstaller.org/">RailsInstaller</a> 等一些一键安装包，但是还是会碰到很多莫名其妙的问题，还有就是有很多 gem 是天然不支持 windows 的，不管你怎么折腾，你可能还是无法安装成功。</p>
+
+<p>可以说，在国内，有很多对 rails 感兴趣的，就是死在搭建环境上。所以我建议要学 Rails 还是使用 Linux 或 Mac OSX 吧，会少很多很多麻烦，我是在 Mac 下开始折腾 Rails 的，我可以说什么乱七八糟的问题都没碰到，环境搭建就几条命令搞定，分分钟的事情。</p>
+
+<p>补充说明为什么推荐 Mac：</p>
+
+<blockquote><p>1、Rails 的作者们都是使用的 Mac，所以 Rails 天然对 Mac 最友好，问题也最少，比如 Rails 的母公司 37signals 发布的名叫 pow 的 web 服务器就是 Mac Only 的。</p>
+
+<p>2、Mac OSX 自带 ruby 环境，搭建 Rails 环境可能就一条命令 gem install rails 就搞定了，当然这是比较理想化了，因为为了管理更方便、使用更方便等，会安装更多的东西，比如 RVM。</p>
+
+<p>3、Textmate，这是一个 Mac Only 的文本编辑器，曾经有人因为它而买 Mac，可见它的魅力了，要说明的是 Rails 的作者们一直在用它，简直可以说 rails 就是用它写出来的。而我个人的使用感受也是很好，用它来写 rails 真的很方便，根本不需要什么 IDE，另外其实有很多克隆 Textmate 的编辑器，其中完成度最好的是 Sublime text 2，我强烈推荐，因为它有 Windows 和 Linux 版，当然也有 Mac 版。</p>
+
+<p>4、Mac 电脑及 Mac OSX 本身的优势，这个我就不多说了，网上到处都是相关文章，简单讲就是 Mac OSX 对程序员来说用户体验很友好，有终端（很重要），有各种各样又好看又好用的软件。</p></blockquote>
+
+<p>有人可能看到这会觉得像软文，在做广告，随便你怎么想吧，谁用谁知道，我接着说。</p>
+
+<p>其次，因为墙的原因，导致很多人搭建环境失败，这个我在之前写的<a href="http://readful.com/post/12322300571/0-ruby-on-rails">《如何从 0 开始学 ruby on rails （漫步版）》</a>一文中有见，在最后一部分，不再赘述。</p>
+
+<p>最后，也是我最想说的，是 rails 新手们的学习态度、方法和方式的问题（注：以下的内容可能过于主观和情绪化，请勿对号入座）。</p>
+
+<p>我想很多人对 Rails 感兴趣都是因为官方那个 15 分钟写就一个博客程序的宣传广告吧，当然可能看的是中文版 :)，这则宣传广告，只是说明了一点，Rails 的开发效率非常高。但在国人眼里，可能加入了「简单」这一层意思，但 Rails 真的没那么简单，想弄好它，要学的东西可多了。</p>
+
+<p>国人是怎么学 Rails 的呢，可能是这样的。</p>
+
+<p>国人看到篇介绍 Rails 的文章，觉得好炫啊，15 分钟呢，立马动手开始搭建环境，而且肯定是看的中文资料，而不是去官方网站。同时加入某个 QQ 群，因为用的是 Windows，同时也没去找相关文章看，就算找了也因为种种原因，搭建环境肯定失败了，然后在 QQ 群里面问，经过无数人的帮助，终于搞定了在 Windows 下搭建环境的问题。</p>
+
+<p>好，环境搭建好了，开始问大家都用什么工具，用哪个 IDE 好，然后群里各抒己见，火爆非常。他们肯定会选 IDE，因为他们说习惯了，不过不幸的事情还是发生了，用 IDE 还是一路艰辛，各种问题，比如环境变量啊，各种报错啊，再次在 QQ 群里问，再次在大家的帮助下把问题解决了。</p>
+
+<p>这下终于可以开始写了，然后照着一篇中文资料想把官方那个 15 分钟写就一个博客程序的例子写出来，再次出现一大堆问题，因为他看的资料过期了，现在已经是 Rails 3.1.3 了，他不小心安装的也是这个，但那中文资料还是 2.x 的甚至 1.x，各种不兼容，然后他还是跑到群里面问，然后还是在大家的帮助下。。。</p>
+
+<p>跌跌撞撞，磕磕碰碰，他们从来不去看官方的资料，因为那是英文的，他们看不懂，他们说自己英语差。他们知道自己英语差，但他们从来不打算去把英语提高，他们中的相当部分人甚至觉得英语对于程序员来说不重要。</p>
+
+<p>他们中相当部分人没有意识说去找本书好好看，侥幸有人告诉他 ruby 看哪本书，rails 看哪本书，他们的第一句话可能是哪有下载，你有吗？传给我。对，他们从来没有版权意识，不喜欢买书，因为贵。不幸的是，因为 rails 的不向下兼容及快速更新步伐，rails 的书永远跟不上，中文书更是落后 1 到 2 年，和他好不容易从网上下载下来效果可以闪瞎眼睛的中文书电子书比，最新的 rails 已经千差万别了，这下再度碰了一鼻子灰。</p>
+
+<p>他们这些人基础很差，英语不行，软件工程、操作系统原理、编译原理、数据库原理、数据结构与算法，通通不懂，但他们还是选择了程序员这条路，一开始，这些你可以不懂，但慢慢的你一定要去补起来，不然这条路会走得很辛苦，但很多人没这个意识。但坦白讲，就这些通通不懂的人有不少在中国的大小公司里还混得不错，真是奇葩，这也算是中国特色了。</p>
+
+<p>他们在网上看到有人说学 rails 不用先学 ruby，但他们不知道，这个话是“有人”对那些有真正的学习能力，有举一反三、融会贯通能力的人说的。他们并不具备这些能力，这下更是磕磕碰碰，跌跌撞撞了。</p>
+
+<p>我不知道为什么，他们在学一个新东西的时候，首先找的不是它的官方网站？我不知道为什么，他们在学一个新东西的时候，不知道看什么书。我不知道为什么，他们为什么连 Google 都不会用。我也不知道为什么，他们遇到问题从来不自己先搜索，而是张口就问。</p>
+
+<p>他们不知道未来在哪里，他们很迷茫，不知道路怎么走。他们不知道学什么，他们不知道怎么学。他们只会问 Java 和 C# 比起来哪个更有前途。</p>
+
+<p>所以，关于「Rails Is Not For Beginners」这个结论，对很多中国人来说是完全正确的，因为他们就是 beginners，他们甚至连 beginners 都不是。他们有更重要的问题需要解决，绝对不是单纯某种语言怎么学，是否适合 beginners 的问题。</p>
+
+<p>这是家庭教育的原因，还是学校教育的原因，或是他们自身的原因，我不知道，也许兼而有之吧。</p>
+
+<p>就说这么多吧，再次声明这是一篇情绪化比较重的文章，请勿对号入座。但如果你对号入座了，因而感觉受到伤害到了，我表示很无奈。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[XML TEST]]></title>
+    <link href="http://Snger.github.com/blog/2011/12/06/xml-test/"/>
+    <updated>2011-12-06T17:16:00+08:00</updated>
+    <id>http://Snger.github.com/blog/2011/12/06/xml-test</id>
+    <content type="html"><![CDATA[<p>XML 测验  结果：18/20<br/>
+如果您有兴趣参与测试，可以点<a href="http://www.w3school.com.cn/quiz/quiz.asp?quiz=xml">这里</a><br/>
+您的回答：<br/>
+1.XML指的是？<br/>
+您的回答：eXtensible Markup Language<br/>
+2.XML对数据进行描述的方式是？<br/>
+您的回答：XML使用DTD来描述数据<br/>
+3.XML的目标是取代HTML<br/>
+您的回答：错误<br/>
+4.下列定义XML版本的声明中语法正确的是？<br/>
+您的回答：<code>&lt;?xml version="1.0"?&gt;</code><br/>
+5.DTD指的是？<!-- more --><br/>
+您的回答：Document Type Definition<br/>
+6.这是一个“形式良好”的文档吗？</p>
+
+<pre><code>&lt;?xml version="1.0"?&gt;
+&lt;note&gt;
+&lt;to&gt;Tove&lt;/to&gt;
+&lt;from&gt;Jani&lt;/from&gt;
+&lt;heading&gt;Reminder&lt;/heading&gt;
+&lt;body&gt;Don't forget me this weekend!&lt;/body&gt;
+&lt;/note&gt;
+</code></pre>
+
+<p>您的回答：是<br/>
+7.这是一个“形式良好”的文档吗？</p>
+
+<pre><code>&lt;?xml version="1.0"?&gt;
+&lt;to&gt;Tove&lt;/to&gt;
+&lt;from&gt;Jani&lt;/from&gt;
+&lt;heading&gt;Reminder&lt;/heading&gt;
+&lt;body&gt;Don't forget me this weekend!&lt;/body&gt;
+</code></pre>
+
+<p>您的回答：否<br/>
+8.哪条陈述是正确的？<br/>
+<em>您的回答：以上陈述都是正确的</em><br/>
+<strong>正确答案：所有XML元素都必须正确地关闭</strong><br/>
+9.哪条陈述是正确的？<br/>
+您的回答：以上陈述都是正确的<br/>
+10.XML可保留空白字符<br/>
+您的回答：正确<br/>
+11.这是一个“形式良好”的文档吗？</p>
+
+<pre><code>&lt;?xml version="1.0"?&gt;
+&lt;note&gt;
+&lt;to age="29"&gt;Tove&lt;/to&gt;
+&lt;from&gt;Jani&lt;/from&gt;
+&lt;/note&gt;
+</code></pre>
+
+<p>您的回答：是<br/>
+12.这是一个“形式良好”的文档吗？</p>
+
+<pre><code>&lt;?xml version="1.0"?&gt;
+&lt;note&gt;
+&lt;to age=29&gt;Tove&lt;/to&gt;
+&lt;from&gt;Jani&lt;/from&gt;
+&lt;/note&gt;
+</code></pre>
+
+<p>您的回答：否<br/>
+13.XML元素不能为空<br/>
+<em>您的回答：正确</em><br/>
+<strong>正确答案：错误</strong><br/>
+14.对于一个XML文档，以下哪个名称是错误的？<br/>
+您的回答：<code>&lt;1dollar&gt;</code><br/>
+15.对于一个XML文档，以下哪个名称是错误的？<br/>
+您的回答：<code>&lt;first name&gt;</code><br/>
+16.对于一个XML文档，以下哪个名称是错误的？<br/>
+您的回答：以上三个都不正确<br/>
+17.必须使用引号包围XML的属性值<br/>
+您的回答：正确<br/>
+18.XSL指的是？<br/>
+您的回答：eXtensible Stylesheet Language<br/>
+19.以下哪种方法可正确地引用名为“mystyle.xsl”的样式表？<br/>
+您的回答：<code>&lt;?xml-stylesheet type="text/xsl" href="mystyle.xsl" ?&gt;</code><br/>
+20.供XML解析器忽略XML文档的特定部分的正确语法是：<br/>
+您的回答：<code>&lt;![CDATA[ Text to be ignored ]]&gt;</code></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Javascript Test]]></title>
+    <link href="http://Snger.github.com/blog/2011/12/05/javascript-test/"/>
+    <updated>2011-12-05T14:33:00+08:00</updated>
+    <id>http://Snger.github.com/blog/2011/12/05/javascript-test</id>
+    <content type="html"><![CDATA[<p>JS 测验 结果：17/20<br/>
+如果您有兴趣参与测试，可以点<a href="http://www.w3school.com.cn/quiz/quiz.asp?quiz=js">这里</a><br/>
+您的回答：<br/>
+1.我们可以在下列哪个 HTML 元素中放置 Javascript 代码？<br/>
+您的回答：<code>&lt;script&gt;</code><br/>
+2.写 &#8220;Hello World&#8221; 的正确 Javascript 语法是？<br/>
+您的回答：<code>document.write("Hello World")</code><br/>
+3.插入 Javacript 的正确位置是？<br/>
+您的回答：&lt;body> 部分和 &lt;head> 部分均可<br/>
+4.引用名为 &#8220;xxx.js&#8221; 的外部脚本的正确语法是？<br/>
+您的回答：<code>&lt;script src="xxx.js"&gt;</code><br/>
+5.外部脚本必须包含 &lt;script> 标签吗？<!-- more --><br/>
+<em>您的回答：是</em><br/>
+<strong>正确答案：否</strong><br/>
+6.如何在警告框中写入 &#8220;Hello World&#8221;？<br/>
+您的回答：<code>alert("Hello World")</code><br/>
+7.如何创建函数？<br/>
+您的回答：<code>function myFunction()</code><br/>
+8.如何调用名为 &#8220;myFunction&#8221; 的函数？<br/>
+您的回答：<code>myFunction()</code><br/>
+9.如何编写当 i 等于 5 时执行一些语句的条件语句？<br/>
+您的回答：<code>if (i==5)</code><br/>
+10.如何编写当 i 不等于 5 时执行一些语句的条件语句？<br/>
+您的回答：<code>if (i != 5)</code><br/>
+11.在 JavaScript 中，有多少种不同类型的循环？<br/>
+<em>您的回答：四种。for 循环、while 循环、do&#8230;while 循环以及 loop&#8230;until 循环。</em><br/>
+<strong>正确答案：两种。for 循环和 while 循环。</strong><br/>
+12.for 循环如何开始？<br/>
+您的回答：<code>for (i = 0; i &lt;= 5; i++)</code><br/>
+13.如何在 JavaScript 中添加注释？<br/>
+您的回答：<code>//This is a comment</code><br/>
+14.可插入多行注释的 JavaScript 语法是？<br/>
+您的回答：<code>/*This comment has more than one line*/</code><br/>
+15.定义 JavaScript 数组的正确方法是？<br/>
+您的回答：<code>var txt = new Array("George","John","Thomas")</code><br/>
+16.如何把 7.25 四舍五入为最接近的整数？
+您的回答：<code>Math.round(7.25)</code><br/>
+17.如何求得 2 和 4 中最大的数？<br/>
+您的回答：<code>Math.max(2,4)</code><br/>
+18.打开名为 &#8220;window2&#8221; 的新窗口的 JavaScript 语法是？<br/>
+您的回答：<code>window.open("http://www.w3school.com.cn","window2")</code><br/>
+19.如何在浏览器的状态栏放入一条消息？<br/>
+<em>您的回答：<code>window.status("put your message here")</code></em><br/>
+<strong>正确答案：<code>window.status = "put your message here"</code></strong><br/>
+20.如何获得客户端浏览器的名称？<br/>
+您的回答：<code>navigator.appName</code></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[XHTML TEST]]></title>
+    <link href="http://Snger.github.com/blog/2011/12/03/xhtml-test/"/>
+    <updated>2011-12-03T08:51:00+08:00</updated>
+    <id>http://Snger.github.com/blog/2011/12/03/xhtml-test</id>
+    <content type="html"><![CDATA[<p>XHTML  测验<br/>
+结果：20/20<br/>
+如果您有兴趣参与测试，可以点<a href="http://www.w3school.com.cn/quiz/quiz.asp?quiz=xhtml">这里</a><br/>
+您的回答：<br/>
+1.XHTML 指的是？<br/>
+您的回答：EXtensible HyperText Markup Language<br/>
+2.请判断以下说法是否正确：XHTML 是一个 Web 标准。<br/>
+您的回答：正确<br/>
+3.请判断以下说法是否正确：XML 和 HTML 会被 XHTML 取代。<br/>
+您的回答：错误<br/>
+4.请判断以下说法是否正确：HTML 会被 XHTML 取代。<br/>
+您的回答：正确<br/>
+5.在下面的 XHTML 中，哪个可以正确地标记段落？<!-- more --><br/>
+您的回答：<code>&lt;p&gt;&lt;/p&gt;</code><br/>
+6.在下面的 XHTML 中，哪个可以正确地标记折行？<br/>
+您的回答：<code>&lt;br /&gt;</code><br/>
+7.下列 XHTML 中的属性和值，哪个是正确的？<br/>
+您的回答：<code>width="80"</code><br/>
+8.请判断以下说法是否正确：XHTML 中所有的元素都需要关闭。
+您的回答：正确<br/>
+9.请判断以下说法是否正确：DOCTYPE 没有关闭标签。<br/>
+您的回答：正确<br/>
+10.在 XHTML 文档中哪些元素是强制性的？<br/>
+您的回答：doctype、html、head、body 以及 title<br/>
+11.请判断以下说法是否正确：XHTML 文档必须是格式良好的。<br/>
+您的回答：正确<br/>
+12.下列哪些是格式良好的 XHTML ？<br/>
+您的回答：<code>&lt;p&gt;A &lt;b&gt;&lt;i&gt;short&lt;/i&gt;&lt;/b&gt; paragraph&lt;/p&gt;</code><br/>
+13.下列哪些 lang 属性的用法是正确的？<br/>
+您的回答：<code>&lt;div lang="en" xml:lang="en"&gt;Hello World!&lt;/div&gt;</code><br/>
+14.哪个属性可替代下列元素的 name 属性： a、applet、frame、iframe、img 以及 map ？<br/>
+您的回答：id 属性<br/>
+15.在 XHTML 中允许简写属性吗？<br/>
+您的回答：否<br/>
+16.所有的 XHTML 文档都需要 doctype 吗？<br/>
+您的回答：是<br/>
+17.在 XHTML 中有哪些不同的 DTD ？<br/>
+您的回答：Strict, Transitional, Frameset<br/>
+18.哪个是最常用的 XHTML DTD ？<br/>
+您的回答：Transitional<br/>
+19.请判断以下说法是否正确：所有的 XHTML 标签和属性都必须是小写的。<br/>
+您的回答：正确<br/>
+20.请判断以下说法是否正确：HTML 5 是 XHTML 的升级版本。
+您的回答：错误</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[HTML TEST]]></title>
+    <link href="http://Snger.github.com/blog/2011/12/02/html-test/"/>
+    <updated>2011-12-02T21:52:00+08:00</updated>
+    <id>http://Snger.github.com/blog/2011/12/02/html-test</id>
+    <content type="html"><![CDATA[<p>HTML 测验  结果：19/20<br/>
+如果您有兴趣参与测试，可以点<a href="http://www.w3school.com.cn/quiz/quiz.asp?quiz=html">这里</a></p>
+
+<p>您的回答：<br/>
+1.HTML 指的是？<br/>
+您的回答：超文本标记语言（Hyper Text Markup Language）<br/>
+2.Web 标准的制定者是？<br/>
+您的回答：万维网联盟（W3C）<br/>
+3.在下列的 HTML 中，哪个是最大的标题？<br/>
+您的回答：<code>&lt;h1&gt;</code><br/>
+4.在下列的 HTML 中，哪个可以插入折行？<!-- more --><br/>
+您的回答：<code>&lt;br&gt;</code><br/>
+5.在下列的 HTML 中，哪个可以添加背景颜色？<br/>
+您的回答：<code>&lt;body bgcolor="yellow"&gt;</code><br/>
+6.请选择产生粗体字的 HTML 标签：<br/>
+您的回答：<code>&lt;b&gt;</code><br/>
+7.请选择产生斜体字的 HTML 标签：<br/>
+您的回答：<code>&lt;i&gt;</code><br/>
+8.在下列的 HTML 中，哪个可以产生超链接？<br/>
+您的回答：<code>&lt;a href="http://www.w3school.com.cn"&gt;W3School&lt;/a&gt;</code><br/>
+9.如何制作电子邮件链接？<br/>
+您的回答：<code>&lt;a href="mailto:xxx@yyy"&gt;</code><br/>
+10.如何在新窗口打开链接？<br/>
+您的回答：<code>&lt;a href="url" target="_blank"&gt;</code><br/>
+11.以下选项中，哪个全部都是表格标签？<br/>
+您的回答：<code>&lt;table&gt;&lt;tr&gt;&lt;td&gt;</code><br/>
+12.请选择可以使单元格中的内容进行左对齐的正确 HTML 标签：<br/>
+您的回答：<code>&lt;td align="left"&gt;</code><br/>
+13.如何产生带有数字列表符号的列表？<br/>
+您的回答：<code>&lt;ol&gt;</code><br/>
+14.如何产生带有圆点列表符号的列表？<br/>
+您的回答：<code>&lt;ul&gt;</code><br/>
+15.在下列的 HTML 中，哪个可以产生复选框？<br/>
+您的回答：<code>&lt;input type="checkbox"&gt;</code><br/>
+16.在下列的 HTML 中，哪个可以产生文本框？</p>
+
+<p style="color:#dd0000">您的回答：<code>&lt;textfield></code></p>
+
+
+<p>
+正确答案：<code>&lt;input type="text"&gt;</code><br/>
+17.在下列的 HTML 中，哪个可以产生下拉列表？<br/>
+您的回答：<code>&lt;select&gt;</code><br/>
+18.在下列的 HTML 中，哪个可以产生文本区（textarea）？<br/>
+您的回答：<code>&lt;textarea&gt;</code><br/>
+19.在下列的 HTML 中，哪个可以插入图像？<br/>
+您的回答：<code>&lt;img src="image.gif"&gt;</code><br/>
+20.在下列的 HTML 中，哪个可以插入背景图像？<br/>
+您的回答：<code>&lt;body background="background.gif"&gt;</code></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[CSS TEST]]></title>
+    <link href="http://Snger.github.com/blog/2011/12/01/css-test/"/>
+    <updated>2011-12-01T19:34:00+08:00</updated>
+    <id>http://Snger.github.com/blog/2011/12/01/css-test</id>
+    <content type="html"><![CDATA[<p>CSS 测验
+结果：16/20</p>
+
+<p>如果您有兴趣参与测试，可以点<a href="http://www.w3school.com.cn/quiz/quiz.asp?quiz=css">这里</a></p>
+
+<p>您的回答：<br/>
+1.CSS 指的是？<br/>
+您的回答：<code>Cascading Style Sheets</code><br/>
+2.在以下的 HTML 中，哪个是正确引用外部样式表的方法？<br/>
+您的回答：<code>&lt;link rel="stylesheet" type="text/css" href="mystyle.css"&gt;</code><br/>
+3.在 HTML 文档中，引用外部样式表的正确位置是？<br/>
+您的回答：&lt;head> 部分<br/>
+4.哪个 HTML 标签用于定义内部样式表？  <!-- more --><br/>
+您的回答：<code>&lt;style&gt;</code><br/>
+5.哪个 HTML 属性可用来定义内联样式？<br/>
+您的回答：<code>style</code><br/>
+6.下列哪个选项的 CSS 语法是正确的？<br/>
+您的回答：<code>body {color: black}</code><br/>
+7.如何在 CSS 文件中插入注释？<br/>
+您的回答：<code>/* this is a comment */</code><br/>
+8.哪个属性可用于改变背景颜色？<br/>
+您的回答：<code>background-color:</code><br/>
+9.如何为所有的 &lt;h1> 元素添加背景颜色？<br/>
+您的回答：<code>h1 {background-color:#FFFFFF}</code><br/>
+10.如何改变某个元素的文本颜色？</p>
+
+<p style="color:#dd0000">您的回答：<code>text-color:</code></p>
+
+
+<p>
+正确答案：<code>color:</code><br/>
+11.哪个 CSS 属性可控制文本的尺寸？<br/>
+您的回答：<code>font-size</code><br/>
+12.在以下的 CSS 中，可使所有 &lt;p> 元素变为粗体的正确语法是？<br/>
+您的回答：<code>p {font-weight:bold}</code><br/>
+13.如何显示没有下划线的超链接？<br/>
+您的回答：<code>a {text-decoration:none}</code><br/>
+14.如何使文本以大写字母开头？<br/>
+您的回答：<code>text-transform:capitalize</code><br/>
+15.如何改变元素的字体？<br/>
+您的回答：<code>font-family:</code><br/>
+16.如何使文本变为粗体？<br/>
+您的回答：<code>font-weight:bold</code><br/>
+17.如何显示这样一个边框：上边框 10 像素、下边框 5 像素、左边框 20 像素、右边框 1 像素？</p>
+
+<p style="color:#dd0000">您的回答：<code>border-width:10px 5px 20px 1px</code></p>
+
+
+<p>
+正确答案：<code>border-width:10px 1px 5px 20px</code><br/>
+18.如何改变元素的左边距？<br/>
+您的回答：<code>margin-left:</code><br/>
+19.请判断以下说法是否正确：如需定义元素内容与边框间的空间，可使用 padding 属性，并可使用负值？</p>
+
+<p style="color:#dd0000">您的回答：正确</p>
+
+
+<p>
+正确答案：错误<br/>
+20.如何产生带有正方形项目的列表？</p>
+
+<p style="color:#dd0000">您的回答：<code>list-type: square</code></p>
+
+
+<p>
+正确答案：<code>list-style-type: square</code></p>
+
+<hr />
+
+<p>对自己的成绩不满意，关键是第17题——看着答案都不知所以（实际上还没用过CSS控制边框），于是google之，发现好些人都在这题错了，例如：<a href="http://www.seozsz.com/9fen.html%EF%BC%89%E3%80%81[%E8%BF%99%E4%BD%8D](http://blog.csdn.net/wustrive_2008/article/details/6226454">这位</a>、<a href="http://wustrive-2008.iteye.com/blog/969906">这位</a>、<a href="http://metallica-1860.iteye.com/blog/664428">还有这位</a>.<a href="http://m.chenxiaomo.com/index-wap2.php?p=4104">Bobo</a>答对了，没在twitter活跃，也没讲解。还是复习去。</p>
+
+<p>update:想起来了，边框的像素若是用<code>border-width:10px 1px 5px 20px</code>,那是正确滴，顺时针……</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Octopress Issue]]></title>
+    <link href="http://Snger.github.com/blog/2011/11/28/octopress-issue/"/>
+    <updated>2011-11-28T11:43:00+08:00</updated>
+    <id>http://Snger.github.com/blog/2011/11/28/octopress-issue</id>
+    <content type="html"><![CDATA[<p>不知什麼原因，Octopress的source分支中的_post文件夾沒被track，博客的文章又更新不能，現在先試試rake new_post[&#8220;&#8221;]，看看效果。</p>
+
+<p>date:2011-11-29 update<br/>
+<em>測試結果爲：</em><br/>
+-    使用&#8221;git status&#8221;,發現<em>post文件夾沒被track，使用&#8221;git add </em>post&#8221;跟蹤。<br/>
+-    測試發文，有效。</p>
+
+<p><em>依舊存在的問題：</em>  <!-- more -->
+-    在github源碼中看不到_post文件夾，不過這也不算壞事。</p>
+
+<p><em>經驗：</em><br/>
+-   在批量傳輸舊文時，直接&#8221;rake generate&#8221;會有一些問題，例如：文章導入不完整，網站索引可能出問題。最好每添一篇文章都生成一次。
+-   更爲主業的測試請進一步閱讀<a href="https://twitter.com/#!/yorkxin">@yorkxin</a>的<em>Octopress 搬家記</em>系列，這是第一篇<a href="http://blog.yorkxin.org/2011/11/26/import-from-wpcom-to-octopress">http://blog.yorkxin.org/2011/11/26/import-from-wpcom-to-octopress</a>.</p>
+
+<p>2011年12月6日09时34分19秒update:<br/>
+在看《progit》时，忽然想到，为什么在github.com的souce分支中看不到<em>post目录：原来在根据官网指导的那两次<code>git push</code>后自己并没有再上传过；而Octopress的发布日志<code>rake generate</code>,<code>rake deploy</code>与git是相对独立的，<code>rake generate</code>使用<a href="https://github.com/mojombo/jekyll">Jekyll</a>生成静态网页，并把结果置于octopress/</em>delploy目录中，在使用<code>rake deploy</code>后发布到github.com并同步到博客。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Hello，Octopress]]></title>
+    <link href="http://Snger.github.com/blog/2011/11/27/hello/"/>
+    <updated>2011-11-27T23:25:00+08:00</updated>
+    <id>http://Snger.github.com/blog/2011/11/27/hello</id>
+    <content type="html"><![CDATA[<p>  <strong>嗨，经过N次失败，多次重装，我的Ocporess终于上线啦！！！</strong><br/>
+  上一次使用Ubuntu还得追溯去年。今年因为在twitter关注比较多Ubuntu的消息，又恰好对WINDOWS7的高内存不满，于是又切回Ubuntu。手头还保留着Ubuntu10.10的CD，又想着待Ubuntu12.4出来时再更新，于是就先把Ubuntu10.10装上了。<br/>
+  日常使用Ubuntu10.10还是不错的，没想到待想使用Octopress时，状况百出。<br/>
+  先是看了几个中文帖教程，一路做下来很顺利，结果就是不能更新博客，后面顺着这些博客找到在twitter上活跃的 <a href="https://twitter.com/#!/yorkxin">@yorkxin</a>、 <a href="https://twitter.com/#!/GregoryALussier">@GregoryALussier</a> 、 <a href="https://twitter.com/#!/xdite">@xdite</a> 这几位达人，问了很多相关问题，也学习了许多知识，这里一并感谢了。  <!-- more -->
+  悲剧的是有些隐藏的问题一直没有发现，于是一直没办法更新博客。<br/>
+  再重装ruby、RVM及相关组件大概5次后，觉得不可能是这方面的问题，于是在找回相关Ubuntu平台的帖，仔细琢磨，最后终于顺藤找到这个帖<a href="http://stackoverflow.com/questions/4980877/rails-error-couldnt-parse-yaml">rails error, couldn&#8217;t parse YAML</a>,虽然找不到最佳答案中所说的文件，却发现<em>问题的关键在YAML语法错误</em>。<br/>
+  测试多次后，在 .yml 文件找到两个错；自己新写的博文也有一个错误，至此，悲剧的折腾终于告一段落。留下此文简单记录下轨迹。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Try again]]></title>
+    <link href="http://Snger.github.com/blog/2011/11/24/try-again/"/>
+    <updated>2011-11-24T23:29:00+08:00</updated>
+    <id>http://Snger.github.com/blog/2011/11/24/try-again</id>
+    <content type="html"><![CDATA[<p>今天大概重装octopress四次了吧，一直没成功，不过没关系，继续努力。
+先这样吧，装好在叙。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Hello-Octopress]]></title>
+    <link href="http://Snger.github.com/blog/2011/11/23/Hello-Octopress/"/>
+    <updated>2011-11-23T18:42:00+08:00</updated>
+    <id>http://Snger.github.com/blog/2011/11/23/Hello-Octopress</id>
+    <content type="html"><![CDATA[<p>这个网站是使用<a href="http://octopress.org" title="Octopress">Octopress</a>架设，并使用免费的<a href="http://pages.github.com" title="GitHub">GitHub Pages</a>网页空间。也是我第一次在Ubuntu操作系统下，使用GVIM及<a href="http://markdown.tw/#link" title="Markdown">Markdown语法</a>写博客。</p>
+
+<p>试用Octopress也是机缘：</p>
+
+<blockquote><p>1.原本只想建一个简单的技术博客，记录自己的菜鸟成长史，于是在国内算是知名的IT社区建了一个博客。十六天写了十五篇博文，转载五篇。没想到昨天一篇日志被删除了。在网路中，我最不能容忍的就是删文，于是离开。  <!-- more -->
+2.也刚好在昨天看到博文<a href="http://www.yangzhiping.com/psy/open-classroom.html" title="不上大学，你可以学些什么？">不上大学，你可以学些什么？</a>中提到</p>
+
+<blockquote><p>你可以，开一个个人博客。如果是2011年才开建，建议采用octopress，记录个人的学习成长。<br/>
+有点好奇，正想试试。<br/>
+两因相加，于是有了这个博客。</p></blockquote></blockquote>
+
+<p>使用Octopress后，发现至少可以训练以下知识：</p>
+
+<blockquote><p>1.GitHub<br/>
+2.vim<br/>
+3.基础建站知识<br/>
+4.HTML+Markdown<br/>
+5.使用英文搜索资料、看文档的能力</p></blockquote>
+
+<p>其实，最重要的是：<strong>自由</strong></p>
+
+<hr />
+
+<h2>感谢以下链接</h2>
+
+<ul>
+<li><a href="http://hack.sslab.co/blog/2011/10/14/hello/" title="Hello,Octopress">Hello,Octopress</a></li>
+<li><a href="http://markdown.tw/#list" title="Markdown.tw">Markdown.tw</a></li>
+<li><a href="http://lyhdev.com/note:octopress" title="lyhdev.com">思创软体技术分享</a></li>
+<li><a href="http://octopress.org" title="Octopress">Octopress</a></li>
+<li><a href="https://github.com" title="GitHub">GitHub</a></li>
+<li>当然，也感谢删我帖的那些网站，链接就不给出了。</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[移动平台WEB前端开发技巧汇总]]></title>
+    <link href="http://Snger.github.com/blog/2011/11/22/mobi-web/"/>
+    <updated>2011-11-22T16:21:00+08:00</updated>
+    <id>http://Snger.github.com/blog/2011/11/22/mobi-web</id>
+    <content type="html"><![CDATA[<p>从 <a href="http://uecss.com/mobile-platform-web-front-end-development-skills-summary.html">UECSS.COM</a> 作者：猪的明天</p>
+
+<p>原名《移动平台3G手机网站前端开发布局技巧汇总》，由武方博整理的，让我们了解下移动设备上的WEB站点开发的基础知识，多些时间和精力去优化其他细节，我这里对原文的标签格式做了细微的调整，阅读查看起来明晰些，原文如下：</p>
+
+<p>  您或许正在或准备参与一个WepApp项目，您或许正在Google搜索mobile development相关的文章，您或许是一名专业的WEB前端工程师，您或许想学习Mobile前端开发方面的技术，如果您被我说中了，呵呵那么这篇文章将为您带来意想不到的惊喜！当您看到这篇文章时，哥已经默认认为您是一名资深的WEB前端工程师，如果您不是，可能您会遇见许多不理解或听不懂的专业术语或前端技术（包括WEB、Mobile）。但是这没有关系，给自己一点信心吧，用心的阅读下去……  <!-- more --><br/>
+  自Iphone和Android这两个牛逼的手机操作系统发布以来，在互联网界从此就多了一个新的名词-WebApp(意为基于WEB形式的应用程序，运行在高端的移动终端设备)。<br/>
+  开发者们都知道在高端智能手机系统中有两种应用程序：一种是基于本地（操作系统）运行的APP；一种是基于高端机的浏览器运行的WebApp，本文将主要讲解后者。</p>
+
+<h3>WebApp与Native App有何区别呢？</h3>
+
+<h4>Native App：</h4>
+
+<ul>
+<li>开发成本非常大</li>
+<li>一般使用的开发语言为JAVA、C++、Objective-C</li>
+<li>更新体验较差、同时也比较麻烦</li>
+<li>每一次发布新的版本，都需要做版本打包，且需要用户手动更新（有些应用程序即使不需要用户手动更新，但是也需要有一个恶心的提示）。</li>
+<li>非常酷</li>
+<li>因为native app可以调用IOS中的UI控件以UI方法，它可以实现WebApp无法实现的一些非常酷的交互效果</li>
+<li>Native app是被Apple认可的</li>
+<li>Native app可以被Apple认可为一款可信任的独立软件，可以放在Apple Stroe出售，但是Web app却不行。</li>
+</ul>
+
+
+<h4>Web App：</h4>
+
+<ul>
+<li>开发成本较低</li>
+<li>使用web开发技术就可以轻松的完成web app的开发</li>
+<li>升级较简单</li>
+<li>升级不需要通知用户，在服务端更新文件即可，用户完全没有感觉</li>
+<li>维护比较轻松</li>
+<li>和一般的web一样，维护比较简单，它其实就是一个站点</li>
+</ul>
+
+
+<p>  Webapp说白了就是一个针对Iphone、Android优化后的web站点，它使用的技术无非就是HTML或HTML5、CSS3、JavaScript，服务端技术JAVA、PHP、ASP。<br/>
+当然，因为这些高端智能手机（Iphone、Android）的内置浏览器都是基于webkit内核的，所以在开发WEBAPP时，多数都是使用HTML5和CSS3技术做UI布局。当使用HTML5和CSS3l做UI时，若还是遵循着一般web开发中使用HTML4和CSS2那样的开发方式的话，这也就失去了WEBAPP的本质意义了，且有些效果也无法实现的，所以在此又回到了我们的主题–webapp的布局方式和技术。
+  在此说明一下，在此所说的移动平台前端开发是指针对高端智能手机（如Iphone、Android）做站点适配也就是WebApp，并非是针对普通手机开发Wap 2.0，所以在阅读本篇文章以前，你需要对webkit内核的浏览器有一定的了解，你需要对HTML5和CSS3有一定的了解。如果你已经对此有所了解，那现在就开始往下阅读吧……</p>
+
+<p>1.首先我们来看看webkit内核中的一些私有的meta标签，这些meta标签在开发webapp时起到非常重要的作用</p>
+
+<pre><code>&lt;meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" /&gt; 
+&lt;meta content="yes" name="apple-mobile-web-app-capable" /&gt; 
+&lt;meta content="black" name="apple-mobile-web-app-status-bar-style" /&gt; 
+&lt;meta content="telephone=no" name="format-detection" /&gt;
+</code></pre>
+
+<blockquote><p>第一个meta标签表示：强制让文档的宽度与设备的宽度保持1:1，并且文档最大的宽度比例是1.0，且不允许用户点击屏幕放大浏览；<br/>
+第二个meta标签是iphone设备中的safari私有meta标签，它表示：允许全屏模式浏览；<br/>
+第三个meta标签也是iphone的私有标签，它指定的iphone中safari顶端的状态条的样式；<br/>
+第四个meta标签表示：告诉设备忽略将页面中的数字识别为电话号码；</p></blockquote>
+
+<p>2.HTML5标签的使用<br/>
+  在开始编写webapp时，哥建议前端工程师使用HTML5，而放弃HTML4，因为HTML5可以实现一些HTML4中无法实现的丰富的WEB应用程序的体验，可以减少开发者很多的工作量，当然了你决定使用HTML5前，一定要对此非常熟悉，要知道HTML5的新标签的作用。比如定义一块内容或文章区域可使用section标签，定义导航条或选项卡可以直接使用nav标签等等。</p>
+
+<p>3.放弃CSS float属性<br/>
+  在项目开发过程中可以会遇到内容排列排列显示的布局，假如你遇见这样的视觉稿，哥建议你放弃float，可以直接使用display:block;</p>
+
+<p>4.利用CSS3边框背景属性<br/>
+  这个按钮有圆角效果，有内发光效果还有高光效果，这样的按钮使用CSS3写是无法写出来的，当然圆角可以使用CSS3来写，但高光和内发光却无法使用CSS3编写，这个时候你不妨使用-webkit-border-image来定义这个按钮的样式。-webkit-border-image就个很复杂的样式属性。</p>
+
+<p>5.块级化a标签<br/>
+  请保证将每条数据都放在一个a标签中，为何这样做？因为在触控手机上，为提升用户体验，尽可能的保证用户的可点击区域较大。</p>
+
+<p>6.自适应布局模式<br/>
+  在编写CSS时，我不建议前端工程师把容器（不管是外层容器还是内层）的宽度定死。为达到适配各种手持设备，我建议前端工程师使用自适应布局模式（支付宝采用了自适应布局模式），因为这样做可以让你的页面在ipad、itouch、ipod、iphone、android、web safarik、chrome都能够正常的显示，你无需再次考虑设备的分辨率。</p>
+
+<p>7.学会使用webkit-box<br/>
+  上一节，我们说过自适应布局模式，有些同学可能会问：如何在移动设备上做到完全自适应呢？很感谢webkit为display属性提供了一个webkit-box的值，它可以帮助前端工程师做到盒子模型灵活控制。</p>
+
+<p>8.如何去除Android平台中对邮箱地址的识别 <br/>
+  看过iOS webapp API的同学都知道iOS提供了一个meta标签:用于禁用iOS对页面中电话号码的自动识别。在iOS中是不自动识别邮件地址的，但在Android平台，它会自动检测邮件地址，当用户touch到这个邮件地址时，Android会弹出一个框提示用户发送邮件，如果你不想Android自动识别页面中的邮件地址，你不妨加上这样一句meta标签在head中</p>
+
+<pre><code>&lt;meta content="email=no" name="format-detection" /&gt;
+</code></pre>
+
+<p>9.如何去除iOS和Android中的输入URL的控件条<br/>
+  你的老板或者PD或者交互设计师可能会要求你：能否让我们的webapp更加像nativeapp，我不想让用户看见那个输入url的控件条？<br/>
+答案是可以做到的。我们可以利用一句简单的javascript代码来实现这个效果</p>
+
+<pre><code>setTimeout(scrollTo,0,0,0);
+</code></pre>
+
+<p>  请注意，这句代码必须放在window.onload里才能够正常的工作，而且你的当前文档的内容高度必须是高于窗口的高度时，这句代码才能有效的执行。</p>
+
+<p>10.如何禁止用户旋转设备  <br/>
+  我曾经也想禁止用户旋转设备，也想实现像某些客户端那样：只能在肖像模式或景观模式下才能正常运行。但现在我可以很负责任的告诉你：别想了!在移动版的webkit中做不到！  <br/>
+  至少Apple webapp API已经说到了：我们为了让用户在safari中正常的浏览网页，我们必须保证用户的设备处于任何一个方位时，safari都能够正常的显示网页内容（也就是自适应），所以我们禁止开发者阻止浏览器的orientationchange事件，看来苹果公司的出发点是正确的，苹果确实不是一般的苹果。<br/>
+  iOS已经禁止开发者阻止orientationchange事件，那Android呢？对不起，我没有找到任何资料说Android禁止开发者阻止浏览器orientationchange事件，但是在Android平台，确实也是阻止不了的。</p>
+
+<p>11.如何检测用户是通过主屏启动你的webapp<br/>
+  看过Apple webapp API的同学都知道iOS为safari提供了一个将当前页面添加主屏的功能，按下iphone ipod ipod touch底部工具中的小加号，或者ipad顶部左侧的小加号，就可以将当前的页面添加到设备的主屏，在设备的主屏会自动增加一个当前页面的启动图标，点击该启动图标就可以快速、便捷的启动你的webapp。<br/>
+  从主屏启动的webapp和浏览器访问你的webapp最大的区别是它清除了浏览器上方和下方的工具条，这样你的webapp就更加像是nativeapp了，还有一个区别是window对像中的navigator子对象的一个standalone属性。
+  iOS中浏览器直接访问站点时，navigator.standalone为false,从主屏启动webapp时，navigator.standalone为true，我们可以通过navigator.standalone这个属性获知用户当前是否是从主屏访问我们的webapp的。<br/>
+  在Android中从来没有添加到主屏这回事！</p>
+
+<p>12.如何关闭iOS中键盘自动大写  <br/>
+  我们知道在iOS中，当虚拟键盘弹出时，默认情况下键盘是开启首字母大写的功能的，根据某些业务场景，可能我们需要关闭这个功能，移动版本webkit为input元素提供了autocapitalize，通过指定autocapitalize=&#8221;off&#8221;来关闭键盘默认首字母大写。</p>
+
+<p>13.iOS中如何彻底禁止用户在新窗口打开页面<br/>
+  有时我们可能需要禁止用户在新窗口打开页面，我们可以使用a标签的target=&#8221;_self&#8221;来指定用户在新窗口打开，或者target属性保持空，但是你会发现iOS的用户在这个链接的上方长按3秒钟后，iOS会弹出一个列表按钮，用户通过这些按钮仍然可以在新窗口打开页面，这样的话，开发者指定的target属性就失效了，但是可以通过指定当前元素的-webkit-touch-callout样式属性为none来禁止iOS弹出这些按钮。这个技巧仅适用iOS对于Android平台则无效。</p>
+
+<p>14.iOS中如何禁止用户保存图片＼复制图片<br/>
+  我们在第13条技巧中提到元素的-webkit-touch-callout属性，同样为一个img标签指定-webkit-touch-callout:none，这样用户就无法保存＼复制你的图片了。</p>
+
+<p>15.iOS中如何禁止用户选中文字  <br/>
+  我们通过指定文字标签的-webkit-user-select:none便可以禁止iOS用户选中文字。</p>
+
+<p>16.iOS中如何获取滚动条的值<br/>
+  桌面浏览器中想要获取滚动条的值是通过document.scrollTop和document.scrollLeft得到的，但在iOS中你会发现这两个属性是未定义的，为什么呢？因为在iOS中没有滚动条的概念，在Android中通过这两个属性可以正常获取到滚动条的值，那么在iOS中我们该如何获取滚动条的值呢？  <br/>
+  通过window.scrollY和window.scrollX我们可以得到当前窗口的y轴和x轴滚动条的值。</p>
+
+<p>17.如何解决盒子边框溢出  <br/>
+  当你指定了一个块级元素时，并且为其定义了边框，设置了其宽度为100％。在移动设备开发过程中我们通常会对文本框定义为宽度100％，将其定义为块级元素以实现全屏自适应的样式，但此时你会发现，该元素的边框(左右)各1个像素会溢了文档，导致出现横向滚动条，为解决这一问题，我们可以为其添加一个特殊的样式-webkit-box-sizing:border-box;用来指定该盒子的大小包括边框的宽度。</p>
+
+<p>18.如何解决Android 2.0以下平台中圆角的问题<br/>
+  如果大家够细心的话，在做wap站点开发时，大家应该会发现android 2.0以下的平台中问题特别的多，比如说边框圆角这个问题吧。<br/>
+在对一个元素定义圆角时，为完全兼容android 2.0以下的平台，我们必须要按照以下技巧来定义边框圆角：</p>
+
+<ul>
+<li>-webkit这个前缀必须要加上（在iOS中，你可以不加，但android中一定要加）；</li>
+<li>如果对针对边框做样式定义，比如border:1px solid #000;那么-webkit-border-radius这属性必须要出现在border属性后。</li>
+<li>假如我们有这样的视觉元素，左上角和右上角是圆角时，我们必须要先定义全局的(4个角的圆角值)-webkit-border-radius:5px;</li>
+<li>然后再依次的覆盖左下角和右下角，-webkit-border-bottom-left-radius:0;-webkit-border-bottom-right-border:0;</li>
+<li>否则在android 2.0以下的平台中将全部显示直角，还有记住！-webkit这个前缀一定要加上！</li>
+</ul>
+
+
+<p>19.如何解决android平台中页面无法自适应<br/>
+  虽然你的html和css都是完全自适应的，但有一天如果你发现你的页面在android中显示的并不是自适应的时候，首先请你确认你的head标签中是否包含以下meta标签：</p>
+
+<pre><code>&lt;meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0;" /&gt;
+</code></pre>
+
+<p>如果有的话，那请你再仔细的看清楚有没有这个属性的值width=device-width，如果没有请立即加上吧！</p>
+
+<p>20.如何解决iOS 4.3版本中safari对页面中5位数字的自动识别和自动添加样式<br/>
+  新的iOS系统也就是4.3版本，升级后对safari造成了一个bug：即使你添加了如下的meta标签，safari仍然会对页面中的5位连续的数字进行自动识别，并且将其重新渲染样式，也就是说你的css对该标签是无效的。</p>
+
+<pre><code>&lt;meta name="format-detection" content="telphone=no" /&gt;
+</code></pre>
+
+<p>  我们可以用一个比较龌龊的办法来解决。比如说支付宝wap站点中显示金额的标签，我们都做了如下改写：</p>
+
+<pre><code>&lt;button class="t-balance" style="background:none;padding:0;border:0;"&gt;95009.00&lt;/button&gt;
+</code></pre>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[SEO的那些事儿]]></title>
+    <link href="http://Snger.github.com/blog/2011/11/22/something-about-seo/"/>
+    <updated>2011-11-22T15:35:00+08:00</updated>
+    <id>http://Snger.github.com/blog/2011/11/22/something-about-seo</id>
+    <content type="html"><![CDATA[<p>来自 <a href="http://omiga.org/blog/archives/category/fed">前端开发</a>
+2011-02-15 10:08:07  2条评论»</p>
+
+<p>去年Q4客串了点SEO的工作，简单总结下。当然SEO涉及内部优化和外部优化两个方面，内部优化主要是站点内链路结构的优化和关键词优化，外部优化则主要是外部链接优化。相对来说，内部优化更具可操作性，而且成本也较低，但是内部优化在整个SEO中只能占到30%～40%的比重，外部优化能带来实际效果的提升可能更显而易见，比如你在权重极高的站点获得了一个外部链接，那么你这个网站权重的提升将会比较明显，但我觉得外部优化不算个技术活儿，还存在很多“潜规则”，我表示兴趣不大。所以以下内容主要涉及的是SEO中内部优化的一点总结。<!-- more --></p>
+
+<h3>页面收录</h3>
+
+<p>SEO内部优化第一步当然不是关键词优化，第一步简单粗暴：让搜索引擎收录更多页面！抛开外链不谈，单从站点本身来说，让每一个页面都有链接（内部链接）链接进来，能被搜索引擎爬虫爬到即可。一般来说一个站点中首页具有权重是最高的，搜索引擎爬取的频率也非常高，所以内部链接结构优化也通常是从首页入手，如把最新更新的内容放到首页第一屏内。这样做一方面能提升用户体验，另一方面也是让搜索引擎能即时地抓取到新增加的页面。<br/>
+但是首页能承载的内容总是有限的，为了增加站内页面的链接入口，通常站点也还会常用诸如“分类”、“存档”或是“推荐”这样的形式来增加内部链接的数量，在SEO中这些方法都是可行的。<br/>
+除此之外你还可以通过“网站地图”来提交页面地供搜索引擎抓取。目前主流搜索引擎都支持通过站点地图提交网站链接，但是百度目前情况不明。每个sitemap.xml最多只能提交50000个链接，一个站点可以有多个sitemap文件，默认搜索引擎会试图抓取根目录下的sitemap.xml文件，你也可以将sitemap.xml添加到robots.txt文件（Sitemap:   <a href="http://example.com/sitemap.xml">http://example.com/sitemap.xml</a>）。多个sitemap的情况可以通过添加到robots.txt或是创建sitemap索引文件（其实我不知道这个东西咋用）来告诉搜索引擎sitemap的具体路径。一点建议：一个网站除了可以建立一个xml版的sitemap外，还可以考虑创建一个html的sitemap，除了能够增加搜索引擎爬取到站内链接的机会，而且对用户体验的提升也有大有益处的。<br/>
+目前flash内的链接，JS产生的链接内容都是不能被抓取的。当你的网站必须要使用flash或是JS来创建内容时，最好是也能创建一个HTML版来共搜索引擎抓取页面上的链接。这个特性当然很多时候被用来控制页面权重的分配。</p>
+
+<h3>关键词优化</h3>
+
+<p>我们在搜索引擎中搜索关键词，搜索引擎将与这个关键词相匹配的网页检索出来，根据网页内容与这个关键词的相关性高低来返回给我们。那么搜索引擎是如何来确定一个网页与某个关键词的相关性的呢？<br/>
+在确定关键词之前是提取关键词。搜索引擎爬取页面后，将页面内容通过分词技术等将页面文本内容提取出来。但是页面中的有些地方的词“先天性”的就具有一定的相关性。比如
+-   页面标题（title）中出现的词
+-   hn标签中出现的词（通常是h1>h2>h3，其他h标签几乎没有任何权重了）
+-   页面代码中越靠前的内容
+-   黑体或斜体字体
+-   ……<br/>
+所以技术手段的优化基本上就是将页面中的主要关键词分布到title，h1/h2/h3，页面内容靠前的部分来提高关键词的相关性。很多有分栏设计的页面，都可以通过技术实现将主要内容在代码中置前来排除其他辅助性内容的干扰。黑体和斜体字体较之于其他字体具有略高的相关性，当然这在用户看来也是具有强调提示作用的。关键词在上诉位置有所体现，同时在页面正文中也有一定的密度分布，那么这个关键词基本上在页面内容上的优化就OK了。但是这里注意一点：切忌堆砌大量关键词，有可能被视作作弊而受到惩罚。<br/>
+除了页面中本身内容提取出来的关键词，外部链接文字也会对页面关键词产生影响，有时候影响还非常大。举个极端一点的例子，比如说某几个大型网站，PR值极高，在他们的首页上都有链接“handsome man”链接到我们的博客域名omiga.org，那么“handsome man”就有可能成为我博客的关键词，而且相关性极高。<br/>
+在上面例子的过程中，一方面大型站点拥有极高的权重和信任度，那么搜索引擎会认为它的描述信息是准确可信的，同时也将它们的权重传递到了我的域名上。站点域名权重对关键词相关性的计算也有较大的影响。<br/>
+keyoworks和description这两个曾经名噪一时的属性如今在关键词相关性计算方面基本上已经没有任何作用，因为曾经的极度滥用，搜索引擎已将这两个属性打入冷宫。但是description对于搜索结果的调整还是有很大的用处，基本上各搜索引擎还是首先考虑将description中的内容显示成搜索结果的描述信息。</p>
+
+<h3>权重传递</h3>
+
+<p>上面提到了权重的传递，权重的传递都是通过链接来完成，而且同等条件下外部链接比内部链接能传递更多的权重，因为内部链接毕竟是网站管理员自己所能控制的，搜索引擎不会让你随意的操作权重的分配。尽管如此，不等于说在站点内部控制权重的分配没有一点作用，你在pr值极高的首页链接到一个内页，这个内页同样还是会获得比较高的权重的。权重传递会随着页面深度的增加会逐渐衰减，一般来说>4层的链接后的页面已经分配不到第一个页面的权重了。比如：A链向B、B链向C，C链向D（A-B-C-D），那么D基本上能分配得到A的权重就极少了，哪怕A是<a href="http://www.miibeian.gov.cn/">http://www.miibeian.gov.cn/</a>。很多网站使用了分页功能，这样做前面的一两页内容上的链接或许还能分配到一点权重，而后面的页码上的链接由于深度的关系，可能就分配不到任何权重了。<br/>
+页面权重的传递除了可以通过外部链接来进行，其实向外导出链接也有可能获得一些权重，或是信任度。比如在网站A首页上，添加各大门户的首页链接，那么也是有可能对A的权重产生影响的。同时还有可能增加用户信任度，对提高点击量具有一定的作用！<br/>
+站点内部权重的分配，一方面可以通过链接深度来实现，另一方面有一个rel=”nofollow”属性，你在wordpress的评论发布者链接上可以看到这个属性，搜索引擎不会为具有rel=”nofollow”属性的链接分配权重，也不会爬取这个链接，目前主流浏览器都支持这个属性。当然<meta name=”robots” content=”noindex,nofollow” />也具有相同的作用，不同之处是meta方式将使页面上所有的链接不被爬取也不能分配权重，百度目前不支持noindex。</p>
+
+<h2>其他一些比较散的点：</h2>
+
+<h3>URL静态化</h3>
+
+<p>现在的搜索引擎完全有能力分析复杂的URL，因此从搜索引擎收录来讲，没有必要非得做URL静态化或是伪静态化。但是从用户体验考虑，短网址更便于用户记忆和传播，同时在搜索引擎结果中短网址也会具有更高的点击率。当然了，如果在URL中还能出现关键词，搜索引擎是会将关键词高亮显示的，这也会增加用户对搜索结果的信任度，提升点击率。</p>
+
+<h3>Title</h3>
+
+<p>title中出现的词具有相对较高的关键词权重外，title还直接在搜索引擎结果中以及其醒目的方式显示。因此，title除了用于关键词优化，提高页面权重外，还可用于优化搜索引擎展示结果，吸引用户点击。即使不点击，也能取得一些如电视媒体广告，视频广告类似的展示营销效果。</p>
+
+<h3>图片优化</h3>
+
+<p>影响图片关键词相关性主要是以下几个方面：
+-   alt属性 alt属性中的文本对图片关键词相关性计算具有比较大的影响
+-   图片前后的文字 即是img标签前后的文字信息，观察发现img后面的文字较img前面的文字的相关性更高一些
+-   整个页面的关键词 这一点无需多言，一个卖化妆品的页面上的一个alt为“java开发”的图片怎么也很难让人相信能给java扯上什么关系
+-   图片大小 一般来说600-1000左右宽高的图片可能更易被搜索引擎偏爱</p>
+
+<h3>视频优化</h3>
+
+<p>视频的这类多媒体内容和图片有类似的特征，即是搜索引擎都无法直接读取其内容。那么搜索引擎在计算其关键词相关性方面也会采取一些相同的算法，比如前后的文字信息、整个页面的关键字等。除此，各搜索引擎也支持站点视频地图（baidu、soso、youdao、sougou，国内这几个搜索引擎都是按照互联网视频开放协议来发布的视频站点地图标准，google采用了另外的视频地图，或是mRSS），你可以通过创建视频站点地图来向搜索引擎提交视频内容。</p>
+
+<h3>W3C验证对SEO无影响</h3>
+
+<p>至少从目前来看，页面代码是否能通过W3C校验对SEO不会产生任何影响。但是简洁，富含语义的代码确是能增加对搜索引擎友好度的。</p>
+
+<h2>纯属虚构</h2>
+
+<p>SEO可以说是一个体力活，传说目前google参与关键字相关性计算的因子就多达200多个，所以，你也很难做一两项优化就达到立竿见影的效果。但相对外部优化来说，内部优化似乎可操作性更强，而且内部优化在一定程度上也对提升用户体验有很大的益处。虽说这篇文章在谈论SEO要如何如何，其实抛开SEO来看，网站结构优化、标题优化、语义化标签这些工作大多也是本应该做好的，与SEO也扯不上多大关系。以上说的种种，或是其他SEO文章所言种种优化方式不一定准确，也不保证长期有效，因为目前还没有哪个搜索引擎公布其搜索算法，所有的一切都是不明真相的群众在经验+数据+小道消息的基础上总结归纳，所以请勿如岳不群邂逅葵花宝典那般走火入魔，专心做内容，先练好内功，有朝一日定能独步武林！<br/>
+<em>SEO的最终目的还是增加点击量、增加业绩，排名、PR值神马的都是浮云，所以你也可以为提高用户点击量不择手段，买也好、抢也罢，与SEO无关！</em></p>
+
+<p>相关文章
+<meta>标签详解<br/>
+分类：<a href="http://omiga.org/blog/archives/category/fed">前端开发</a> | 标签：robots,seo,sitemap,搜索引擎优化 <br/>
+trackback: <a href="http://omiga.org/blog/archives/1565/trackback">http://omiga.org/blog/archives/1565/trackback</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[HTML4和HTML5之间的10个主要不同]]></title>
+    <link href="http://Snger.github.com/blog/2011/11/21/html4-vs-html5/"/>
+    <updated>2011-11-21T19:20:00+08:00</updated>
+    <id>http://Snger.github.com/blog/2011/11/21/html4-vs-html5</id>
+    <content type="html"><![CDATA[<p>从 <a href="http://blogread.cn/it/">IT技术博客大学习</a> 作者：Aqee
+标签：  HTML5</p>
+
+<p>   本文是从 <a href="http://www.developerdrive.com/2011/08/10-essential-differences-between-html4-and-html5/">10 Essential Differences Between HTML4 and HTML5</a> 这篇文章翻译而来。</p>
+
+<p>　　HTML5是最新的HTML标准，或迟或早，所有的web程序员都会发现需要使用到这个最新的标准，而且，很多人都会感觉到，重新开发一个HTML5的网站，要比把一个网站从HTML4迁移到HTML5上容易的多，这是因为这两个版本之间有很大不同之处。<br/>
+　　事实上，HTML5并没有对HTML4做什么重大的修改，它们很多东西都是相似的。<br/>
+　　可是，其中有一些很重要的区别你需要知道。下面列出的就是一些HTML4和HTML5之间主要的不同之处(并不是全部，全部列出来是不可能的)：<!-- more --></p>
+
+<ol>
+<li><p><em>HTML5标准还在制定中</em> <br/>
+　　这头一个不同之处显而易见，但非常重要，我需要先从它开始。也许你已经注意到了关于HTML5很酷的言论到处都是，但是事实情况是，HTML5是一个还未完成的标准。HTML4已经有10岁了，但它仍是当前正式的标准的事实没有改变。<br/>
+　　另一方面，HTML5仍处在早期阶段，以后的修改会不断的出现。你必须考虑到这些，因为你在网站上使用的这些新增加或修改的网页元素会每年都出现一些变化，你需要不停的更新升级你的网站，这可不是你希望的。这就是目前为止，你最好在产品里使用HTML4，只在实验里使用HTML5的原因。</p></li>
+<li><p><em>简化的语法</em><br/>
+　　更简单的doctype声明是HTML5里众多新特征之一。现在你只需要写 &#8216;&lt;!doctype html>&#8217; ，这就行了。HTML5的语法兼容HTML4和XHTML1，但不兼容SGML。</p></li>
+<li><p><em>一个替代Flash的新 &#8216;&lt;canvas>&#8217; 标记</em><br/>
+　　对于Web用户来说，Flash既是一个惊喜，也是一种痛苦。有很多的Web开发人员对HTML5对Flash产生的威胁很不满。但对于那些忍受着要花几年时间加载和运行的臃肿的Flash视频的人来说，用新的  &#8216;&lt;canvas>&#8217; 标记生成视频的技术已经到来。<br/>
+　　目前， &#8216;&lt;canvas>&#8217; 标记并不能提供所有的Flash具有的功能，但假以时日，Flash必将从web上淘汰。我们拭目以待，因为很多人还并不认同这种观点。</p></li>
+<li><p><em>新的 &#8216;&lt;header>&#8217; 和 &#8216;&lt;footer>&#8217; 标记</em><br/>
+　　HTML5的设计是要更好的描绘网站的解剖结构。这就是为什么这些&#8217;&lt;header>&#8217; 和
+&#8216;&lt;footer>&#8217; 等新标记的出现，它们是专门为标志网站的这些部分设计的。<br/>
+　　在开发网站时，你不在需要用 &#8216;&lt;div>&#8217; 标记来标注网页的这些部分。</p></li>
+<li><p><em>新的 &#8216;&lt;section>&#8217; 和 &#8216;&lt;article>&#8217; 标记</em><br/>
+　　跟 &#8216;&lt;header>&#8217; 和 &#8216;&lt;footer>&#8217; 标记类似，HTML5中引入的新的 &#8216;&lt;section>&#8217; 和  &#8216;&lt;article>&#8217; 标记可以让开发人员更好的标注页面上的这些区域。<br/>
+　　据推测，除了让代码更有组织外，它也能改善SEO效果，能让搜索引擎更容易的分析你的页面。</p></li>
+<li><p><em>新的 &#8216;&lt;menu>&#8217; 和 &#8216;&lt;figure>&#8217; 标记</em><br/>
+　　新的 &#8216;&lt;menu>&#8217; 标记可以被用作普通的菜单，也可以用在工具条和右键菜单上，虽然这些东西在页面上并不常用。<br/>
+　　类似的，新的 &#8216;&lt;figure>&#8217; 标记是一种更专业的管理页面上文字和图像的方式。当然，你可以用样式表来控制文字和图像，但使用HTML5内置的这个标记更适合。</p></li>
+<li><p><em>新的 &#8216;&lt;audio>&#8217; 和 &#8216;&lt;video>&#8217; 标记</em><br/>
+　　新的 &#8216;&lt;audio>&#8217; 和 &#8216;&lt;video>&#8217; 标记可能是HTML5中增加的最有用处的两个东西了。正如标记名称，它们是用来嵌入音频和视频文件的。<br/>
+　　除此之外还有一些新的多媒体的标记和属性，例如<track>，它是用来提供跟踪视频的文字信息的。有了这些标记，HTML5使Web2.0特征变得越来越友好。问题在于，在HTML5还未被广泛的接受之前，Web2.0还是老的Web2.0。</p></li>
+<li><p><em>全新的表单设计</em><br/>
+　　新的 &#8216;&lt;form>&#8217; 和 &#8216;&lt;forminput>&#8217; 标记对原有的表单元素进行的全新的修改，它们有很多的新属性(以及一些修改)。如果你经常的开发表单，你应该花时间更详细的研究一下。</p></li>
+<li><p><em>不再使用 &#8216;&lt;b>&#8217; 和 &#8216;&lt;font>&#8217; 标记</em><br/>
+　　对我个人来说，这是一个让我不太理解的改动。我并不认为去除 &#8216;&lt;b>&#8217; 和 &#8216;&lt;font>&#8217; 标记会带来多大的好处。我知道，官方的指导说这些标记可以通过CCS来做更好的处理，但这样一来，为了在文章一两个地方出现的这种标记，你就需要在独立的css和文本两个地方来实现这一的功能，岂不笨拙。也许我们以后会习惯这种方法。</p></li>
+<li><p><em>不再使用 &#8216;&lt;frame>&#8217; , &#8216;&lt;center>&#8217; , &#8216;&lt;big>&#8217; 标记</em><br/>
+　　事实上，我已经记不清曾经何时用过这些标记了，所以，我并不为去除这些标记感到悲哀。相同的原因，有更好的标记能实现它们的功能——这很好，任何作废的标记从标准中剔除都是受欢迎的。</p></li>
+</ol>
+
+
+<p>　　这10个HTML5和HTML4之间的不同只是整个新的规范中的一小部分。除了这些主要的变动外，我还可以略提一下一些次要的改动，比如修改了 &#8216;&lt;ol>&#8217; 标记的属性，让它能够倒排序，对 &#8216;&lt;u>&#8217; 标记也做了修改。<br/>
+　　所有这些次要的改动数量众多。而且新的修改也在不断的增加，因此，如果你想实时跟踪最新的动向，你需要经常的查看w3.org的HTML4 和 HTML5之间的不同这个页面。如果你很心急，想在你的工作中使用这些新的标记和属性，我劝告你最好只是做实验，原因已经说的很清楚了，这些新标记和新属性在将来也许会有很大的改变，所以，除非你不断的更新你的代码，它们很可能会过期失效。<br/>
+　　尽管如今大多数流行的浏览器的最新版都支持HTML5，但有些新的(或修改的)标记和属性它们并不支持，所以你的网页在用户的屏幕上有可能前后显示的不一致。耐心等待，等待HTML5真正可以实用时候。目前还不是时候。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[怎样花两年时间去面试一个人+前端开发类书籍]]></title>
+    <link href="http://Snger.github.com/blog/2011/11/14/Interview-and-book/"/>
+    <updated>2011-11-14T12:54:00+08:00</updated>
+    <id>http://Snger.github.com/blog/2011/11/14/Interview-and-book</id>
+    <content type="html"><![CDATA[<p>BY  <a href="http://mindhacks.cn/2011/11/04/how-to-interview-a-person-for-two-years/">刘未鹏</a>  – NOVEMBER 4, 2011
+POSTED IN: 学习方法, 未分类, 编程</p>
+
+<p>Joel Spolsky曾经感叹：招聘难，难于上青天（此处笔者稍加演绎:)）。他有两个辛辣但不乏洞察力的断言：真正的牛人也许一辈子就投大概4次简历，这些家伙一毕业就被好公司抢走了，并且他们的雇主会给他们不赖的待遇，所以他们也不想挪窝。（刚刚去世的Dennis Ritchie就是这样一个人）而“人才”市场上能找到的大多都不是什么人才。招到这帮人轻则费钱重则把你公司搞挂。<br/>
+诚然，也许没有哪个行业像IT行业这样，无形资产占据公司的绝大多数资产。拒坊间传言比尔·盖茨就曾经说过类似这样的话：只要允许我带走100个人我可以再造一个微软。这话没搜到原版出处，但是从一个侧面反映了IT公司当中智力资产所占的比例之重。<!-- more -->
+所以一个自然的推论就是，招聘也许是一个公司决策当中最最重要的一个环节。Joel Spolsky把他在这方面的观察，体会和洞见集结成了一本小册子《Smart and Gets Things Done》，开篇就挑战“产品是公司成败的关键”这个传统观念，他认为创造最适合工程师生活的环境，留下最优秀的人才才是最先最重要的一步，接下来好的产品是水到渠成的事情。国内iapp4me.com创始人郝培强正是这个理念，所以他在微博上说：</p>
+
+<p>我们是小公司，工资开的不高，也不招太多的人，但是电脑都是iMac27，iMac21，Macbook pro15，基本上比很多大公司都好多了。软件没盗版，刚才photoshop的正版我也收了。中午管饭，公司备伞。哈哈。节日假正常放，从不加班，早晨11点上班，下午6点下班。我是有资格说某些大公司的员工苦逼的。<br/>
+事实上，米国找个人尚且难成这样，搞得Joel还费心费力写本书语重心长地劝企业们要善待好工程师，国内找个人更是难上加难，国内高质量问答社区知乎创始人周源就曾经在知乎上分享他呕心沥血的招人历程，看完真是让人慨叹这年头找个靠谱的人多不容易（这条知乎问答还有很多精彩的跟帖）：</p>
+
+<p>其实从 08 年到现在，我一直想这事能不能有点窍门，或者是实用的方法，结论是几乎没有。我用过的大家都用的方法：</p>
+
+<ul>
+<li>在水木上发贴子（有点效果）</li>
+<li>在蓝色理想上发贴子（无效）</li>
+<li>在技术邮件组里发贴子（无效）</li>
+<li>买 51job/智联 最便宜的服务（有点效果）</li>
+<li>给所有可以想到的人打电话，请他们推荐（无效）</li>
+<li>给所有和你讨论过创业，喝过点小酒的人打电话（无效）</li>
+<li>约前同事私下谈（有效）</li>
+<li>我用过的大家可能没有用的方法：</li>
+</ul>
+
+
+<p>上 twitter，看 XXX 的 follower，一个一个看，看他们的 twitter，博客，Google Reader 分享，想办法搞到邮件，联系，半夜电话骚扰。<br/>
+上豆瓣，前端后端挑几本重量级的书，去找想看，看过，正在看这本书的人，一个一个看，看他们的活动，博客，Google Reader 分享，想办法搞到邮件，联系，半夜电话骚扰。<br/>
+找同事，问他们都看什么技术博客，想办法搞到邮件，联系，半夜电话骚扰。<br/>
+正是这样的不容易，才有不少公司走内部培养的办法，这里的逻辑是：一上来就招到靠谱的人太难了，但找一块靠谱的璞玉然后雕琢雕琢相对就简单很多。这倒是个办法，但这样做的人难免就陷入了纠结：培养好了，人跑了怎么办。这也不能怪招聘的公司，的确是人之常情。其实解决的办法也很简单，培养的时候进行适当引导，让员工发挥自己的主动学习能力，这样不但人得到更多成长，公司也不会觉得投入太多患得患失。所谓师傅领进门修行在个人。</p>
+
+<p>但是，这仍然还是没有解决根本的问题，就是招聘真的很困难。应聘者固然觉得自己是在“海投”，大海捞针一般。而招聘者何尝不也是这种大海捞针的感觉。这就好比两个人谈恋爱，都想和对方好上，但是偏偏就聊不到一块去。</p>
+
+<p>招聘真的很困难。以至于招聘者每年需要绞尽脑汁出新笔试题，以免往年的笔试题早就被人背熟了。出题很费脑子，要出的不太简单也不太难，能够滤掉绝大多数滥竽充数的但又要保证不因题目不公平而滤掉真正有能力的，要考虑审题人的时间成本就只能大多数用选择题，而选择题又是可以猜答案的（极少有人会在选了答案之后还敢在空白的地方写为什么选某答案的原因的）。更悲催的是，有些题目出的连公司的员工们自己都会做错（真的是员工们做错了吗？还是题目本身就出错了？）<br/>
+笔试完了之后如果还没有被鄙视就要进入面试环节，姑且不说笔试题的种种弊端，就说面试环节，短短几个小时的面试（大多数公司也许连几个小时的面试时间都没有），既需要全面考察基本知识，又要考察编程素养，还要考察（也许最重要的）性格心态。再然后还有一项根本没法考察但却占据程序员相当一部分工作时间的：debug能力。面试官不但得找准问题，不因对方一题答对而妄下结论，也不因一题打错而就扼杀机会，还要以管窥豹，从一朵花看到整个世界，从面试人的举止言谈，分析问题的方式，甚至写程序的笔迹来观察这个人的性格，做事的方式和心态，简直是要面试官具备心理分析师的水准才行。</p>
+
+<p>这厢要招人的雇主苦不堪言，那边找工作的人也是一团乱麻。绝大多数应届生直到毕业也不清楚他们想要去的公司到底需要什么样的能力，或者说，他们到底需要具备什么样的能力才能在应聘季节拥有自己的选择权。中国虽然本科教育环境差，但是同样有很多的人在本科希望整点东西出来，他们有一腔的激情和抱负，有强大的动力，但就是不知道自己需要掌握哪些技能才能满足雇主的要求，求告无门，整年整年苦闷的像没头苍蝇一样乱撞（我就收到过很多次这样的来信，他们往往很想学点东西，但又不知道哪些重要哪些不重要，到底该学到什么程度，不知道导致不确定，不确定导致决策瘫痪，干脆嘛也不动，荒废时间）。<br/>
+什么叫熟练？什么又叫精通？那么扎实呢？两年的YY经验又意味着什么？能这么简单的量化吗？同样是两年的“实践”有的人能真的学到点东西，有的人也许近似一无所得。那么实习呢？很多人都一定要在简历上弄个实习经验，这个又能说明多少问题呢？大作业呢？得奖呢？有一次我面试一位同学，据简历说编译原理课的大作业得了一等奖，可我一问什么是递归下降，就傻眼了。<br/>
+这个现实的结果就是，现在绝大多数应届简历而言，也许最具信息量的部分不是“精通XXX，熟悉YYY，掌握ZZZ”，不是“在UUU实习过”，也不是这个项目那个作业，反倒是越来越被认为不重要的一项：毕业学校。毕业学校本不应该是最具信息量的，它之所以最具信息量只是源于一个悲剧的事实：简历上其他条目实在信息量太少了。所以靠谱的面试者往往学会了无视简历上华而不实的内容，只相信面试的时候亲眼所见，扫两眼简历也就罢了，最后还得自己捋起袖子慢慢面。而应聘者也许也知道招聘的也不会细细纠简历上的条目，所以什么词也都敢往上捅，反正先过了HR筛简历这关再说。从经济学角度来讲，应聘者的这种策略是正确的，没有代价（因为目前似乎没有公司会去给已经申请过的人做一个诚信数据库），但至少有可能会带来巨大的收益。应聘成了博彩。而博彩式的应聘给招聘公司带来了巨大的筛选压力。简历成了摆设。<br/>
+那么招聘这个关系里面的第三者——学校——所处的位置呢？学校更关心的是毕业率和就业率，这似乎是件好事，有这个为目标，那么老师们似乎应该努力让自己的学生多学点东西。可惜就业的质量似乎不是最重要的指标，此其一。其二老师本身大多数没有丰富的业界经验，根本不知道企业整整需要的人才是什么样的，可能花了精力，但却培养不出雇主真正需要的人。另一方面，老师所起的作用很多时候甚至是一个负面的作用，例如布置大作业表面上看上去是培养学生的能力，我们姑且不说抄袭，假设每个人都做了，那么大作业本身能够衡量多少东西呢？能否衡量代码质量，能否衡量团队协作能力？能否衡量交流能力？考虑到大作业用到的东西往往都是书里面现成的，大作业甚至不能衡量学习能力。而学习能力简直算是这个行业最重要的能力没有之一了。</p>
+
+<p>所以，简而言之，如果把人才培养/招聘这件事情本身类比做一个项目，那么这整个项目迄今为止就是一个巨大的失败。为什么这么说呢：</p>
+
+<p>和需求严重脱节：作为人才需求方的雇主的需求到底是什么？绝大多数应聘者都没搞清。更严重的是，这却一点都不是应聘者的错。因为雇主是stakeholder，是雇主自己的责任得去说清楚需求是什么。结果应聘者实现的不是雇主想要的，雇主想要的应聘者没有实现。<br/>
+应聘者雇来培训自己的人根本不管事：学生交了学费，就相当于雇老师来培训自己，可培训者根本也不了解（或不关心）他的客户们的需求。这里，学生是需求方，老师则是实现方。弄清需求的职责在后者，可后者也弄不清。
+学生自己也弄不清：学生自己既是需求方（需要特定技能），也是实现方。可他们自己也弄不清需求到底是什么。</p>
+
+<p>以上三点还不是最严重的，最严重的在下面：
+明白需求是什么的也不知道怎么实现：怎么去培养现代IT企业真正需要的人才？特别地，实战能力怎么培养？代码素养怎么培养？协作沟通能力怎么培养？学习能力怎么培养？就算这些都知道怎么培养，又怎么给在象牙塔里头，离催命之日还遥遥无期的学生提供足够的动力呢？而学生自己就算知道该学哪些技能，又怎么知道具体怎么着手？什么是最有效率的学习方法？又如何让自己保持学习的热情？<br/>
+以上这些问题，就是当下人才培养/招聘的惨淡现状。简而言之，在雇主和学生之间，横梗着一条巨大的鸿沟，两头都很着急，两头都有动力，但就是没有方法，君住长江头妾住长江尾。像微软谷歌这样的，干脆和高校合作，直接插手本科或硕士的教育，从而保证到时有足够强的候选，某种程度上，这的确是根本解决之道，可一来这代价太大了，非一般企业承受得起，二来这影响面也太小了。</p>
+
+<p>这一切，也许将在未来的5年发生根本的变化。</p>
+
+<p>《Switch: How to Change Things When Change Is Hard》（中译《瞬变》）里面指出，表面上看来非常困难的改变，也许是因为根本就没有抓住要害。在书中作者通过大量案例分析和心理学研究，雄辩地指出以下几点促成改变的关键之处：</p>
+
+<p>触动内心的大象：要改变的人必须要有情感层面的动力。有一些特定的方法能够比另一些方法更能对人的情感产生触动。<br/>
+给出清晰、明确的目标：目标一定不能含糊，模棱两口的目标让人无所适从，导致决策瘫痪。例如最近我们组在招实习生，我在微博上发了一条招聘信息，其中提到“扎实”的系统底层知识，有同学就写信来问，怎么叫“扎实”。我傻眼了。比尔·盖茨就以目标清晰明确著称，不仅在战略制定上，“每个人桌面上都有一台PC”，而且居然还体现在招聘上——“如果你读完了TAOCP，那么就给我投简历吧”。多么清晰，明确的目标啊——虽然高了点，也许这就是比尔·盖茨至今还没被应聘邮件淹没的原因:)<br/>
+给前进的道路扫清障碍：人是懒惰的，只要有借口就会不想往前。如果既有明确的目标，同时道路又直直指向目标，一览无余，只等你开始往前走，那么便没有借口，一往无前。<br/>
+那么让我们对照上面看看，可以做什么？</p>
+
+<p>首先，内心的大象不需要触动，中国有足够多的人足够早就开始焦虑就业的事情，只是不知道往哪使劲，这部分人如果把劲头用到正确的事情上面也许足以满足现在的IT企业人才饥渴了。至于其他人，好吧，也许身边的人开始动起来他们也会被触动。</p>
+
+<p>然后是清晰、明确的目标。这一点上目前雇主们的做法可谓好坏参半，好的一点是大家都强调要有实践经验，要有团队协作精神，坏的一点就在基础知识和技能的要求方面，可谓再含糊不过了：“精通XX语言”，“扎实的XX功底”，“熟悉XX技术”，甚至看上去最具量化感的描述“X年YY经验”其实都根本说明不了多少东西，在信息量方面还不如我家门口菜市场上一家卖酥油饼的店门口挂的横幅——“三天不硬、至少六层！”。</p>
+
+<p>很多朋友也许注意到一个现象，现在企业对招聘者简历的要求也在变得越来越灵活变通，例如ThoughtWorks在招聘的时候就希望招聘者能给出自己的博客地址，博客对IT行业的意义也许胜过其他所有行业，一个积累多年的技术博客比任何简历都更能说明问题。台湾的郭安定也说“为什么写技术博客对新人如此重要”。可惜这个做法也有一个弊端：并不是所有技术牛人都写博客，有人就是只干不说型的，而就算写博客，乃至动手写过一阵子的，写一个常年的博客，也远比你想象的更为困难，因为很多时候，写（说）得靠谱比做得靠谱更难。所以这个过滤器很多时候用不上。</p>
+
+<p>但是这的确表明了一个思考的方向，就是寻找更具鉴别力的过滤器，Stackoverflow Careers 2.0之所以强大，是因为Joel Spolsky和Jeff Atwood这两位常年混社区的资深博主创造性地将一个人在社区的活动历史浓缩成为一系列的量化数值，由于这个历史很长期，所以鉴别力非常高。但它同样也有问题，就是对于应聘者来讲相当花费时间，而且并不是花时间（在Stackoverflow上回答问题）就一定能花到点子上。</p>
+
+<p>到底什么特征才是既通用，又能够有效地鉴别高低应聘者的特征呢？这个特征必须不像博客那样难以实现，同时又必须有足够的区分度。<br/>
+有的地方在要求填写简历的时候必须填上平时都访问哪些技术网站。恩，很不错的尝试，可区分度仍然还是不够，因为上网站上查东西毕竟只占现阶段大多数应届生的少数信息来源，特别是当我们看重得更多的是应届应聘者的系统性的知识基础的时候，网上的东西虽然丰富，但属于提高班，也更为琐碎，什么是更系统的知识来源呢？答案其实大家都知道——<strong>书</strong>。</p>
+
+<p>我一向认为，很多时候，是否好好看完一本好书，对一个人的提升往往能达到质的区别。就算不好好看完一本好书，马马虎虎看完，只要书是真的好书，也肯定会有很大的提高。我在面试的时候就经常询问对方看过哪些技术书籍，经常上哪些网站，订哪些博客。这里头尤其数书籍这一项的区分度最高。此外，好书和坏书的差别，从本质上，就是学习效率和大方向的差别。一本烂书可以浪费你半年的时间，但一本好书却可以为你带来真正扎实的基础和开阔的视野。人们常常用“内功”来形容扎实的基础，认为学好了内功以后学什么都快，其实一点没错，好的“内功”书不仅讲清楚深刻的原理，而且指明技术的本质，刻画领域的地图。好的书抓住不变量，让人能够触类旁通。好的书不仅介绍知识，而且阐释原则，介绍那些万变不离其宗的东西。读烂书浪费时间，但读好书却节省时间。<br/>
+象牙塔内的学生受到视野的限制，往往择书不慎，事倍功半，烂书不仅浪费时间，还会打击人的积极性，让人对知识心生恐惧，认为很难掌握，殊不知只是作者没有讲好（或者没有翻译好）。因此，为招聘头疼的公司完全可以给出“应聘俺们公司前必读的十本书”，也不一定要每个公司都不一样，在某个技术子领域有影响力的人，或者创始人们，可以来定义具有代表性的书单。</p>
+
+<p>我们姑且把这个计划叫做“书单计划”，容易看到“书单计划”具备以下几个卓越的优点：</p>
+
+<ul>
+<li>清晰、明确。完全可度量。</li>
+<li>防伪：读没读过，随便一问便知。而正因为应聘者也知道这事不像实习经验可以忽悠，所以也不敢乱往简历上捅词。</li>
+<li>不在乎是否“泄题”：书单完全公开的，无所谓，本来就是要你去读的。想背题？背书吧。真能背下来说明认真看了。</li>
+<li>管你用心不用心读，只要读了，读完了，就有区别。真正的好书，你想不被吸引都难。据我观察很多人就是不知道该去读什么书。</li>
+<li>不存在“怎么做”的障碍：所有人都知道怎么读书——一页一页读。</li>
+<li>不需要招聘者投入精力：书单在此，就这么简单，您看着办。</li>
+<li>评估的负担很大程度转移到了应聘者的身上：是不是认真看完了，有没有心得体会，您自己掂量。没看完别来找我们。</li>
+<li>“书单计划”能很大程度上起到强鉴别器的作用，看了就是看了，必然能学到东西，没看就是没看。知道和不知道，区别是本质的。其实很多企业内部培训，根本上其实还不就是叫员工去看之前没看过的书或者资料嘛。最后，除了鉴别作用之外，它还是一个清晰促进的目标，是完全不花精力的培养。</li>
+</ul>
+
+
+<p>当然，“书单计划”的背后是另一个悲剧的现实，如果不是因为这个现实，这个计划也完全没有必要，那就是，中国IT大学教育当中要求要学的书，和企业真正需要你去读的书相比，不是完全不够用，就是写的不够好，或者更悲剧的就是根本用不上，所以在这个大背景下出来的牛人都是自己淘书自己学的。微软高级开发测试工程师，《Windows用户态程序高效排错》作者熊力就在微博上说过：“我当年毕业的时候总结了一个公式：第一份工作的月薪=大学四年买过的技术书籍价格的总和。”<br/>
+但是光有“书单计划”还不够，因为书籍只能管基础知识这一块，一些更难以量化衡量的实战“能力”又怎么办呢？至少目前为止，除了“练”之外好像还没有特别好的办法。可是在象牙塔里面做的项目，或大作业，真的能起到练的作用吗？前面说了，学生会知道自己最终要交差的不是雇主，而是老师，于是就以老师能够评判的标准来默认要求自己了，老师能够评判编码素养？代码风格？文档？设计？协作？甚至连著名的Joel 12条的第一条“是否用源代码管理系统”都没法通过。所以大多数时候，大作业能起到的作用近乎0。<br/>
+但是如果这一切是由雇主来评判的，这个“作业”是由雇主来给出的，就完全不一样了。一想到作业是要作为简历的一部分的，能不紧张嘛。能不好好做嘛。能不学到点东西嘛？<br/>
+可是这事儿能实现吗？雇主能给学生出大作业吗？也许一两个关系好的高校可以，可是中国那么多学生呢？<br/>
+为什么不能呢？如果像书单那样，列出各个技术领域“推荐在学校期间尝试的项目”，至于动不动手做，那是学生自己的问题。做的，自然能够得到锻炼，面试的时候自然能得到更大的优势。<br/>
+可问题是，面试的人又怎么来评估呢？这不又回到了没法有效评估的怪圈了吗？答案很简单，但这个答案，直到最近几年，才真正成为现实——</p>
+
+<p><strong>GitHub</strong></p>
+
+<p>GitHub诞生于08年春天，第一年便产生了4万6千个公共项目，大约一年半之后用户就已经达到10万用户之巨。而到今年九月份，GitHub已经迎来了百万级用户。Host超过两百万个项目。</p>
+
+<p>增长的太快了！就像Twitter一样。这样疯了一般的增长只能说明一个事实——人们等待这个产品太久了。</p>
+
+<p>Social Coding。</p>
+
+<p>真实的项目，真实的流程，真实的人名，一切代码review, check-in, test, build, document, 甚至讨论，计划，brianstorming，流程，一切的一切，都是项目历史的一部分，都可以像棋局那样复盘。有经验的面试者只要稍稍扫两眼一个人的GitHub历史，挑出几个check-in历史看一看，便完全能够迅速判断这个人是否满足他的要求。不再需要费劲心机地去想题目，去观察，去揣测，去花费大量的时间的同时还只能采样到几个极为有限的点。<br/>
+不像象牙塔里面大作业，这里有源代码管理系统，自动化build，有check-in，有review，有分工，有合作，最重要的是——这是一个集市，一个超出象牙塔的集市，牛人相互吸引，你可以在互联网上找到和自己拥有共同兴趣的一帮人，真正做起一点事情，而不是交差，不需要受限于几十个人的一个小班级。Here Comes Everybody。<br/>
+为什么我这么有信心？因为这事儿已经发生了。这个想法也完全不是我原创的。<br/>
+正如很多事情一样，现在在国内发生的事情，往往是美国那头的历史。今年7月中旬，纽约一家公司的工程师老大发了一篇博客文章：Github is Your New Resume。指出一个惊人但再合理不过的事实：越来越多的IT公司在招聘的时候要求应聘者给出GitHub账号。甚至已经有人为GitHub写了根据GitHub上的历史自动生成简历的工具。<br/>
+仔细想想，这是必然的趋势，没有比这个再合理的事情了，既然StackOverflow的历史能够作为简历，GitHub的历史不本该就是更好的简历吗：你想要具有实战经验，懂check-in懂review懂test和代码质量的重要性，懂交流和沟通的重要性，你本就应该在一个真实的项目当中去锻炼这些东西，而这些在目前已经完全可以办到。正如邹欣老师所说，你的工作就是最好的面试。<br/>
+这件事情放在早几年，是完全没法做到的，因为我们那时候还没有GitHub。正如没有Twitter，没有微博之前，很多事情都不会成为可能一样，你有千钧之力，缺乏一个合适的支点，也没法撬动一整个社群。无组织中的组织，具有强大的杠杆效应。<br/>
+这个事情里面，我唯一提出的东西就是：在目前国内这个现状下，苦闷的招聘者应该主动行动，给出一些建议项目，正如前面提到的书单计划一样，招聘者需要给出的只是引导和清晰明确的目标，剩下的事情，应聘者自然会去完成，这些项目可以是实验项目，也可以是完全能做出点卖钱的东西的项目（如果好好做的话），唯一的不可或缺的前提是，项目不能太小，单人就能完成的项目不理想，一两个月就能完成的项目不理想，最好足够大到能够锻炼到方方面面，偏大一点倒是无所谓的，因为一个尚未完成的项目完全可以作为简历。当然，可以想见的是，真到了那个时候，学生们肯定又是不会满足于仅去做那些已经有许多人做过的项目了。所以这里企业们一开始所建议的项目只是一个《Nudge》，是滚雪球之前需要的一点初始动能。后面的事情，他们自己会完成。</p>
+
+<p>“GitHub计划”同样有一些明显的、甚至不可替代的优点：</p>
+
+<ul>
+<li>清晰、明确，完全可度量。</li>
+<li>防伪：同样不担心“泄题”。你伪造不了GitHub历史，伪造不了check-in历史，review comments，文档，交流记录…</li>
+<li>它不但是招聘，也是不花精力的培养。善哉善哉。</li>
+<li>评估的责任很大程度上交给了应聘者自己。</li>
+<li>从你的GitHub旅程开始，你就已经一脚踏进了真正的企业，而企业的面试也已经开始。</li>
+</ul>
+
+
+<p><strong>书单+GitHub，就相当于一个两年左右的面试。</strong></p>
+
+<p>没有什么面试比持续两年的面试更具有信息量。<br/>
+书单，加上项目，已经基本上覆盖了所需的全部技能。最妙的是，有太多的人在焦急的等待着他们未来的雇主给出明确的信号，他们想投入精力，去学习和实践，去成为企业需要的人，但是他们就是不知道往什么方向走，所谓有动力没方向。所以，雇主给出了清晰明确的要求，相信对于很多人来说反倒是一个解脱：“终于知道该干什么了”。《编程之美》为什么常居畅销榜？因为它透露了雇主眼中的需求，明确、清晰的需求，可以实现，并且知道怎么去实现的需求。<br/>
+你提前两年就开始面试和培养未来的候选者，而且还不需要你花出一分精力，而且人家还很乐意，没有比这更完美的面试了。<br/>
+想一想，以后那些没见过世面的公司看见你拿出GitHub账号给他看，该是多么惊讶同时又觉得多么合理。</p>
+
+<p>而这一切，只是因为两个小小的改变：<br/>
+由需求方（雇主）给出了清晰、明确的目标。<br/>
+<em>GitHub这样的平台。</em><br/>
+那么，学校/老师在这个事情当中的位置呢？说实话我不知道。没有哪个行业像IT行业这样特殊：没有什么东西不能够（应该）在互联网上学到的。自组织的力量完全大过传统的教育方式。而且，既然雇主都当了领路人了，我不知道还有中间开发商什么事儿。（注：这里说的是软件开发，并非计算机科学研究，后者另当别论）</p>
+
+<p>那么，这个改变会发生吗？多久会发生呢？当然，它在国外已经发生了，所以问这个问题多少有点无趣。但我还是预计很快就会在国内发生，毕竟，不是已经有人要求出示博客，和经常浏览的网站了吗？也许5年左右（4年本科和6年硕士的中间值？））就会深刻改变整个人才培养/招聘的格局。当然，我并不是预言家，所以不要把我的时间估计当真，我能肯定的是，这种方式是必然的大势所趋。</p>
+
+<p>刚才我就收到一位同学邀请我上知乎回答一个问题“找工作的首要原则是什么？”，当然，这个问题的答案是：“弄清雇主的需求到底是什么”。</p>
+
+<p>列一下我所认为的，你面试微软前必须要读的十本书：</p>
+
+<ul>
+<li>Code: The Hidden Language of Computer Hardware and Software （《编码的奥秘》）</li>
+<li>Computer System: A Programmer’s Approach （《深入理解计算机系统》） / Windows via C/C++ （《Windows核心编程》 / 《程序员的自我修养》</li>
+<li>Code Complete 2（《代码大全》）/ The Pragmatic Programmer （《程序员修炼之道》，我也把这本书称为《代码小全》）</li>
+<li>Programming Pearls （《编程珠玑》） / Algorithms / Algorithm Design / 《编程之美》</li>
+<li>The C Programming Language</li>
+<li>The C++ Programming Language / Programming: Principles and Practice Using C++ / Accelerated C++</li>
+<li>The Structure and Interpretation of Computer Programs （《计算机程序的构造和解释》）</li>
+<li>Clean Code / Implementation Patterns</li>
+<li>Design Patterns （《设计模式》） / Agile Software Development, Principles, Patterns, and Practices</li>
+<li>Refactoring （《重构》）</li>
+</ul>
+
+
+<p>（注：1. 以上同一条目下用“/”隔开的表示任选，当然你也可以都读了，相信我，时间是足够的。2. 读这些书并不意味着逐字逐句从第一页读到最后一页——当然你也可以这么做。怎么是聪明高效的读法，可以参考我之前写的关于如何阅读和查找/鉴别书籍/资料的博文）<br/>
+注意：以上是我个人认为你面试微软开发职位前必须要读的10本书，它不代表我的雇主的观点。它也只是一个初步的书单，肯定会受到我个人经验和眼界的限制。欢迎大家提意见。</p>
+
+<p>此外，IT不同子领域的必读书单可能千差万别，所以在发布之前我把这篇文章发给了一些朋友，他们给出了自己的书单（你是不是能看到一些有趣的共同点呢）：</p>
+
+<p>云风（中国游戏编程先行者，前网易游戏部门资深程序员，简悦创始人）：<br/>
+如果面试，我会挑以下的我自己读过的书，让人选择他也读过的部分，再了解他对这些书的理解。这些书其实本质上就是两类，对所面对的东西（程序语言也好，操作系统也好，底层设施也好）本身的理解程度。以及另一类：对设计思想和原则的理解：</p>
+
+<ul>
+<li>C++编程思想</li>
+<li>Effective C++</li>
+<li>深度探索C++对象模型</li>
+<li>C++语言的设计和演化</li>
+<li>C专家编程</li>
+<li>C陷阱与缺陷</li>
+<li>C语言接口与实现</li>
+<li>Lua程序设计</li>
+<li>Linkers and Loaders</li>
+<li>COM本质论</li>
+<li>Windows核心编程</li>
+<li>深入解析Windows操作系统</li>
+<li>程序员修炼之道</li>
+<li>代码大全</li>
+<li>UNIX编程艺术</li>
+<li>设计模式</li>
+<li>代码优化：有效使用内存</li>
+<li>深入理解计算机系统</li>
+<li>深入理解LINUX内核</li>
+<li>TCP/IP 详解</li>
+</ul>
+
+
+<p>冯大辉（丁香园CTO，贝塔咖啡创始人）：</p>
+
+<ul>
+<li>软件随想录</li>
+<li>黑客与画家</li>
+<li>重来</li>
+<li>UNIX编程艺术</li>
+<li>编程人生</li>
+</ul>
+
+
+<p>洪强宁（豆瓣技术总监）：
+StackOverflow上有一个程序员必读书单帖子，这里仅列出top10，更多参考这里。</p>
+
+<ul>
+<li>Code Complete 2</li>
+<li>The Mythical Man-Month （《人月神话》）</li>
+<li>Code: The Hidden Language of Computer Hardware and Software （《编码的奥秘》）</li>
+<li>TAOCP （不解释）</li>
+<li>The Pragmatic Programmer （《程序员修炼之道》）</li>
+<li>Design Patterns （《设计模式》）</li>
+<li>The Structure and Interpretation of Computer Programs （《计算机程序的构造和解释》）</li>
+<li>Refactoring （《重构》）</li>
+<li>The C Programming Language</li>
+<li>Introduction to Algorithms （《算法导论》）</li>
+</ul>
+
+
+<p>张峥（微软亚洲研究院副院长）：</p>
+
+<ul>
+<li>Algorithms (by Sanjoy Dasgupta, Christos Papadimitriou and Umesh Vazirani)</li>
+<li>Data Structure and Algorithms</li>
+<li>The C Programming Language</li>
+<li>The Design of the UNIX Operating System</li>
+<li>Compilers （龙书）</li>
+<li>Computer Architecture: A Quantitative Approach</li>
+<li>Flow</li>
+<li>Outliers (why hard work and luck are both important)</li>
+</ul>
+
+
+<p><strong>读好书是如此的重要，因为好书往往带领你去到更好的书，更大的世界。</strong></p>
+
+<hr />
+
+<h2><a href="http://uicss.cn/fed-book/">前端开发类书籍</a></h2>
+
+<p>Posted in 前端开发 on 07/05/2010 13:09:20 | 转载请注明：出自 崔凯的博客</p>
+
+<p>推荐一些适合前端开发工程师阅读的书籍，希望对大家有所帮助：</p>
+
+<p><em>JavaScript类：</em></p>
+
+<ul>
+<li>javascript权威指南</li>
+<li>javascript基础教程</li>
+<li>javascript DOM 编程艺术</li>
+<li>javascript高级程序设计</li>
+</ul>
+
+
+<p><em>网站优化：</em></p>
+
+<ul>
+<li>高性能网站建设进阶指南</li>
+<li>XHTML+CSS类：</li>
+<li>CSS网站布局实录</li>
+<li>精通CSS</li>
+<li>网站重构</li>
+<li>CSS那些事儿</li>
+</ul>
+
+
+<p><em>jQuery：</em></p>
+
+<ul>
+<li>jQuery基础教程</li>
+<li>jQuery实战</li>
+</ul>
+
+
+<p><em>用户体验类：</em></p>
+
+<ul>
+<li>Don&#8217;t Make Me Think</li>
+<li>用户体验的要素</li>
+<li>瞬间之美</li>
+<li>应需而变——设计的力量</li>
+<li>赢在用户</li>
+</ul>
+
+
+<p><em>SEO类：</em></p>
+
+<ul>
+<li>网络营销实战密码</li>
+<li>SEO实战密码</li>
+<li>SEO智慧</li>
+<li>产品运营类：</li>
+<li>结网 | 第二版</li>
+<li>人人都是产品经理</li>
+<li>营销管理</li>
+</ul>
+
+
+<p><em>管理：</em></p>
+
+<ul>
+<li>领导学(原书第6版)</li>
+<li>职场：</li>
+<li>杜拉拉升职记</li>
+<li>职场潜伏心理学</li>
+<li>食荤者</li>
+<li>步步为营</li>
+</ul>
+
+
+<p><em>励志：</em></p>
+
+<ul>
+<li>平凡的世界</li>
+<li>相约星期二</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[turn off laptop moniter]]></title>
+    <link href="http://Snger.github.com/blog/2011/11/14/turn-off-laptop-moniter/"/>
+    <updated>2011-11-14T11:44:00+08:00</updated>
+    <id>http://Snger.github.com/blog/2011/11/14/turn-off-laptop-moniter</id>
+    <content type="html"><![CDATA[<p>You cannot always close the Laptop Lid to turn off Display screen of Laptop, like while you are listening to music.This App helps people who are blind to save battery of their laptop.And it just one button:turnoff.You can regain back it with slight mouse movement or hitting any keyboard key.</p>
+
+<p>这是小软件可以在你需要关闭笔记本电脑的显示屏时使用。</p>
+
+<!-- more -->
+
+
+<p>P.S. Successfully Tested on HP Compaq 6910p running Windows 7 Ultimate.</p>
+
+<p>HOME:<a href="https://code.google.com/p/turn-off-laptop-moniter/">https://code.google.com/p/turn-off-laptop-moniter/</a></p>
+
+<p>CODE:<a href="https://github.com/Snger/turn-off-laptop-moniter">https://github.com/Snger/turn-off-laptop-moniter</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[使用Mp3tag编辑媒体元素（例如Mp3）]]></title>
+    <link href="http://Snger.github.com/blog/2011/11/06/mp3tag/"/>
+    <updated>2011-11-06T17:07:00+08:00</updated>
+    <id>http://Snger.github.com/blog/2011/11/06/mp3tag</id>
+    <content type="html"><![CDATA[<p>在使用一些音乐播放器的时候，如果遇到一些Mp3的元素缺失，就比较遗憾了——你不能使用按专辑、歌手进行选择播放。</p>
+
+<p>Q：批量元素空缺：专辑栏<br/>
+A：1.运用Shift、Ctrl批量选择需要修改的歌曲；<br/>
+   2. 在唱片集输入专辑名；3.保存。</p>
+
+<!-- more -->
+
+
+<p>Q: 批量变量元素空缺：标题栏<br/>
+A: 1. 运用Shift、Ctrl批量选择需要修改的歌曲；<br/>
+   2. 使用“文件名-标签”功能（右键调出或使用工具栏按钮），标签格式选择<code>%title%</code>；<br/>
+   3. 用正则表达式<code><sup>\d\d[.|-]?</code>替换掉标题中的歌曲标号（例如“0.1神奇”替换为“神奇&#8221;)<br/></sup>
+   步骤为：菜单栏-动作-动作-新建-命名-新建动作”根据正则表达式替换“-字段”TITLE“，正则表达式<code><sup>\d\d[.|-]?</code>，其他留空，确认；4.从标题栏或是工具栏使用刚才定义的动作（缺点：文件名前多了一个空格）<br/></sup>
+A: 再举个例子：如果想把“03<em>蕭邦</em>鋼琴樂的經典<em>17</em>Ｇ小調敘事曲”中的“03<em>蕭邦</em>鋼琴樂的經典_”这部分替换掉，可以使用正则表达式：<code><sup>\w{3}.{1}\w.{5}\w</code></sup> <br/>
+（说明：原本想用
+正则表达式<code>/<sup>[\u2E80-\u9FFF]+$/</code>来对应Unicode编码中的汉字范围，可是发现出错，也许是编码的问题。</sup></p>
+
+<p><strong>有一个小问题：</strong>我用<code>\w{3}</code>来匹配<code>03_</code>；用<code>.</code>来匹配汉字，可是两个汉字”蕭邦“却是用<code>.{1}</code>来匹配，个数有出入。望高手不吝赐教。感谢。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Vim发布二十周年]]></title>
+    <link href="http://Snger.github.com/blog/2011/11/06/vim-20years/"/>
+    <updated>2011-11-06T14:24:00+08:00</updated>
+    <id>http://Snger.github.com/blog/2011/11/06/vim-20years</id>
+    <content type="html"><![CDATA[<p>从 <a href="http://solidot.org.feedsportal.com/c/33236/f/556826/s/19c80822/l/0Lopensource0Bsolidot0Borg0Carticle0Bpl0Dsid0F110C110C0A30C0A5532430Gamp0Pfrom0Frss/story01.htm">Solidot:奇客的资讯，重要的东西</a>转载 作者：blackhat</p>
+
+<p>1991年11月2日，Vim文本编辑器公开发布了第一个版本。昨天是它的二十周年庆。Vim最初是为Amiga平台开发的Vi编辑器克隆，但迅速被移植到其它平台，并最终成为最流行的Vi兼容文本编辑器。Vi的开发始于1970年代末，作者是BSD开发者、太阳微系统公司联合创始人BillJoy。它是类UNIX系统的标准编辑器。Vi克隆出现于80年代末和90年代初，主要原因是Vi的许可证不能自由分发，而克隆则因为采用了没有限制的许可证而得到广泛使用。早期的两个著名克隆是Stevie和Elvis。Vim作者BramMoolenaar对Amiga平台上的Vi克隆不甚满意，他开始在Stevie基础上开发新的文本编辑器。第一个公开发布的版本是1.14版，使用了宽松的公共版权许可证。名字Vim最初指Vi IMitation，后来变为Vi IMproved，代表是Vi的升级版。</p>
+
+<p>VIM官方网站：<a href="http://www.vim.org">http://www.vim.org</a></p>
+]]></content>
+  </entry>
+  
+</feed>
