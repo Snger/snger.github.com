@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Octopress | The Same Summer.]]></title>
+  <link href="http://Snger.github.com/blog/categories/octopress/atom.xml" rel="self"/>
+  <link href="http://Snger.github.com/"/>
+  <updated>2011-12-27T22:32:14+08:00</updated>
+  <id>http://Snger.github.com/</id>
+  <author>
+    <name><![CDATA[Snger]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Octopress Issue]]></title>
+    <link href="http://Snger.github.com/blog/2011/11/28/octopress-issue/"/>
+    <updated>2011-11-28T11:43:00+08:00</updated>
+    <id>http://Snger.github.com/blog/2011/11/28/octopress-issue</id>
+    <content type="html"><![CDATA[<p>不知什麼原因，Octopress的source分支中的_post文件夾沒被track，博客的文章又更新不能，現在先試試rake new_post[""]，看看效果。</p>
+
+<p>date:2011-11-29 update<br/>
+<em>測試結果爲：</em><br/>
+-    使用"git status",發現<em>post文件夾沒被track，使用"git add </em>post"跟蹤。<br/>
+-    測試發文，有效。</p>
+
+<p><em>依舊存在的問題：</em>  <!-- more -->
+-    在github源碼中看不到_post文件夾，不過這也不算壞事。</p>
+
+<p><em>經驗：</em><br/>
+-   在批量傳輸舊文時，直接"rake generate"會有一些問題，例如：文章導入不完整，網站索引可能出問題。最好每添一篇文章都生成一次。
+-   更爲主業的測試請進一步閱讀<a href="https://twitter.com/#!/yorkxin">@yorkxin</a>的<em>Octopress 搬家記</em>系列，這是第一篇<a href="http://blog.yorkxin.org/2011/11/26/import-from-wpcom-to-octopress">http://blog.yorkxin.org/2011/11/26/import-from-wpcom-to-octopress</a>.</p>
+
+<p>2011年12月6日09时34分19秒update:<br/>
+在看《progit》时，忽然想到，为什么在github.com的souce分支中看不到<em>post目录：原来在根据官网指导的那两次<code>git push</code>后自己并没有再上传过；而Octopress的发布日志<code>rake generate</code>,<code>rake deploy</code>与git是相对独立的，<code>rake generate</code>使用<a href="https://github.com/mojombo/jekyll">Jekyll</a>生成静态网页，并把结果置于octopress/</em>delploy目录中，在使用<code>rake deploy</code>后发布到github.com并同步到博客。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Hello，Octopress]]></title>
+    <link href="http://Snger.github.com/blog/2011/11/27/hello/"/>
+    <updated>2011-11-27T23:25:00+08:00</updated>
+    <id>http://Snger.github.com/blog/2011/11/27/hello</id>
+    <content type="html"><![CDATA[<p>  <strong>嗨，经过N次失败，多次重装，我的Ocporess终于上线啦！！！</strong><br/>
+  上一次使用Ubuntu还得追溯去年。今年因为在twitter关注比较多Ubuntu的消息，又恰好对WINDOWS7的高内存不满，于是又切回Ubuntu。手头还保留着Ubuntu10.10的CD，又想着待Ubuntu12.4出来时再更新，于是就先把Ubuntu10.10装上了。<br/>
+  日常使用Ubuntu10.10还是不错的，没想到待想使用Octopress时，状况百出。<br/>
+  先是看了几个中文帖教程，一路做下来很顺利，结果就是不能更新博客，后面顺着这些博客找到在twitter上活跃的 <a href="https://twitter.com/#!/yorkxin">@yorkxin</a>、 <a href="https://twitter.com/#!/GregoryALussier">@GregoryALussier</a> 、 <a href="https://twitter.com/#!/xdite">@xdite</a> 这几位达人，问了很多相关问题，也学习了许多知识，这里一并感谢了。  <!-- more -->
+  悲剧的是有些隐藏的问题一直没有发现，于是一直没办法更新博客。<br/>
+  再重装ruby、RVM及相关组件大概5次后，觉得不可能是这方面的问题，于是在找回相关Ubuntu平台的帖，仔细琢磨，最后终于顺藤找到这个帖<a href="http://stackoverflow.com/questions/4980877/rails-error-couldnt-parse-yaml">rails error, couldn't parse YAML</a>,虽然找不到最佳答案中所说的文件，却发现<em>问题的关键在YAML语法错误</em>。<br/>
+  测试多次后，在 .yml 文件找到两个错；自己新写的博文也有一个错误，至此，悲剧的折腾终于告一段落。留下此文简单记录下轨迹。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Try again]]></title>
+    <link href="http://Snger.github.com/blog/2011/11/24/try-again/"/>
+    <updated>2011-11-24T23:29:00+08:00</updated>
+    <id>http://Snger.github.com/blog/2011/11/24/try-again</id>
+    <content type="html"><![CDATA[<p>今天大概重装octopress四次了吧，一直没成功，不过没关系，继续努力。
+先这样吧，装好在叙。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Hello-Octopress]]></title>
+    <link href="http://Snger.github.com/blog/2011/11/23/Hello-Octopress/"/>
+    <updated>2011-11-23T18:42:00+08:00</updated>
+    <id>http://Snger.github.com/blog/2011/11/23/Hello-Octopress</id>
+    <content type="html"><![CDATA[<p>这个网站是使用<a href="http://octopress.org" title="Octopress">Octopress</a>架设，并使用免费的<a href="http://pages.github.com" title="GitHub">GitHub Pages</a>网页空间。也是我第一次在Ubuntu操作系统下，使用GVIM及<a href="http://markdown.tw/#link" title="Markdown">Markdown语法</a>写博客。</p>
+
+<p>试用Octopress也是机缘：</p>
+
+<blockquote><p>1.原本只想建一个简单的技术博客，记录自己的菜鸟成长史，于是在国内算是知名的IT社区建了一个博客。十六天写了十五篇博文，转载五篇。没想到昨天一篇日志被删除了。在网路中，我最不能容忍的就是删文，于是离开。  <!-- more -->
+2.也刚好在昨天看到博文<a href="http://www.yangzhiping.com/psy/open-classroom.html" title="不上大学，你可以学些什么？">不上大学，你可以学些什么？</a>中提到</p>
+
+<blockquote><p>你可以，开一个个人博客。如果是2011年才开建，建议采用octopress，记录个人的学习成长。<br/>
+有点好奇，正想试试。<br/>
+两因相加，于是有了这个博客。</p></blockquote></blockquote>
+
+<p>使用Octopress后，发现至少可以训练以下知识：</p>
+
+<blockquote><p>1.GitHub<br/>
+2.vim<br/>
+3.基础建站知识<br/>
+4.HTML+Markdown<br/>
+5.使用英文搜索资料、看文档的能力</p></blockquote>
+
+<p>其实，最重要的是：<strong>自由</strong></p>
+
+<hr />
+
+<h2>感谢以下链接</h2>
+
+<ul>
+<li><a href="http://hack.sslab.co/blog/2011/10/14/hello/" title="Hello,Octopress">Hello,Octopress</a></li>
+<li><a href="http://markdown.tw/#list" title="Markdown.tw">Markdown.tw</a></li>
+<li><a href="http://lyhdev.com/note:octopress" title="lyhdev.com">思创软体技术分享</a></li>
+<li><a href="http://octopress.org" title="Octopress">Octopress</a></li>
+<li><a href="https://github.com" title="GitHub">GitHub</a></li>
+<li>当然，也感谢删我帖的那些网站，链接就不给出了。</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

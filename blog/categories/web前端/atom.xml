@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Web前端 | The Same Summer.]]></title>
+  <link href="http://Snger.github.com/blog/categories/web前端/atom.xml" rel="self"/>
+  <link href="http://Snger.github.com/"/>
+  <updated>2011-12-27T22:32:14+08:00</updated>
+  <id>http://Snger.github.com/</id>
+  <author>
+    <name><![CDATA[Snger]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[一些在github中开源的淘宝项目]]></title>
+    <link href="http://Snger.github.com/blog/2011/12/27/taobaopages/"/>
+    <updated>2011-12-27T20:54:00+08:00</updated>
+    <id>http://Snger.github.com/blog/2011/12/27/taobaopages</id>
+    <content type="html"><![CDATA[<p>因为现在的工作与淘宝相关，于是在github中搜索是否有淘宝相关的项目，页面见<a href="https://github.com/search?langOverride=&amp;q=taobao&amp;repo=&amp;start_value=2&amp;type=Repositories">"Search Taobao in Github.com"</a><br/>
+其中最值得注意的自然是由淘宝前端攻城师们发起创建的一个开源 JS 类库——KISSY。<a href="http://docs.kissyui.com/">KISSY项目主页</a>、<a href="https://github.com/kissyteam">KISSY在github的托管页面</a>。<br/>
+另一個值得關注的項目是由支付宝前端样式解决方案小组的项目——<a href="http://aliceui.com/">Alice</a>,<a href="https://github.com/sofish/Alice">Github託管頁面</a>.<br/>
+在淘寶店鋪中經常使用的<a href="http://www.linezing.com/">“淘寶量子統計”</a>據說<a href="http://chenxiaoyu.org/2011/10/30/nginx-modules.html">“完全是lua扩展“</a>,我還沒研究，有興趣的可以看看。<br/>
+<a href="http://cubee.github.com/doc/">cubee</a>是一套整洁实用的UI控件库,在淘寶中使用比較多，現在已經停止維護，相關的項目是<a href="https://github.com/taobao-wd/taobao-wd.github.com">淘宝北京前端Demo Gallery</a>，可以跟進看看。<br/>
+一個已放棄的淘寶數據採集項目——<a href="https://github.com/mangege/taobaotop">淘宝top数据采集</a>.</p>
+
+<h2>其他一些規範的開源代碼：<a href="https://github.com/ForrestShi/taobaoshop">Taobaoshop-Simple app to demo the Taobao plugin</a>、<a href="https://github.com/chengdh/taobao-book-rails2">淘宝快手书商应用</a>、<a href="https://github.com/moxing/tbNinja/tree/master/src">tbNinja-taobao seller service</a>、<a href="https://github.com/gckjdev/Taobao_Miaosha">Taobao_Miaosha</a>、<a href="https://github.com/gckjdev/Taobao_Zhekou">Taobao_Zhekou</a>。  </h2>
+
+<p>最後，當然是我的開源項目啦，<a href="https://github.com/Snger/TaobaoPages">TaobaoPages</a>。<br/>
+一直覺得開源使互聯網世界更加美好。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[XML TEST]]></title>
+    <link href="http://Snger.github.com/blog/2011/12/06/xml-test/"/>
+    <updated>2011-12-06T17:16:00+08:00</updated>
+    <id>http://Snger.github.com/blog/2011/12/06/xml-test</id>
+    <content type="html"><![CDATA[<p>XML 测验  结果：18/20<br/>
+如果您有兴趣参与测试，可以点<a href="http://www.w3school.com.cn/quiz/quiz.asp?quiz=xml">这里</a><br/>
+您的回答：<br/>
+1.XML指的是？<br/>
+您的回答：eXtensible Markup Language<br/>
+2.XML对数据进行描述的方式是？<br/>
+您的回答：XML使用DTD来描述数据<br/>
+3.XML的目标是取代HTML<br/>
+您的回答：错误<br/>
+4.下列定义XML版本的声明中语法正确的是？<br/>
+您的回答：<code>&lt;?xml version="1.0"?&gt;</code><br/>
+5.DTD指的是？<!-- more --><br/>
+您的回答：Document Type Definition<br/>
+6.这是一个“形式良好”的文档吗？</p>
+
+<pre><code>&lt;?xml version="1.0"?&gt;
+&lt;note&gt;
+&lt;to&gt;Tove&lt;/to&gt;
+&lt;from&gt;Jani&lt;/from&gt;
+&lt;heading&gt;Reminder&lt;/heading&gt;
+&lt;body&gt;Don't forget me this weekend!&lt;/body&gt;
+&lt;/note&gt;
+</code></pre>
+
+<p>您的回答：是<br/>
+7.这是一个“形式良好”的文档吗？</p>
+
+<pre><code>&lt;?xml version="1.0"?&gt;
+&lt;to&gt;Tove&lt;/to&gt;
+&lt;from&gt;Jani&lt;/from&gt;
+&lt;heading&gt;Reminder&lt;/heading&gt;
+&lt;body&gt;Don't forget me this weekend!&lt;/body&gt;
+</code></pre>
+
+<p>您的回答：否<br/>
+8.哪条陈述是正确的？<br/>
+<em>您的回答：以上陈述都是正确的</em><br/>
+<strong>正确答案：所有XML元素都必须正确地关闭</strong><br/>
+9.哪条陈述是正确的？<br/>
+您的回答：以上陈述都是正确的<br/>
+10.XML可保留空白字符<br/>
+您的回答：正确<br/>
+11.这是一个“形式良好”的文档吗？</p>
+
+<pre><code>&lt;?xml version="1.0"?&gt;
+&lt;note&gt;
+&lt;to age="29"&gt;Tove&lt;/to&gt;
+&lt;from&gt;Jani&lt;/from&gt;
+&lt;/note&gt;
+</code></pre>
+
+<p>您的回答：是<br/>
+12.这是一个“形式良好”的文档吗？</p>
+
+<pre><code>&lt;?xml version="1.0"?&gt;
+&lt;note&gt;
+&lt;to age=29&gt;Tove&lt;/to&gt;
+&lt;from&gt;Jani&lt;/from&gt;
+&lt;/note&gt;
+</code></pre>
+
+<p>您的回答：否<br/>
+13.XML元素不能为空<br/>
+<em>您的回答：正确</em><br/>
+<strong>正确答案：错误</strong><br/>
+14.对于一个XML文档，以下哪个名称是错误的？<br/>
+您的回答：<code>&lt;1dollar&gt;</code><br/>
+15.对于一个XML文档，以下哪个名称是错误的？<br/>
+您的回答：<code>&lt;first name&gt;</code><br/>
+16.对于一个XML文档，以下哪个名称是错误的？<br/>
+您的回答：以上三个都不正确<br/>
+17.必须使用引号包围XML的属性值<br/>
+您的回答：正确<br/>
+18.XSL指的是？<br/>
+您的回答：eXtensible Stylesheet Language<br/>
+19.以下哪种方法可正确地引用名为“mystyle.xsl”的样式表？<br/>
+您的回答：<code>&lt;?xml-stylesheet type="text/xsl" href="mystyle.xsl" ?&gt;</code><br/>
+20.供XML解析器忽略XML文档的特定部分的正确语法是：<br/>
+您的回答：<code>&lt;![CDATA[ Text to be ignored ]]&gt;</code></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Javascript Test]]></title>
+    <link href="http://Snger.github.com/blog/2011/12/05/javascript-test/"/>
+    <updated>2011-12-05T14:33:00+08:00</updated>
+    <id>http://Snger.github.com/blog/2011/12/05/javascript-test</id>
+    <content type="html"><![CDATA[<p>JS 测验 结果：17/20<br/>
+如果您有兴趣参与测试，可以点<a href="http://www.w3school.com.cn/quiz/quiz.asp?quiz=js">这里</a><br/>
+您的回答：<br/>
+1.我们可以在下列哪个 HTML 元素中放置 Javascript 代码？<br/>
+您的回答：<code>&lt;script&gt;</code><br/>
+2.写 "Hello World" 的正确 Javascript 语法是？<br/>
+您的回答：<code>document.write("Hello World")</code><br/>
+3.插入 Javacript 的正确位置是？<br/>
+您的回答：&lt;body> 部分和 &lt;head> 部分均可<br/>
+4.引用名为 "xxx.js" 的外部脚本的正确语法是？<br/>
+您的回答：<code>&lt;script src="xxx.js"&gt;</code><br/>
+5.外部脚本必须包含 &lt;script> 标签吗？<!-- more --><br/>
+<em>您的回答：是</em><br/>
+<strong>正确答案：否</strong><br/>
+6.如何在警告框中写入 "Hello World"？<br/>
+您的回答：<code>alert("Hello World")</code><br/>
+7.如何创建函数？<br/>
+您的回答：<code>function myFunction()</code><br/>
+8.如何调用名为 "myFunction" 的函数？<br/>
+您的回答：<code>myFunction()</code><br/>
+9.如何编写当 i 等于 5 时执行一些语句的条件语句？<br/>
+您的回答：<code>if (i==5)</code><br/>
+10.如何编写当 i 不等于 5 时执行一些语句的条件语句？<br/>
+您的回答：<code>if (i != 5)</code><br/>
+11.在 JavaScript 中，有多少种不同类型的循环？<br/>
+<em>您的回答：四种。for 循环、while 循环、do...while 循环以及 loop...until 循环。</em><br/>
+<strong>正确答案：两种。for 循环和 while 循环。</strong><br/>
+12.for 循环如何开始？<br/>
+您的回答：<code>for (i = 0; i &lt;= 5; i++)</code><br/>
+13.如何在 JavaScript 中添加注释？<br/>
+您的回答：<code>//This is a comment</code><br/>
+14.可插入多行注释的 JavaScript 语法是？<br/>
+您的回答：<code>/*This comment has more than one line*/</code><br/>
+15.定义 JavaScript 数组的正确方法是？<br/>
+您的回答：<code>var txt = new Array("George","John","Thomas")</code><br/>
+16.如何把 7.25 四舍五入为最接近的整数？
+您的回答：<code>Math.round(7.25)</code><br/>
+17.如何求得 2 和 4 中最大的数？<br/>
+您的回答：<code>Math.max(2,4)</code><br/>
+18.打开名为 "window2" 的新窗口的 JavaScript 语法是？<br/>
+您的回答：<code>window.open("http://www.w3school.com.cn","window2")</code><br/>
+19.如何在浏览器的状态栏放入一条消息？<br/>
+<em>您的回答：<code>window.status("put your message here")</code></em><br/>
+<strong>正确答案：<code>window.status = "put your message here"</code></strong><br/>
+20.如何获得客户端浏览器的名称？<br/>
+您的回答：<code>navigator.appName</code></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[XHTML TEST]]></title>
+    <link href="http://Snger.github.com/blog/2011/12/03/xhtml-test/"/>
+    <updated>2011-12-03T08:51:00+08:00</updated>
+    <id>http://Snger.github.com/blog/2011/12/03/xhtml-test</id>
+    <content type="html"><![CDATA[<p>XHTML  测验<br/>
+结果：20/20<br/>
+如果您有兴趣参与测试，可以点<a href="http://www.w3school.com.cn/quiz/quiz.asp?quiz=xhtml">这里</a><br/>
+您的回答：<br/>
+1.XHTML 指的是？<br/>
+您的回答：EXtensible HyperText Markup Language<br/>
+2.请判断以下说法是否正确：XHTML 是一个 Web 标准。<br/>
+您的回答：正确<br/>
+3.请判断以下说法是否正确：XML 和 HTML 会被 XHTML 取代。<br/>
+您的回答：错误<br/>
+4.请判断以下说法是否正确：HTML 会被 XHTML 取代。<br/>
+您的回答：正确<br/>
+5.在下面的 XHTML 中，哪个可以正确地标记段落？<!-- more --><br/>
+您的回答：<code>&lt;p&gt;&lt;/p&gt;</code><br/>
+6.在下面的 XHTML 中，哪个可以正确地标记折行？<br/>
+您的回答：<code>&lt;br /&gt;</code><br/>
+7.下列 XHTML 中的属性和值，哪个是正确的？<br/>
+您的回答：<code>width="80"</code><br/>
+8.请判断以下说法是否正确：XHTML 中所有的元素都需要关闭。
+您的回答：正确<br/>
+9.请判断以下说法是否正确：DOCTYPE 没有关闭标签。<br/>
+您的回答：正确<br/>
+10.在 XHTML 文档中哪些元素是强制性的？<br/>
+您的回答：doctype、html、head、body 以及 title<br/>
+11.请判断以下说法是否正确：XHTML 文档必须是格式良好的。<br/>
+您的回答：正确<br/>
+12.下列哪些是格式良好的 XHTML ？<br/>
+您的回答：<code>&lt;p&gt;A &lt;b&gt;&lt;i&gt;short&lt;/i&gt;&lt;/b&gt; paragraph&lt;/p&gt;</code><br/>
+13.下列哪些 lang 属性的用法是正确的？<br/>
+您的回答：<code>&lt;div lang="en" xml:lang="en"&gt;Hello World!&lt;/div&gt;</code><br/>
+14.哪个属性可替代下列元素的 name 属性： a、applet、frame、iframe、img 以及 map ？<br/>
+您的回答：id 属性<br/>
+15.在 XHTML 中允许简写属性吗？<br/>
+您的回答：否<br/>
+16.所有的 XHTML 文档都需要 doctype 吗？<br/>
+您的回答：是<br/>
+17.在 XHTML 中有哪些不同的 DTD ？<br/>
+您的回答：Strict, Transitional, Frameset<br/>
+18.哪个是最常用的 XHTML DTD ？<br/>
+您的回答：Transitional<br/>
+19.请判断以下说法是否正确：所有的 XHTML 标签和属性都必须是小写的。<br/>
+您的回答：正确<br/>
+20.请判断以下说法是否正确：HTML 5 是 XHTML 的升级版本。
+您的回答：错误</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[HTML TEST]]></title>
+    <link href="http://Snger.github.com/blog/2011/12/02/html-test/"/>
+    <updated>2011-12-02T21:52:00+08:00</updated>
+    <id>http://Snger.github.com/blog/2011/12/02/html-test</id>
+    <content type="html"><![CDATA[<p>HTML 测验  结果：19/20<br/>
+如果您有兴趣参与测试，可以点<a href="http://www.w3school.com.cn/quiz/quiz.asp?quiz=html">这里</a></p>
+
+<p>您的回答：<br/>
+1.HTML 指的是？<br/>
+您的回答：超文本标记语言（Hyper Text Markup Language）<br/>
+2.Web 标准的制定者是？<br/>
+您的回答：万维网联盟（W3C）<br/>
+3.在下列的 HTML 中，哪个是最大的标题？<br/>
+您的回答：<code>&lt;h1&gt;</code><br/>
+4.在下列的 HTML 中，哪个可以插入折行？<!-- more --><br/>
+您的回答：<code>&lt;br&gt;</code><br/>
+5.在下列的 HTML 中，哪个可以添加背景颜色？<br/>
+您的回答：<code>&lt;body bgcolor="yellow"&gt;</code><br/>
+6.请选择产生粗体字的 HTML 标签：<br/>
+您的回答：<code>&lt;b&gt;</code><br/>
+7.请选择产生斜体字的 HTML 标签：<br/>
+您的回答：<code>&lt;i&gt;</code><br/>
+8.在下列的 HTML 中，哪个可以产生超链接？<br/>
+您的回答：<code>&lt;a href="http://www.w3school.com.cn"&gt;W3School&lt;/a&gt;</code><br/>
+9.如何制作电子邮件链接？<br/>
+您的回答：<code>&lt;a href="mailto:xxx@yyy"&gt;</code><br/>
+10.如何在新窗口打开链接？<br/>
+您的回答：<code>&lt;a href="url" target="_blank"&gt;</code><br/>
+11.以下选项中，哪个全部都是表格标签？<br/>
+您的回答：<code>&lt;table&gt;&lt;tr&gt;&lt;td&gt;</code><br/>
+12.请选择可以使单元格中的内容进行左对齐的正确 HTML 标签：<br/>
+您的回答：<code>&lt;td align="left"&gt;</code><br/>
+13.如何产生带有数字列表符号的列表？<br/>
+您的回答：<code>&lt;ol&gt;</code><br/>
+14.如何产生带有圆点列表符号的列表？<br/>
+您的回答：<code>&lt;ul&gt;</code><br/>
+15.在下列的 HTML 中，哪个可以产生复选框？<br/>
+您的回答：<code>&lt;input type="checkbox"&gt;</code><br/>
+16.在下列的 HTML 中，哪个可以产生文本框？</p>
+
+<p style="color:#dd0000">您的回答：<code>&lt;textfield></code></p>
+
+
+<p>
+正确答案：<code>&lt;input type="text"&gt;</code><br/>
+17.在下列的 HTML 中，哪个可以产生下拉列表？<br/>
+您的回答：<code>&lt;select&gt;</code><br/>
+18.在下列的 HTML 中，哪个可以产生文本区（textarea）？<br/>
+您的回答：<code>&lt;textarea&gt;</code><br/>
+19.在下列的 HTML 中，哪个可以插入图像？<br/>
+您的回答：<code>&lt;img src="image.gif"&gt;</code><br/>
+20.在下列的 HTML 中，哪个可以插入背景图像？<br/>
+您的回答：<code>&lt;body background="background.gif"&gt;</code></p>
+]]></content>
+  </entry>
+  
+</feed>
