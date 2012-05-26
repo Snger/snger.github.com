@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: 折腾 | The Same Summer.]]></title>
+  <link href="http://Snger.github.com/blog/categories/折腾/atom.xml" rel="self"/>
+  <link href="http://Snger.github.com/"/>
+  <updated>2012-05-26T13:42:53+08:00</updated>
+  <id>http://Snger.github.com/</id>
+  <author>
+    <name><![CDATA[Snger]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Hello，Octopress]]></title>
+    <link href="http://Snger.github.com/blog/2011/11/27/hello/"/>
+    <updated>2011-11-27T23:25:00+08:00</updated>
+    <id>http://Snger.github.com/blog/2011/11/27/hello</id>
+    <content type="html"><![CDATA[<p>  <strong>嗨，经过N次失败，多次重装，我的Ocporess终于上线啦！！！</strong><br/>
+  上一次使用Ubuntu还得追溯去年。今年因为在twitter关注比较多Ubuntu的消息，又恰好对WINDOWS7的高内存不满，于是又切回Ubuntu。手头还保留着Ubuntu10.10的CD，又想着待Ubuntu12.4出来时再更新，于是就先把Ubuntu10.10装上了。<br/>
+  日常使用Ubuntu10.10还是不错的，没想到待想使用Octopress时，状况百出。<br/>
+  先是看了几个中文帖教程，一路做下来很顺利，结果就是不能更新博客，后面顺着这些博客找到在twitter上活跃的 <a href="https://twitter.com/#!/yorkxin">@yorkxin</a>、 <a href="https://twitter.com/#!/GregoryALussier">@GregoryALussier</a> 、 <a href="https://twitter.com/#!/xdite">@xdite</a> 这几位达人，问了很多相关问题，也学习了许多知识，这里一并感谢了。  <!-- more -->
+  悲剧的是有些隐藏的问题一直没有发现，于是一直没办法更新博客。<br/>
+  再重装ruby、RVM及相关组件大概5次后，觉得不可能是这方面的问题，于是在找回相关Ubuntu平台的帖，仔细琢磨，最后终于顺藤找到这个帖<a href="http://stackoverflow.com/questions/4980877/rails-error-couldnt-parse-yaml">rails error, couldn't parse YAML</a>,虽然找不到最佳答案中所说的文件，却发现<em>问题的关键在YAML语法错误</em>。<br/>
+  测试多次后，在 .yml 文件找到两个错；自己新写的博文也有一个错误，至此，悲剧的折腾终于告一段落。留下此文简单记录下轨迹。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Try again]]></title>
+    <link href="http://Snger.github.com/blog/2011/11/24/try-again/"/>
+    <updated>2011-11-24T23:29:00+08:00</updated>
+    <id>http://Snger.github.com/blog/2011/11/24/try-again</id>
+    <content type="html"><![CDATA[<p>今天大概重装octopress四次了吧，一直没成功，不过没关系，继续努力。
+先这样吧，装好在叙。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Hello-Octopress]]></title>
+    <link href="http://Snger.github.com/blog/2011/11/23/Hello-Octopress/"/>
+    <updated>2011-11-23T18:42:00+08:00</updated>
+    <id>http://Snger.github.com/blog/2011/11/23/Hello-Octopress</id>
+    <content type="html"><![CDATA[<p>这个网站是使用<a href="http://octopress.org" title="Octopress">Octopress</a>架设，并使用免费的<a href="http://pages.github.com" title="GitHub">GitHub Pages</a>网页空间。也是我第一次在Ubuntu操作系统下，使用GVIM及<a href="http://markdown.tw/#link" title="Markdown">Markdown语法</a>写博客。</p>
+
+<p>试用Octopress也是机缘：</p>
+
+<blockquote><p>1.原本只想建一个简单的技术博客，记录自己的菜鸟成长史，于是在国内算是知名的IT社区建了一个博客。十六天写了十五篇博文，转载五篇。没想到昨天一篇日志被删除了。在网路中，我最不能容忍的就是删文，于是离开。  <!-- more -->
+2.也刚好在昨天看到博文<a href="http://www.yangzhiping.com/psy/open-classroom.html" title="不上大学，你可以学些什么？">不上大学，你可以学些什么？</a>中提到</p>
+
+<blockquote><p>你可以，开一个个人博客。如果是2011年才开建，建议采用octopress，记录个人的学习成长。<br/>
+有点好奇，正想试试。<br/>
+两因相加，于是有了这个博客。</p></blockquote></blockquote>
+
+<p>使用Octopress后，发现至少可以训练以下知识：</p>
+
+<blockquote><p>1.GitHub<br/>
+2.vim<br/>
+3.基础建站知识<br/>
+4.HTML+Markdown<br/>
+5.使用英文搜索资料、看文档的能力</p></blockquote>
+
+<p>其实，最重要的是：<strong>自由</strong></p>
+
+<hr />
+
+<h2>感谢以下链接</h2>
+
+<ul>
+<li><a href="http://hack.sslab.co/blog/2011/10/14/hello/" title="Hello,Octopress">Hello,Octopress</a></li>
+<li><a href="http://markdown.tw/#list" title="Markdown.tw">Markdown.tw</a></li>
+<li><a href="http://lyhdev.com/note:octopress" title="lyhdev.com">思创软体技术分享</a></li>
+<li><a href="http://octopress.org" title="Octopress">Octopress</a></li>
+<li><a href="https://github.com" title="GitHub">GitHub</a></li>
+<li>当然，也感谢删我帖的那些网站，链接就不给出了。</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[turn off laptop moniter]]></title>
+    <link href="http://Snger.github.com/blog/2011/11/14/turn-off-laptop-moniter/"/>
+    <updated>2011-11-14T11:44:00+08:00</updated>
+    <id>http://Snger.github.com/blog/2011/11/14/turn-off-laptop-moniter</id>
+    <content type="html"><![CDATA[<p>You cannot always close the Laptop Lid to turn off Display screen of Laptop, like while you are listening to music.This App helps people who are blind to save battery of their laptop.And it just one button:turnoff.You can regain back it with slight mouse movement or hitting any keyboard key.</p>
+
+<p>这是小软件可以在你需要关闭笔记本电脑的显示屏时使用。</p>
+
+<!-- more -->
+
+
+<p>P.S. Successfully Tested on HP Compaq 6910p running Windows 7 Ultimate.</p>
+
+<p>HOME:<a href="https://code.google.com/p/turn-off-laptop-moniter/">https://code.google.com/p/turn-off-laptop-moniter/</a></p>
+
+<p>CODE:<a href="https://github.com/Snger/turn-off-laptop-moniter">https://github.com/Snger/turn-off-laptop-moniter</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[使用Mp3tag编辑媒体元素（例如Mp3）]]></title>
+    <link href="http://Snger.github.com/blog/2011/11/06/mp3tag/"/>
+    <updated>2011-11-06T17:07:00+08:00</updated>
+    <id>http://Snger.github.com/blog/2011/11/06/mp3tag</id>
+    <content type="html"><![CDATA[<p>在使用一些音乐播放器的时候，如果遇到一些Mp3的元素缺失，就比较遗憾了——你不能使用按专辑、歌手进行选择播放。</p>
+
+<p>Q：批量元素空缺：专辑栏<br/>
+A：1.运用Shift、Ctrl批量选择需要修改的歌曲；<br/>
+   2. 在唱片集输入专辑名；3.保存。</p>
+
+<!-- more -->
+
+
+<p>Q: 批量变量元素空缺：标题栏<br/>
+A: 1. 运用Shift、Ctrl批量选择需要修改的歌曲；<br/>
+   2. 使用“文件名-标签”功能（右键调出或使用工具栏按钮），标签格式选择<code>%title%</code>；<br/>
+   3. 用正则表达式<code><sup>\d\d[.|-]?</code>替换掉标题中的歌曲标号（例如“0.1神奇”替换为“神奇")<br/></sup>
+   步骤为：菜单栏-动作-动作-新建-命名-新建动作”根据正则表达式替换“-字段”TITLE“，正则表达式<code><sup>\d\d[.|-]?</code>，其他留空，确认；4.从标题栏或是工具栏使用刚才定义的动作（缺点：文件名前多了一个空格）<br/></sup>
+A: 再举个例子：如果想把“03<em>蕭邦</em>鋼琴樂的經典<em>17</em>Ｇ小調敘事曲”中的“03<em>蕭邦</em>鋼琴樂的經典_”这部分替换掉，可以使用正则表达式：<code><sup>\w{3}.{1}\w.{5}\w</code></sup> <br/>
+（说明：原本想用
+正则表达式<code>/<sup>[\u2E80-\u9FFF]+$/</code>来对应Unicode编码中的汉字范围，可是发现出错，也许是编码的问题。</sup></p>
+
+<p><strong>有一个小问题：</strong>我用<code>\w{3}</code>来匹配<code>03_</code>；用<code>.</code>来匹配汉字，可是两个汉字”蕭邦“却是用<code>.{1}</code>来匹配，个数有出入。望高手不吝赐教。感谢。</p>
+]]></content>
+  </entry>
+  
+</feed>
