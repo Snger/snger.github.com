@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Linux | The Same Summer.]]></title>
+  <link href="http://Snger.github.com/blog/categories/linux/atom.xml" rel="self"/>
+  <link href="http://Snger.github.com/"/>
+  <updated>2012-05-26T13:42:53+08:00</updated>
+  <id>http://Snger.github.com/</id>
+  <author>
+    <name><![CDATA[Snger]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[别担忧，Enyo在这呢]]></title>
+    <link href="http://Snger.github.com/blog/2012/05/26/never-fear-enyo-is-here/"/>
+    <updated>2012-05-26T11:04:00+08:00</updated>
+    <id>http://Snger.github.com/blog/2012/05/26/never-fear-enyo-is-here</id>
+    <content type="html"><![CDATA[<blockquote><p>原文：<a href="http://www.webosnation.com/never-fear-enyo-here">Never Fear, Enyo is Here</a><br/>
+作者：<a href="http://www.webosnation.com/author/sharon-l-copeland">SHARON L COPELAND</a><br/>
+译者：<a href="https://twitter.com/#!/sjs_stef">@sjs_stef</a><br/>
+官方公告：<a href="http://blog.enyojs.com/post/23752115577/enyo-continues#notes">Enyo Continues</a></p></blockquote>
+
+<p><img src="http://cdn.webosnation.com/sites/webosnation.com/files/imagecache/large/postimages/380846/ENYO.jpg" alt="Enyo-img" /></p>
+
+<p>过去36个小时里发生了如此多的变故足够让你我的脑袋炸开。悲摧是由HP宣布<a href="http://www.webosnation.com/hps-q2-2012-earnings-call-beginning-major-company-restructuring-27000-jobs-be-lost">两年的时间内准备砍掉 27000 个职位</a>开始,然后，<a href="http://www.webosnation.com/enyo-team-rumored-have-quit-hp-moving-google-0">Enyo 的核心团队正收拾包裹准备入住 Google</a>。是的，我们由衷的祝福你们找到这个奇妙的工作；但我们也非常的希望你们能自觉排成一队，我会为你们每个人准备一个祝福——以一记响亮的耳光。你们可知昨晚(2012-5-24)的10:30我们起来登录 twitter 就为了确认这个沉沦的消息。还没恍过神来就再遭遇这个星期的第二个坏消息。每一个 webOS 的粉丝就像被送上专门为坏孩子准备的桌子，品尝着一小块没有奶油的蛋糕。想着这对于我们的 webOS 手机意味着什么？ TouchPad 的遭遇又将如何？ webOS 的路在何方？也许我们可以从 Enyo团队发布的这个声明中舒缓下心神：</p>
+
+<blockquote><blockquote><p>Enyo 团队一直都是稳定而团结的。在听到我们的开发成员说道最近发布的版本中{译者注：<a href="https://github.com/enyojs/enyo-1.0">enyo-1.0</a>}，性能已经大幅提高的好消息后，我们将以另一种方式发布新的版本{译者注：<a href="https://github.com/enyojs/enyo">enyo</a>}。之后，我们把重心放在扩大 <a href="https://github.com/enyojs/onyx">Onyx 部件集</a>上。大家应该知道我们团队已经邀请了合适的工程师，为团队的发展提供支持。</p>
+
+<p>毫无疑问，我们正在不断成长。正如我们于本月早些时候表示的，我们正在招聘——不仅仅是为了取代那些离开的工程师，更是为了今后的发展而壮大我们的团队。如果你想为 Enyo的成功贡献你的力量（并且得到报酬），请让我们知道。当然，我们非常欢迎大家在 <a href="https://github.com/enyojs/enyo/fork">Github 上贡献代码</a>。</p>
+
+<p>我们的大门敞开者；如果您有任何问题，请在 <a href="http://forums.enyojs.com/">Enyo 论坛</a>畅所欲言。我们一直在倾听，并且尽力帮助您解决问题。我们也将在下周参加在旧金山举行的  O’Reilly Fluent Conference 会议，在之后的一周我们也会出席在拉斯维加斯举办的 HP Discover ——我们非常期待能在那儿看见你。</p></blockquote></blockquote>
+
+<p>既然得到了官方的确认信息，那么，就放下你的不安，按照原定的计划继续前行。Enyo 还在继续征途。</p>
+
+<hr />
+
+<p>P.S. 从前几年开始阅读 <a href="http://www.readwriteweb.com/">ReadWriteWeb</a> 、<a href="http://www.techcrunch.com/">TechCrunch</a>、<a href="http://www.engadget.com/">Engadget</a> 时就想用翻译记录自己的阅读，却自找理由放弃。自从认真的开始接触开源的相关代码、项目后，由衷的喜欢这种态度。自勉。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Ubuntu无响应的处理方法]]></title>
+    <link href="http://Snger.github.com/blog/2012/05/18/dealingwithnon-responseofubuntu/"/>
+    <updated>2012-05-18T22:10:00+08:00</updated>
+    <id>http://Snger.github.com/blog/2012/05/18/dealingwithnon-responseofubuntu</id>
+    <content type="html"><![CDATA[<p>在更新了Ubuntu12.04后，经常遇到电脑无响应的状态，一般的症状是：鼠标可以移动，键盘却无法操作，点击笔记本的音量控制键，指示灯有变化，音量却没变化，很是无奈。<br/>
+症状一般发生在使用 Flash 、使用 Chrome 浏览一些页面没优化好的网页、Chrome 开15+网页的时候。<br/>
+尝试过使用 Gnome Classic 假死的情况基本上不出现，不过后来 Gnome 和 Unity 有些冲突，又切回 Unity，于是这状况又出现了。<br/>
+搜索了下，发现一些人更新显卡驱动后，情况好转。关于显卡安装，<a href="http://forum.ubuntu.org.cn/viewtopic.php?t=140531">请点这里</a><br/>
+另外，<a href="http://fgqiblog.appspot.com/?p=43001">这篇文章介绍了Ubuntu死机、无响应的处理方法</a>,比较推荐的方法是：</p>
+
+<ol>
+<li>按Ctrl-Alt-(F1～F6)，进入控制台进行相关的操作</li>
+<li>用户名和密码登录，然后运行 top 命令，查看正在运行的程序，记下占 CPU 高的程序的 PID</li>
+<li>输入 kill + PID ,结束相应的进程</li>
+<li>Alt + F7 切换回图形界面</li>
+</ol>
+
+
+<p>5月20更新：发现 kill 相关进程后，切换回图形界面还是呈现卡死状态，又不想重启电脑，于是使用<br/>
+<code>sudo skill -KILL -u 图形界面登录的用户名</code><br/>
+去重启图形界面。</p>
+]]></content>
+  </entry>
+  
+</feed>

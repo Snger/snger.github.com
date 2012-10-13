@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: 读书笔记 | The Same Summer.]]></title>
+  <link href="http://Snger.github.com/blog/categories/读书笔记/atom.xml" rel="self"/>
+  <link href="http://Snger.github.com/"/>
+  <updated>2012-05-26T13:42:53+08:00</updated>
+  <id>http://Snger.github.com/</id>
+  <author>
+    <name><![CDATA[Snger]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[认清实际]]></title>
+    <link href="http://Snger.github.com/blog/2012/05/18/theessenceoftheactual/"/>
+    <updated>2012-05-18T20:46:00+08:00</updated>
+    <id>http://Snger.github.com/blog/2012/05/18/theessenceoftheactual</id>
+    <content type="html"><![CDATA[<p>继续话题：<a href="http://developer.51cto.com/art/201202/315330.htm">计算机课程之1：认清实际</a>.</p>
+
+<h3>1. 列举10个Python Web框架</h3>
+
+<p>关于 Python web 框架，网络上流传比较广的版本是来自<a href="http://feilong.me">飞龙博客</a>的<a href="http://feilong.me/2011/01/talk-about-python-web-framework">浅谈Python web框架</a>,其文主要介绍了 <a href="http://www.djangoproject.com/">Django</a>、<a href="http://www.pylonshq.com/">Pylons</a>、<a href="http://www.tornadoweb.org/">Tornado</a>、<a href="http://bottle.paws.de/">Bottle</a>、<a href="http://www.quixote.ca/">Quixote</a>.<a href="http://wiki.python.org/moin/WebFrameworks">点击这里-查看更多</a></p>
+
+<h3>2. Python有多少种不同的解释器？</h3>
+
+<p>在 Wikipedia 中的 <a href="http://zh.wikipedia.org/wiki/Category:Python%E8%A7%A3%E9%87%8A%E5%99%A8">Python解释器 分类</a>中，主要列出三种：</p>
+
+<ul>
+<li><p><a href="http://zh.wikipedia.org/wiki/CPython">CPython</a></p>
+
+<blockquote><p>CPython是用C语言实现的Python解释器，也是官方的并且是最广泛使用的Python解释器。除了CPython以外，还有用JAVA实现的Jython和用.NET实现的IronPython，使Python方便地和JAVA程序、.NET程序集成。</p></blockquote></li>
+<li><p><a href="http://zh.wikipedia.org/wiki/IronPython">IronPython</a></p>
+
+<blockquote><p>IronPython 是一种在 .NET 和 Mono 上实现的 Python 语言，由 Jim Hugunin（同时也是 Jython 创造者）所创造。在 2007 年，开发者决定改写构架，使用动态类型系统以让更多脚本语言能很容易地移植到.NET Framework上。</p></blockquote></li>
+<li><p><a href="http://zh.wikipedia.org/wiki/Jython">Jython</a></p>
+
+<blockquote><p>Jython，（原JPython），是一个用JAVA语言写的Python解释器。Jython程序可以和Java无缝集成。除了一些标准模块，Jython使用Java的模块。Jython几乎拥有标准的Python中不依赖于C语言的全部模块。</p></blockquote></li>
+<li><p><a href="http://zh.wikipedia.org/wiki/PyPy">PyPy</a></p>
+
+<blockquote><p>PyPy是用Python实现的Python解释器。PyPy比CPython是更加灵活，易于使用和试验，以制定具体的功能在不同情况的实现方法，可以很容易实施。</p></blockquote></li>
+</ul>
+
+
+<h3>3. Perl 跟 Python 有什么不同？</h3>
+
+<p>两者设计思想的不同：<br/>
+Perl--<a href="http://en.wikipedia.org/wiki/There_is_more_than_one_way_to_do_it">"there is more than one way to do it"</a><br/>
+Python--<a href="http://www.python.org/dev/peps/pep-0020/">"there should be one—and preferably only one—obvious way to do it"</a><br/>
+推荐阅读<a href="http://www.ibm.com/developerworks/cn/linux/l-cn-perl2python/index.html">Perl 与 Python 之间的一些异同</a>,文章从 1.起源与特点 2.基本数据类型 3.控制结构 4.函数 5.包与模块 6.面向对象 7.正则表达式 8.线程 方面进行了比较。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[认清计算机（系课程）本质]]></title>
+    <link href="http://Snger.github.com/blog/2012/05/17/theessenceofthecomputer/"/>
+    <updated>2012-05-17T20:52:00+08:00</updated>
+    <id>http://Snger.github.com/blog/2012/05/17/theessenceofthecomputer</id>
+    <content type="html"><![CDATA[<h2>一个有趣的系列，<a href="http://developer.51cto.com/art/201203/321936.htm"><em>宅男程序员给老婆的计算机课程</em></a>,起始篇<a href="http://developer.51cto.com/art/201202/314296.htm">认清本质</a>中说到几个问题,老实说真不清楚，于是GOOGLE，列举些目前的了解，并将持续更新，用作记录。</h2>
+
+<h3>1. 用500字讲述什么是Programming Methodology?</h3>
+
+<p>2012.5.17：比较常听到的编程的方法：</p>
+
+<ul>
+<li><p><a href="http://en.wikipedia.org/wiki/Procedural_programming">Procedural programming</a>(<a href="http://zh.wikipedia.org/wiki/%E7%A8%8B%E5%BA%8F%E7%B7%A8%E7%A8%8B">程序编程，又称程序式编程、程序化编程、过程化编程,俗称面向过程</a>),面向对象编程的思维就像日程安排或是作业流程图，主体流程是步进式的。</p></li>
+<li><p><a href="http://en.wikipedia.org/wiki/Object-oriented_programming">Object-oriented programming</a>(<a href="http://zh.wikipedia.org/wiki/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1">面向对象程序设计</a>)；</p>
+
+<blockquote><p><a href="http://zh.wikipedia.org/wiki/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1">面向对象程序设计</a>:指一种程序设计范型，同时也是一种程序开发的方法。它将对象作为程序的基本单元，将程序和数据封装其中，以提高软件的重用性、灵活性和扩展性。<br/>
+两者对比：<br/>
+面向对象程序设计可以被视作一种在程序中包含各种独立而又互相调用的单位和对象的思想，这与传统的思想刚好相反：传统的程序设计主张将程序看作一系列函数的集合，或者直接就是一系列对电脑下达的指令。面向对象程序设计中的每一个对象都应该能够接受数据、处理数据并将数据传达给其它对象，因此它们都可以被看作一个小型的“机器”，或者说是负有责任的角色。</p></blockquote></li>
+<li><p><a href="">Functional programming</a>(<a href="http://zh.wikipedia.org/wiki/%E5%87%BD%E6%95%B8%E7%A8%8B%E5%BC%8F%E8%AA%9E%E8%A8%80">函数式编程</a>);</p>
+
+<blockquote><p>它将电脑运算视为数学上的函数计算，并且避免状态以及可变资料。函数编程语言最重要的基础是 λ 演算（lambda calculus）。而且λ演算的函数可以接受函数当作输入（引数）和输出（传出值）。<br/>
+和指令式编程相比，函数式编程强调函数的计算比指令的执行重要。<br/>
+和程序编程相比，函数式编程里，函数的计算可随时调用。</p></blockquote></li>
+</ul>
+
+
+<h2>*   其他：去<a href="http://en.wikipedia.org/wiki/Programming_paradigm">Programming paradigm</a>(<a href="http://zh.wikipedia.org/wiki/%E7%BC%96%E7%A8%8B%E8%8C%83%E5%9E%8B">编程范型</a>)查看更多。  </h2>
+
+<h3>2. 列举10种Data Structure.</h3>
+
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Array_data_structure">array data structure</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Record_(computer_science">Record</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Hash_table">hash</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Union_(computer_science">Union</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Tagged_union">tagged union</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Set_(abstract_data_type">set</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Object_(computer_science">object</a>
+
+<ul>
+<li>常规说法：阵列 (Array)、堆栈 (Stack)、队列 (Queue)、链表 (Linked List)、树 (Tree)、图 (Graph)、堆 (Heap)、杂凑 (Hash)。<a href="http://zh.wikipedia.org/wiki/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84">来源</a><!-- more --></li>
+</ul>
+</li>
+</ul>
+
+
+<hr />
+
+<h3>3. 列举10种Algorithm.</h3>
+
+<p>Wikipedia:<a href="http://en.wikipedia.org/wiki/Algorithm">Algorithm</a>、<a href="http://zh.wikipedia.org/wiki/%E7%AE%97%E6%B3%95">算法</a>;<br/>
+<a href="http://www.douban.com/group/topic/12416781/">经典算法集合</a>:</p>
+
+<ul>
+<li>排序算法</li>
+<li>冒泡排序法</li>
+<li>起泡法</li>
+<li>鸡尾酒排序</li>
+<li>桶排序</li>
+<li>计数排序</li>
+<li>归并排序</li>
+<li>排序二叉树</li>
+<li>鸽巢排序</li>
+<li>基数排序</li>
+</ul>
+
+
+<p>算法博客推荐：<a href="http://blog.csdn.net/v_JULY_v">结构之法 算法之道</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Test My jQuery Skill: Solutions]]></title>
+    <link href="http://Snger.github.com/blog/2012/03/04/test-my-jquery-skill-solutions/"/>
+    <updated>2012-03-04T10:24:00+08:00</updated>
+    <id>http://Snger.github.com/blog/2012/03/04/test-my-jquery-skill-solutions</id>
+    <content type="html"><![CDATA[<p>See it in my other blog : <a href="http://thesamesummer.blogspot.com/2012/02/test-my-jquery-skills-solutions.html">Test My jQuery Skills: Solutions | The same summer.</a></p>
+
+<h2>You can text it now : <a href="http://tutsplus.com/lesson/jquery-30-days-quiz-1/">Tuts+ Premium Course: 30 Days to Learn jQuery - Quiz #1: The Basics</a>  </h2>
+
+<h3>1.In addition to jQuery(), we can also use a shorter reference to the jQuery function. What is it?</h3>
+
+<p><code>jQ  $  $$  j</code></p>
+
+<h4>Additional Notes</h4>
+
+<p>If you review the jQuery source (something you should always do), you will find that jQuery and $ can both be used interchangably. The former is most often used in situations when the $ can clash with existing code or libraries.</p>
+
+<h3>2.True or False: the jQuery function accepts a CSS selector, which is used to query the DOM for the applicable elements.</h3>
+
+<p> <code>True False</code></p>
+
+<h4>Additional Notes</h4>
+
+<p>Remember, you are not limited to mere CSS selectors; you can also pass DOM nodes, and even create elements. For instance, the following code will create a div and append it to the body: $("
+Hi there
+").appendTo("body");</p>
+
+<h3>3.Query the DOM for the div with an id of container and store a reference to it ("cache it") in a variable, called container.</h3>
+
+<p><code>var container = $("#container");</code></p>
+
+<h4>Additional Notes</h4>
+
+<p>Storing the results of a particular query in a variable is often referred to as "caching." This way, we keep from having to dive into the DOM pool over and over to retrieve the same set of elements.</p>
+
+<h3>4.Query the DOM for the ul, and add a class of alternate.</h3>
+
+<p><code>$("ul").addClass("alternate");</code></p>
+
+<h4>Additional Notes</h4>
+
+<p>Technically, this code will add a class of alternate to all unordered lists in the DOM. If you need to be more specific, you can use an id, or a method like eq() or first() to fine-tune the results.</p>
+
+<h3>5.Which of the following is not a valid jQuery method?</h3>
+
+<p><code>addClass  next  prev  grandparents</code></p>
+
+<h4>Additional Notes</h4>
+
+<p>Don't take the "parent-child" relationship idea too far. grandparents or grandchildren do not exist! Instead, you'd use parents(), closest(), and find().<!-- more --></p>
+
+<h3>6.True or False: We use $(document).ready(fn); to ensure that the DOM has fully loaded before proceeding.</h3>
+
+<p> <code>True False</code></p>
+
+<h4>Additional Notes</h4>
+
+<p>Alternatively, the same result can be achieved by passing an anonymous function to jQuery.</p>
+
+<h3>7.Use jQuery's text method to update the element. Change it to "Updated."</h3>
+
+<p><code>$("h1").text("Updated");</code></p>
+
+<h4>Additional Notes</h4>
+
+<p>Should you need to insert actual HTML, you'd instead use the html method.</p>
+
+<h3>8.Which method will return the nearest element, moving up the DOM chain, that matches the provided selector?</h3>
+
+<p><code>ancestors()  closest()  nearest()  children()</code></p>
+
+<h4>Additional Notes</h4>
+
+<p>closest will retrieve the first element that matches a provided selector. It begins at the current element, and works up through the DOM tree.</p>
+
+<h3>9.The box (or div) below has a class of box. Listen for when this box is clicked. When it is, remove the box class. Hint: you will want to use jQuery'son() method.</h3>
+
+<pre><code>    $("div.box").on("click", function() { 
+        $(this).removeClass("box");
+    });
+</code></pre>
+
+<h4>Additional Notes</h4>
+
+<p>In addition to on(), jQuery also provides a handful of "shortcut" methods, such as click() and hover().</p>
+
+<h3>10.Imagine that you've selected one list item, and now need to select all other list items on that same level. Which method should use to accomplish this?</h3>
+
+<h4>Additional Notes</h4>
+
+<p>Additionally, a selector can be passed to the siblings method. This allows you to filter the matches.</p>
+
+<h3>11.Select the fourth list item below, and use the css method to set its background color to 'gray'.</h3>
+
+<p><code>$('li:nth-child(4)').css('background', 'gray');</code></p>
+
+<h4>Additional Notes</h4>
+
+<p>There were lots of ways to handle this question. In addition to the provided solution, you could also use the eq()method: $("li").eq(3).css("backgroundColor", "gray");. jQuery also allows you to use eq as a custom selectors: $("li:eq(3)");.</p>
+
+<h3>12.True or False: jQuery is just JavaScript.</h3>
+
+<p> <code>True False</code></p>
+
+<h4>Additional Notes</h4>
+
+<p>Sometimes, it's easy to think of JavaScript and jQuery as entirely separate languages, but they aren't! At its core, jQuery is just JavaScript.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[XML TEST]]></title>
+    <link href="http://Snger.github.com/blog/2011/12/06/xml-test/"/>
+    <updated>2011-12-06T17:16:00+08:00</updated>
+    <id>http://Snger.github.com/blog/2011/12/06/xml-test</id>
+    <content type="html"><![CDATA[<p>XML 测验  结果：18/20<br/>
+如果您有兴趣参与测试，可以点<a href="http://www.w3school.com.cn/quiz/quiz.asp?quiz=xml">这里</a><br/>
+您的回答：<br/>
+1.XML指的是？<br/>
+您的回答：eXtensible Markup Language<br/>
+2.XML对数据进行描述的方式是？<br/>
+您的回答：XML使用DTD来描述数据<br/>
+3.XML的目标是取代HTML<br/>
+您的回答：错误<br/>
+4.下列定义XML版本的声明中语法正确的是？<br/>
+您的回答：<code>&lt;?xml version="1.0"?&gt;</code><br/>
+5.DTD指的是？<!-- more --><br/>
+您的回答：Document Type Definition<br/>
+6.这是一个“形式良好”的文档吗？</p>
+
+<pre><code>&lt;?xml version="1.0"?&gt;
+&lt;note&gt;
+&lt;to&gt;Tove&lt;/to&gt;
+&lt;from&gt;Jani&lt;/from&gt;
+&lt;heading&gt;Reminder&lt;/heading&gt;
+&lt;body&gt;Don't forget me this weekend!&lt;/body&gt;
+&lt;/note&gt;
+</code></pre>
+
+<p>您的回答：是<br/>
+7.这是一个“形式良好”的文档吗？</p>
+
+<pre><code>&lt;?xml version="1.0"?&gt;
+&lt;to&gt;Tove&lt;/to&gt;
+&lt;from&gt;Jani&lt;/from&gt;
+&lt;heading&gt;Reminder&lt;/heading&gt;
+&lt;body&gt;Don't forget me this weekend!&lt;/body&gt;
+</code></pre>
+
+<p>您的回答：否<br/>
+8.哪条陈述是正确的？<br/>
+<em>您的回答：以上陈述都是正确的</em><br/>
+<strong>正确答案：所有XML元素都必须正确地关闭</strong><br/>
+9.哪条陈述是正确的？<br/>
+您的回答：以上陈述都是正确的<br/>
+10.XML可保留空白字符<br/>
+您的回答：正确<br/>
+11.这是一个“形式良好”的文档吗？</p>
+
+<pre><code>&lt;?xml version="1.0"?&gt;
+&lt;note&gt;
+&lt;to age="29"&gt;Tove&lt;/to&gt;
+&lt;from&gt;Jani&lt;/from&gt;
+&lt;/note&gt;
+</code></pre>
+
+<p>您的回答：是<br/>
+12.这是一个“形式良好”的文档吗？</p>
+
+<pre><code>&lt;?xml version="1.0"?&gt;
+&lt;note&gt;
+&lt;to age=29&gt;Tove&lt;/to&gt;
+&lt;from&gt;Jani&lt;/from&gt;
+&lt;/note&gt;
+</code></pre>
+
+<p>您的回答：否<br/>
+13.XML元素不能为空<br/>
+<em>您的回答：正确</em><br/>
+<strong>正确答案：错误</strong><br/>
+14.对于一个XML文档，以下哪个名称是错误的？<br/>
+您的回答：<code>&lt;1dollar&gt;</code><br/>
+15.对于一个XML文档，以下哪个名称是错误的？<br/>
+您的回答：<code>&lt;first name&gt;</code><br/>
+16.对于一个XML文档，以下哪个名称是错误的？<br/>
+您的回答：以上三个都不正确<br/>
+17.必须使用引号包围XML的属性值<br/>
+您的回答：正确<br/>
+18.XSL指的是？<br/>
+您的回答：eXtensible Stylesheet Language<br/>
+19.以下哪种方法可正确地引用名为“mystyle.xsl”的样式表？<br/>
+您的回答：<code>&lt;?xml-stylesheet type="text/xsl" href="mystyle.xsl" ?&gt;</code><br/>
+20.供XML解析器忽略XML文档的特定部分的正确语法是：<br/>
+您的回答：<code>&lt;![CDATA[ Text to be ignored ]]&gt;</code></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Javascript Test]]></title>
+    <link href="http://Snger.github.com/blog/2011/12/05/javascript-test/"/>
+    <updated>2011-12-05T14:33:00+08:00</updated>
+    <id>http://Snger.github.com/blog/2011/12/05/javascript-test</id>
+    <content type="html"><![CDATA[<p>JS 测验 结果：17/20<br/>
+如果您有兴趣参与测试，可以点<a href="http://www.w3school.com.cn/quiz/quiz.asp?quiz=js">这里</a><br/>
+您的回答：<br/>
+1.我们可以在下列哪个 HTML 元素中放置 Javascript 代码？<br/>
+您的回答：<code>&lt;script&gt;</code><br/>
+2.写 "Hello World" 的正确 Javascript 语法是？<br/>
+您的回答：<code>document.write("Hello World")</code><br/>
+3.插入 Javacript 的正确位置是？<br/>
+您的回答：&lt;body> 部分和 &lt;head> 部分均可<br/>
+4.引用名为 "xxx.js" 的外部脚本的正确语法是？<br/>
+您的回答：<code>&lt;script src="xxx.js"&gt;</code><br/>
+5.外部脚本必须包含 &lt;script> 标签吗？<!-- more --><br/>
+<em>您的回答：是</em><br/>
+<strong>正确答案：否</strong><br/>
+6.如何在警告框中写入 "Hello World"？<br/>
+您的回答：<code>alert("Hello World")</code><br/>
+7.如何创建函数？<br/>
+您的回答：<code>function myFunction()</code><br/>
+8.如何调用名为 "myFunction" 的函数？<br/>
+您的回答：<code>myFunction()</code><br/>
+9.如何编写当 i 等于 5 时执行一些语句的条件语句？<br/>
+您的回答：<code>if (i==5)</code><br/>
+10.如何编写当 i 不等于 5 时执行一些语句的条件语句？<br/>
+您的回答：<code>if (i != 5)</code><br/>
+11.在 JavaScript 中，有多少种不同类型的循环？<br/>
+<em>您的回答：四种。for 循环、while 循环、do...while 循环以及 loop...until 循环。</em><br/>
+<strong>正确答案：两种。for 循环和 while 循环。</strong><br/>
+12.for 循环如何开始？<br/>
+您的回答：<code>for (i = 0; i &lt;= 5; i++)</code><br/>
+13.如何在 JavaScript 中添加注释？<br/>
+您的回答：<code>//This is a comment</code><br/>
+14.可插入多行注释的 JavaScript 语法是？<br/>
+您的回答：<code>/*This comment has more than one line*/</code><br/>
+15.定义 JavaScript 数组的正确方法是？<br/>
+您的回答：<code>var txt = new Array("George","John","Thomas")</code><br/>
+16.如何把 7.25 四舍五入为最接近的整数？
+您的回答：<code>Math.round(7.25)</code><br/>
+17.如何求得 2 和 4 中最大的数？<br/>
+您的回答：<code>Math.max(2,4)</code><br/>
+18.打开名为 "window2" 的新窗口的 JavaScript 语法是？<br/>
+您的回答：<code>window.open("http://www.w3school.com.cn","window2")</code><br/>
+19.如何在浏览器的状态栏放入一条消息？<br/>
+<em>您的回答：<code>window.status("put your message here")</code></em><br/>
+<strong>正确答案：<code>window.status = "put your message here"</code></strong><br/>
+20.如何获得客户端浏览器的名称？<br/>
+您的回答：<code>navigator.appName</code></p>
+]]></content>
+  </entry>
+  
+</feed>

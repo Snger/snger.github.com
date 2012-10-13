@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: 工具 | The Same Summer.]]></title>
+  <link href="http://Snger.github.com/blog/categories/工具/atom.xml" rel="self"/>
+  <link href="http://Snger.github.com/"/>
+  <updated>2012-05-26T13:42:53+08:00</updated>
+  <id>http://Snger.github.com/</id>
+  <author>
+    <name><![CDATA[Snger]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Ubuntu使用K2pdfopt转换pdf]]></title>
+    <link href="http://Snger.github.com/blog/2012/05/20/usek2pdfoptfromubuntu/"/>
+    <updated>2012-05-20T14:36:00+08:00</updated>
+    <id>http://Snger.github.com/blog/2012/05/20/usek2pdfoptfromubuntu</id>
+    <content type="html"><![CDATA[<blockquote><p>"喜欢阅读电子书的朋友，特别是拥有Kindle等电纸书的朋友谈到扫描PDF(Scanned PDF)，大多是又爱又恨，”爱”在大量书籍、尤其是发行较早或外文原版的一些经典书籍，多由热心人士私下扫描成PDF发布在网络上，可以方便地下载到硬盘里(摆在那儿心里就踏实，看不看就另说了)；”恨”在扫描PDF(Scanned PDF)”骨头”太硬，不能像原生PDF(Native PDF)那样转换成各种格式。小小6寸屏，甚至3、4寸屏，纵然有满腔阅读热情，眼睛挤着挤着就吃不消了。由<a href="http://www.willus.com/author/">Willus</a>开发的<a href="http://www.willus.com/k2pdfopt/">免费PDF处理软件K2PDFopt</a>很好地解决了这个问题，可以让大家硬盘里堆积如山的扫描PDF真正重见天日。"--<a href="http://note1day.com/2011/12/k2pdfopt/">用K2PDFopt重排版面，随手解救扫描PDF</a></p></blockquote>
+
+<p>在 ubuntu 安装也十分简单，主要是这几个步骤：</p>
+
+<ol>
+<li>去 <a href="http://willus.com/k2pdfopt/download/">K2pdfopt Download</a> 下载相应的版本</li>
+<li>在文件所在的下载目录（一般是 Downloads ），右键所下载文件，把文件移动到主目录（家目录 Home）</li>
+<li><p>Ctrl + Alt + T 进入命令行，依次输入如下代码：</p>
+
+<pre><code> sudo mv k2pdfopt /usr/local/bin
+ (输入你的密码)
+ chmod a+x /usr/local/bin/k2pdfopt
+ mkdir .local/share/applications
+ cat &gt; .local/share/applications/k2pdfopt.desktop
+ [Desktop Entry]
+ Name=k2pdfopt
+ Exec=/usr/local/bin/k2pdfopt %f
+ Terminal=true
+ Type=Application
+ Categories=Application
+ (按下组合键 &lt;Ctrl-D&gt;)
+ exit
+</code></pre></li>
+<li><p>完成前三步后，你就可以在任意 .pdf 文件右击，在 “更多应用程序” 中找到 k2pdfopt, 选择后你就可以看到 k2pdfopt 的功能界面了。</p></li>
+</ol>
+
+
+<p>喜欢看图示的朋友可以看看 <a href="http://www.willus.com/k2pdfopt/help/ubuntu.shtml">GETTING STARTED: UBUNTU DESKTOP 11.1</a><br/>
+更多技巧，可以看看 <a href="http://note1day.com/2011/12/k2pdfopt-faq/">K2pdfopt使用常见问题</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Vim发布二十周年]]></title>
+    <link href="http://Snger.github.com/blog/2011/11/06/vim-20years/"/>
+    <updated>2011-11-06T14:24:00+08:00</updated>
+    <id>http://Snger.github.com/blog/2011/11/06/vim-20years</id>
+    <content type="html"><![CDATA[<p>从 <a href="http://solidot.org.feedsportal.com/c/33236/f/556826/s/19c80822/l/0Lopensource0Bsolidot0Borg0Carticle0Bpl0Dsid0F110C110C0A30C0A5532430Gamp0Pfrom0Frss/story01.htm">Solidot:奇客的资讯，重要的东西</a>转载 作者：blackhat</p>
+
+<p>1991年11月2日，Vim文本编辑器公开发布了第一个版本。昨天是它的二十周年庆。Vim最初是为Amiga平台开发的Vi编辑器克隆，但迅速被移植到其它平台，并最终成为最流行的Vi兼容文本编辑器。Vi的开发始于1970年代末，作者是BSD开发者、太阳微系统公司联合创始人BillJoy。它是类UNIX系统的标准编辑器。Vi克隆出现于80年代末和90年代初，主要原因是Vi的许可证不能自由分发，而克隆则因为采用了没有限制的许可证而得到广泛使用。早期的两个著名克隆是Stevie和Elvis。Vim作者BramMoolenaar对Amiga平台上的Vi克隆不甚满意，他开始在Stevie基础上开发新的文本编辑器。第一个公开发布的版本是1.14版，使用了宽松的公共版权许可证。名字Vim最初指Vi IMitation，后来变为Vi IMproved，代表是Vi的升级版。</p>
+
+<p>VIM官方网站：<a href="http://www.vim.org">http://www.vim.org</a></p>
+]]></content>
+  </entry>
+  
+</feed>
