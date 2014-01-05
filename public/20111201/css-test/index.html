@@ -1,0 +1,439 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  
+  <title>CSS TEST | The Same Summer.</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <meta name="author" content="Snger">
+  
+  <meta name="description" content="CSS 测验">
+  
+  
+  <meta property="og:title" content="CSS TEST"/>
+  <meta property="og:site_name" content="The Same Summer."/>
+  <link href="/favicon.ico" rel="icon" type="image/x-ico">
+  <link rel="alternate" href="/atom.xml" title="The Same Summer." type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.min.css" type="text/css">
+</head>
+
+<body>
+  <header>
+    <div class="clearfix">
+	<div id="logo">
+		<a href="/"><img src="/img/logo.svg" width="360" height="108" alt="Snger"/></a>
+		<hgroup>
+			<h1 class="site-name"><a href="/">The Same Summer.</a></h1>
+			<h2 class="blog-motto"></h2>
+		</hgroup>
+	 </div>
+	 <div class="navbar"><a class="navbutton" href="#"><i class="icon-menu"></i></a></div>
+	<nav>
+		<ul>
+		 
+			<li><a href="/">博客</a></li>
+		
+			<li><a href="/archives">存档</a></li>
+		
+			<li><a href="/about">关于</a></li>
+		
+			<li><a href="/projects">专题</a></li>
+		
+			<li><a href="/lab">实验室</a></li>
+		
+			<li> <a title="shall we talk" href='javascript:(
+function() {
+	function loadCss() {
+		var e = document.createElement("link");
+		e.setAttribute("type", "text/css");
+		e.setAttribute("rel", "stylesheet");
+		e.setAttribute("href", f);
+		e.setAttribute("class", l);
+		document.body.appendChild(e)
+	}
+ 
+	function removeCssClass() {
+		var e = document.getElementsByClassName(l);
+		for (var t = 0; t < e.length; t++) {
+			document.body.removeChild(e[t])
+		}
+	}
+ 
+	function showLight() {
+		var e = document.createElement("div");
+		e.setAttribute("class", a);
+		document.body.appendChild(e);
+		setTimeout(function() {
+			document.body.removeChild(e)
+		}, 100)
+	}
+ 
+	function getOffset(e) {
+		return {
+			height : e.offsetHeight,
+			width : e.offsetWidth
+		}
+	}
+ 
+	function elemFilter(i) {
+		var s = getOffset(i);
+		return s.height > e && s.height < n && s.width > t && s.width < r
+	}
+ 
+	function returnOffsetTop(e) {
+		var t = e;
+		var n = 0;
+		while (!!t) {
+			n += t.offsetTop;
+			t = t.offsetParent
+		}
+		return n
+	}
+ 
+	function g() {
+		var e = document.documentElement;
+		if (!!window.innerWidth) {
+			return window.innerHeight
+		} else if (e && !isNaN(e.clientHeight)) {
+			return e.clientHeight
+		}
+		return 0
+	}
+ 
+	function y() {
+		if (window.pageYOffset) {
+			return window.pageYOffset
+		}
+		return Math.max(document.documentElement.scrollTop, document.body.scrollTop)
+	}
+ 
+	function E(e) {
+		var t = returnOffsetTop(e);
+		return t >= w && t <= b + w
+	}
+ 
+	function S() {
+		var e = document.createElement("audio");
+		e.setAttribute("class", l);
+		e.src = i[parseInt(10*Math.random())];
+		e.loop = false;
+		e.addEventListener("canplay", function() {
+			setTimeout(function() {
+				x(k)
+			}, 500);
+			setTimeout(function() {
+				N();
+				showLight();
+				for (var e = 0; e < O.length; e++) {
+					T(O[e])
+				}
+			}, 15500)
+		}, true);
+		e.addEventListener("ended", function() {
+			N();
+			removeCssClass()
+		}, true);
+		e.innerHTML = " <p>If you are reading this, it is because your browser does not support the audio element. We recommend that you get a new browser.</p> <p>";
+		document.body.appendChild(e);
+		e.play()
+	}
+ 
+	function x(e) {
+		e.className += " " + s + " " + o
+	}
+ 
+	function T(e) {
+		e.className += " " + s + " " + u[Math.floor(Math.random() * u.length)]
+	}
+ 
+	function N() {
+		var e = document.getElementsByClassName(s);
+		var t = new RegExp("\\b" + s + "\\b");
+		for (var n = 0; n < e.length; ) {
+			e[n].className = e[n].className.replace(t, "")
+		}
+	}
+
+	function reset(){
+		N();removeCssClass();
+	}
+ 
+	var e = 30;
+	var t = 30;
+	var n = 350;
+	var r = 350;
+	var i = ["/music/again-yui.mp3","/music/AiCongLingKaiShi-syz.mp3","/music/BieLaiWuYang-xtf.mp3","/music/DangChe-eason.mp3","/music/HaoJiuBuJian-eason.mp3","/music/LifeForRent-Dido.mp3","/music/TongLei-syz.mp3","/music/WoHuaiNianDe-syz.mp3","/music/youAreBeautiful.mp3","/music/youngForYou.mp3"];
+	var s = "mw-harlem_shake_me";
+	var o = "im_first";
+	var u = ["im_drunk", "im_baked", "im_trippin", "im_blown"];
+	var a = "mw-strobe_light";
+	var f = "/css/harlem-shake-style.css";
+	var l = "mw_added_css";
+	var b = g();
+	var w = y();
+	var C = document.getElementsByTagName("*");
+	var k = null;
+	reset();
+	for (var L = 0; L < C.length; L++) {
+		var A = C[L];
+		if (elemFilter(A)) {
+			if (E(A)) {
+				k = A;
+				break
+			}
+		}
+	}
+	if (A === null) {
+		console.warn("Could not find a node of the right size. Please try a different page.");
+		return
+	}
+	loadCss();
+	S();
+	var O = [];
+	for (var L = 0; L < C.length; L++) {
+		var A = C[L];
+		if (elemFilter(A)) {
+			O.push(A)
+		}
+	}
+})()    '>>_<</a>
+			</li>
+			<li><form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
+				<label>Search</label>
+					<input type="search" name="q" id="search" autocomplete="off" autocorrect="off" autocapitalize="off" maxlength="20" placeholder="Search" />
+					<input type="hidden" name="q" value="site:snger.github.io/">
+				</form>
+			</li>
+		</ul>
+	</nav>
+</div>
+<!-- var i = "//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake.mp3";
+	var f = "//s3.amazonaws.com/source/css/harlem-shake-style.css"; -->
+  </header>
+  <div id="container">
+    <div id="main" class="postpart">
+	<header class="clearfix">
+	  <h1><a href="/20111201/css-test/" title="CSS TEST">CSS TEST</a></h1>
+	  <p>By
+	  
+	 	 <a href="https://twitter.com/sjs_stef" title="Snger">Snger</a>
+	  
+	  on<time datetime="2011-12-01T11:34:00.000Z">12月 1 2011</time></p>
+	</header>
+	<article>     
+	     <p>CSS 测验<br>结果：16/20</p>
+<p>如果您有兴趣参与测试，可以点<a href="http://www.w3school.com.cn/quiz/quiz.asp?quiz=css" target="_blank">这里</a></p>
+<p>您的回答：<br>1.CSS 指的是？<br>您的回答：<code>Cascading Style Sheets</code><br>2. 在以下的 HTML 中，哪个是正确引用外部样式表的方法？<br>您的回答：<code>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;mystyle.css&quot;&gt;</code><br>3. 在 HTML 文档中，引用外部样式表的正确位置是？<br>您的回答：&lt;head&gt; 部分<br>4. 哪个 HTML 标签用于定义内部样式表？  <a id="more"></a><br>您的回答：<code>&lt;style&gt;</code><br>5. 哪个 HTML 属性可用来定义内联样式？<br>您的回答：<code>style</code><br>6. 下列哪个选项的 CSS 语法是正确的？<br>您的回答：<code>body {color: black}</code><br>7. 如何在 CSS 文件中插入注释？<br>您的回答：<code>/* this is a comment */</code><br>8. 哪个属性可用于改变背景颜色？<br>您的回答：<code>background-color:</code><br>9. 如何为所有的 &lt;h1&gt; 元素添加背景颜色？<br>您的回答：<code>h1 {background-color:#FFFFFF}</code><br>10. 如何改变某个元素的文本颜色？<br><span style="color:#dd0000">您的回答：<code>text-color:</code></span><br>正确答案：<code>color:</code><br>11. 哪个 CSS 属性可控制文本的尺寸？<br>您的回答：<code>font-size</code><br>12. 在以下的 CSS 中，可使所有 &lt;p&gt; 元素变为粗体的正确语法是？<br>您的回答：<code>p {font-weight:bold}</code><br>13. 如何显示没有下划线的超链接？<br>您的回答：<code>a {text-decoration:none}</code><br>14. 如何使文本以大写字母开头？<br>您的回答：<code>text-transform:capitalize</code><br>15. 如何改变元素的字体？<br>您的回答：<code>font-family:</code><br>16. 如何使文本变为粗体？<br>您的回答：<code>font-weight:bold</code><br>17. 如何显示这样一个边框：上边框 10 像素、下边框 5 像素、左边框 20 像素、右边框 1 像素？<br><span style="color:#dd0000">您的回答：<code>border-width:10px 5px 20px 1px</code></span><br>正确答案：<code>border-width:10px 1px 5px 20px</code><br>18. 如何改变元素的左边距？<br>您的回答：<code>margin-left:</code><br>19. 请判断以下说法是否正确：如需定义元素内容与边框间的空间，可使用 padding 属性，并可使用负值？<br><span style="color:#dd0000">您的回答：正确</span><br>正确答案：错误<br>20. 如何产生带有正方形项目的列表？<br><span style="color:#dd0000">您的回答：<code>list-type: square</code></span><br>正确答案：<code>list-style-type: square</code>  </p>
+<hr>
+<p>对自己的成绩不满意，关键是第 17 题——看着答案都不知所以（实际上还没用过 CSS 控制边框），于是 google 之，发现好些人都在这题错了，例如：<a href="http://www.seozsz.com/9fen.html）、[这位](http://blog.csdn.net/wustrive_2008/article/details/6226454" target="_blank">这位</a>、<a href="http://wustrive-2008.iteye.com/blog/969906" target="_blank">这位</a>、<a href="http://metallica-1860.iteye.com/blog/664428" target="_blank">还有这位</a>.<a href="http://m.chenxiaomo.com/index-wap2.php?p=4104" target="_blank">Bobo</a>答对了，没在 twitter 活跃，也没讲解。还是复习去。</p>
+<p>update: 想起来了，边框的像素若是用<code>border-width:10px 1px 5px 20px</code>, 那是正确滴，顺时针……</p>
+    
+	</article>
+	
+
+
+<div class="articletags">
+	<i class="icon-tag"></i>Tags: <a href="/tags/Web前端/">Web前端</a><a href="/tags/读书笔记/">读书笔记</a>
+	<i class="icon-folder"></i>categories:  <a href="/categories/Web前端/">Web前端</a>
+</div>
+
+	
+<div class="jiathis_style share">
+    <span class="jiathis_txt">分享到：</span>
+    <a class="jiathis_button_tsina">新浪微博</a>
+    <a class="jiathis_button_tqq">腾讯微博</a>
+    <a class="jiathis_button_weixin">微信</a>
+    <a class="jiathis_button_twitter">Twitter</a>
+    <a class="jiathis_button_googleplus">Google+</a>
+    <a class="jiathis_button_evernote">EverNote</a>
+    <a href="http://www.jiathis.com/share?uid=1501277" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+</div>
+<script type="text/javascript" >
+    var jiathis_config={
+    data_track_clickback:true,
+    sm:"copy,renren,cqq",
+    pic:"",
+    summary:"",
+     ralateuid:{"tsina":"1530558400"},hideMore:false}
+    
+  </script> 
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=
+" charset="utf-8"></script>      
+
+	<div class="pagepart clearfix">
+ 
+	<a href="/20111202/html-test/" class="prev" title="HTML TEST">HTML TEST</a>
+ 
+ 
+	<a href="/20111128/octopress-issue/" class="next" title="Octopress Issue">Octopress Issue</a>
+ 
+</div>
+	
+</div>  
+    <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏">
+        <i class="icon-menu"></i>
+      </a></div>
+    <div id="asidepart">
+    <div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"><i class="icon-menu"></i></a></div>
+    <aside>
+  
+<div class="categorieslist">
+	<p class="asidetitle">分类</p>
+		<ul>
+		
+			<li><a href="/categories/Linux/" title="Linux">Linux<sup>2</sup></a></li>
+		
+			<li><a href="/categories/Web前端/" title="Web前端">Web前端<sup>10</sup></a></li>
+		
+			<li><a href="/categories/php/" title="php">php<sup>1</sup></a></li>
+		
+			<li><a href="/categories/博客相关/" title="博客相关">博客相关<sup>6</sup></a></li>
+		
+			<li><a href="/categories/工具/" title="工具">工具<sup>3</sup></a></li>
+		
+			<li><a href="/categories/折腾/" title="折腾">折腾<sup>1</sup></a></li>
+		
+			<li><a href="/categories/读书笔记/" title="读书笔记">读书笔记<sup>2</sup></a></li>
+		
+			<li><a href="/categories/达者为师/" title="达者为师">达者为师<sup>2</sup></a></li>
+		
+		</ul>
+</div>
+
+
+  
+<div class="tagslist">
+	<p class="asidetitle">标签</p>
+		<ul class="clearfix">
+		
+			<li><a href="/tags/Linux/" title="Linux">Linux<sup>2</sup></a></li>
+		
+			<li><a href="/tags/Magento/" title="Magento">Magento<sup>1</sup></a></li>
+		
+			<li><a href="/tags/Octopress/" title="Octopress">Octopress<sup>5</sup></a></li>
+		
+			<li><a href="/tags/Web前端/" title="Web前端">Web前端<sup>10</sup></a></li>
+		
+			<li><a href="/tags/hexo/" title="hexo">hexo<sup>1</sup></a></li>
+		
+			<li><a href="/tags/mp3tag/" title="mp3tag">mp3tag<sup>1</sup></a></li>
+		
+			<li><a href="/tags/php/" title="php">php<sup>1</sup></a></li>
+		
+			<li><a href="/tags/vim/" title="vim">vim<sup>1</sup></a></li>
+		
+			<li><a href="/tags/工具/" title="工具">工具<sup>2</sup></a></li>
+		
+			<li><a href="/tags/折腾/" title="折腾">折腾<sup>5</sup></a></li>
+		
+			<li><a href="/tags/翻译/" title="翻译">翻译<sup>1</sup></a></li>
+		
+			<li><a href="/tags/读书笔记/" title="读书笔记">读书笔记<sup>7</sup></a></li>
+		
+			<li><a href="/tags/达者为师/" title="达者为师">达者为师<sup>5</sup></a></li>
+		
+		</ul>
+</div>
+
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="RSS 订阅"><i class="icon-rss"></i>RSS 订阅</a>
+</div>
+</aside>
+    </div>
+  </div>
+  <footer><div id="footer" >
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	<section class="info">
+		<p>在开源的世界学习了很多 <br/>
+		从具有开源精神的人身上学到更多……<br/>
+		</p>
+	</section>
+	<div class="social-font">
+		
+		<a href="http://weibo.com/snger" target="_blank" title="新浪微博"><i class="icon-sina-weibo"></i></a>
+		
+		
+		<a href="https://twitter.com/sjs_stef" target="_blank" title="twitter"><i class="icon-twitter"></i></a>
+		
+		
+		<a href="https://github.com/snger" target="_blank" title="github"><i class="icon-github"></i></a>
+		
+		
+	</div>
+	<p class="copyright">Powered by <a href="http://zespia.tw/hexo/" target="_blank" title="hexo">hexo</a> and Theme forked from <a href="https://github.com/A-limon/pacman" target="_blank" title="Pacman">Pacman</a> © 2014 
+	
+	<a href="http://snger.github.io/" title="Snger">Snger</a>
+	
+	</p>
+</div>
+</footer>
+  <script src="/js/jquery-2.0.1.min.js"></script>
+<script src="/js/prettify.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function()         
+	{	
+		$('.navbar').click(function(){
+			$('header nav').slideToggle("slow");
+		});
+		var myWidth = 0;
+    	function getSize(){
+    		if( typeof( window.innerWidth ) == 'number' ) {
+    			myWidth = window.innerWidth;
+           	 } else if( document.documentElement && document.documentElement.clientWidth) {
+             	myWidth = document.documentElement.clientWidth;
+            };
+        };
+    	getSize(); 
+    	//document.getElementById("test").innerHTML =myWidth;
+        $(window).resize(function(){
+        	getSize(); 
+        	if (myWidth >= 1024||(document.activeElement.id=='search')) {
+        		$('nav').css('display', 'block') ;
+			}else{
+				$('nav').css('display', 'none') ;
+			}
+        });
+     $("pre").addClass("prettyprint linenums");
+     prettyPrint();
+     $('.closeaside').click(function(){
+            $('#asidepart').fadeOut();
+            $('#main').animate({
+                marginLeft: ['10%','swing'],
+                marginRight: ['10%','swing']
+            });
+            $('.openaside').fadeIn();  
+        });
+        $('.openaside').click(function(){
+            $('#asidepart').fadeIn();
+            $('#main').animate({
+                marginLeft: ['0%','swing'],
+                marginRight: ['0%','swing']
+            });
+            $('.openaside').fadeOut();  
+        });
+        $(window).scroll(function(){
+            $('.openaside').css("top",Math.max(50,260-$(this).scrollTop()));
+        });
+	});
+</script>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-27385230-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</body>
+</html> 
