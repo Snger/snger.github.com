@@ -1,0 +1,86 @@
+---
+layout: post
+title: "XML TEST"
+date: 2011-12-06 17:16
+comments: true
+tags: [Web前端, 读书笔记]
+categories: Web前端
+description: XML 测验
+
+
+---
+XML 测验  结果：18/20  
+如果您有兴趣参与测试，可以点[这里](http://www.w3school.com.cn/quiz/quiz.asp?quiz=xml)  
+您的回答：  
+1.XML指的是？  
+您的回答：eXtensible Markup Language  
+2.XML对数据进行描述的方式是？  
+您的回答：XML使用DTD来描述数据  
+3.XML的目标是取代HTML  
+您的回答：错误  
+4.下列定义XML版本的声明中语法正确的是？  
+您的回答：`<?xml version="1.0"?>`  
+5.DTD指的是？<!-- more -->  
+您的回答：Document Type Definition  
+6.这是一个“形式良好”的文档吗？  
+
+	<?xml version="1.0"?>
+	<note>
+	<to>Tove</to>
+	<from>Jani</from>
+	<heading>Reminder</heading>
+	<body>Don't forget me this weekend!</body>
+	</note>
+
+您的回答：是  
+7.这是一个“形式良好”的文档吗？
+
+	<?xml version="1.0"?>
+	<to>Tove</to>
+	<from>Jani</from>
+	<heading>Reminder</heading>
+	<body>Don't forget me this weekend!</body>
+
+您的回答：否  
+8.哪条陈述是正确的？  
+_您的回答：以上陈述都是正确的_  
+__正确答案：所有XML元素都必须正确地关闭__  
+9.哪条陈述是正确的？  
+您的回答：以上陈述都是正确的  
+10.XML可保留空白字符  
+您的回答：正确  
+11.这是一个“形式良好”的文档吗？
+
+	<?xml version="1.0"?>
+	<note>
+	<to age="29">Tove</to>
+	<from>Jani</from>
+	</note>
+
+您的回答：是  
+12.这是一个“形式良好”的文档吗？
+
+	<?xml version="1.0"?>
+	<note>
+	<to age=29>Tove</to>
+	<from>Jani</from>
+	</note>
+
+您的回答：否  
+13.XML元素不能为空  
+_您的回答：正确_  
+__正确答案：错误__  
+14.对于一个XML文档，以下哪个名称是错误的？  
+您的回答：`<1dollar>`  
+15.对于一个XML文档，以下哪个名称是错误的？  
+您的回答：`<first name>`  
+16.对于一个XML文档，以下哪个名称是错误的？  
+您的回答：以上三个都不正确  
+17.必须使用引号包围XML的属性值  
+您的回答：正确  
+18.XSL指的是？  
+您的回答：eXtensible Stylesheet Language  
+19.以下哪种方法可正确地引用名为“mystyle.xsl”的样式表？  
+您的回答：`<?xml-stylesheet type="text/xsl" href="mystyle.xsl" ?>`  
+20.供XML解析器忽略XML文档的特定部分的正确语法是：  
+您的回答：`<![CDATA[ Text to be ignored ]]>`

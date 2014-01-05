@@ -5,9 +5,10 @@
 db.json
 node_modules
 debug.log
-themes
+public
+#themes
 
 # ignore my contents
-source/_posts
-source/_drafts
-source/music
+#source/_posts
+#source/_drafts
+#source/music
