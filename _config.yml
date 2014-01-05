@@ -101,7 +101,7 @@ markdown:
 deploy:
   type: github
   repository: https://github.com/Snger/snger.github.io.git
-  branch: gh-pages
+  branch:
 
 # customize
 multi_thread: true
