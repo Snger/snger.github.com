@@ -100,7 +100,7 @@ markdown:
 ## Docs: http://zespia.tw/hexo/docs/deployment.html
 deploy:
   type: github
-  repository: https://github.com/Snger/snger.github.com.git
+  repository: https://github.com/Snger/snger.github.io.git
   branch: gh-pages
 
 # customize
