@@ -1,9 +1,9 @@
 menu:
-  博客: /blog
-  存档: /blog/archives
-  关于: /blog/about
-  专题: /blog/projects
-  实验室: /blog/lab
+  博客: /
+  存档: /archives
+  关于: /about
+  专题: /projects
+  实验室: /lab
 
 widgets: 
 - category
