@@ -12,9 +12,9 @@ language: zh-CN
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://snger.github.io/
-root: /
-permalink: :year:month:day/:title/
+url: http://snger.github.io/blog
+root: /blog/
+permalink: :year/:month/:day/:title/
 tag_dir: tags
 archive_dir: archives
 category_dir: categories
@@ -74,7 +74,7 @@ per_page: 7
 pagination_dir: page
 
 # Disqus
-disqus_shortname: sjs_stef
+disqus_shortname: snger
 
 # Extensions
 ## Plugins: https://github.com/tommy351/hexo/wiki/Plugins
