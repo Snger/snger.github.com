@@ -1,0 +1,34 @@
+menu:
+  博客: /
+  存档: /archives
+  关于: /about
+  专题: /projects
+  实验室: /lab
+
+widgets: 
+- category
+- tag
+- rss
+
+excerpt_link: Read More
+
+google_analytics: UA-27385230-1
+
+google_plus:
+
+twitter: #右边栏要显示twitter展示的话，需要在此设置
+  username: sjs_stef
+  show_replies: false
+  tweet_count: 2 
+
+weibo_url: http://weibo.com/snger
+twitter_url: https://twitter.com/sjs_stef
+github_url: https://github.com/snger
+facebook_url: 
+
+jiathis:
+  enable: true
+  id: 
+  tsina: 1530558400
+
+rss: /atom.xml
