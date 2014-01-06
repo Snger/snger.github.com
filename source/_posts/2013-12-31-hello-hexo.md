@@ -1,5 +1,6 @@
 title: Hello Hexo
 date: 2013-12-31 14:04:44
+comments: true
 categories: 博客相关
 tags: hexo
 description: hexo是由Node.js驱动的一款快速、简单且功能强大的博客框架。

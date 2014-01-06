@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "关于我"
+comments: false
+
 ---
 
 最近有一个刊物提出了一个很有趣的问题：<a href="http://www.my1510.cn/article.php?id=68535">青年人怎样做青年人</a>？

@@ -6,6 +6,7 @@ comments: true
 categories: php
 tags: [Magento, php]
 description: 如何在Ubuntu系统安装Magento
+permalink: magentoinstallationinubuntu
 
 ---
 
