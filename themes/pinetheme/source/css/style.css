@@ -1256,3 +1256,11 @@ li.L1,li.L3,li.L5,li.L7,li.L9 { }
 .archivepart a{
   padding: .3em 1em;
 }
+#comments {
+  padding: 20px;
+  background: #d1d1d1;
+}
+#comments .title {
+  font-weight: normal;
+  margin-bottom: 15px;
+}
