@@ -773,7 +773,7 @@ li.L1,li.L3,li.L5,li.L7,li.L9 { }
     transition: color .35s;
   }
   .postpart a:hover{
-    color:#fff;
+    color:#2f2f2f;
   }
   #main>header{
     padding:0;
