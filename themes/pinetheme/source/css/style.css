@@ -1264,3 +1264,7 @@ li.L1,li.L3,li.L5,li.L7,li.L9 { }
   font-weight: normal;
   margin-bottom: 15px;
 }
+/* table */
+table{ margin: .5em 2%; background-color: #333; border-collapse:collapse; border-spacing:0;}
+table th{ height:45px; font-weight:normal; color:#ffa0a0; background:#333; border:1px #444 solid; }
+table td{ height:45px;text-align:center; border:1px #444 solid;color:#fff; }
