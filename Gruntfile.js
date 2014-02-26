@@ -44,7 +44,7 @@ module.exports = function(grunt) {
                     cwd: '<%= paths.pinetheme.css %>/', //指定文件路径
                     src: ['*.css'], //指定文件
                     dest: '<%= paths.pinetheme.css %>/', //指定处理后存储路径
-                    ext: '-min.css' //指定处理后的文件后缀
+                    ext: '.min.css' //指定处理后的文件后缀
                 }]
             }
         },
