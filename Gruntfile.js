@@ -1,6 +1,17 @@
 module.exports = function(grunt) {
 
+    var time = new Date(),
+        Y = time.getFullYear().toString(),
+        M = ((time.getMonth() + 1) < 10 ? '0' + (time.getMonth() + 1) : (time.getMonth() + 1)).toString(),
+        D = (time.getDate() < 10 ? '0' + time.getDate() : time.getDate()).toString(),
+        H = (time.getHours() < 10 ? '0' + time.getHours() : time.getHours()).toString(),
+        m = time.getMinutes() < 10 ? '0' + time.getMinutes() : time.getMinutes();
+
+    var date = Y + M + D + H + m;
+
     grunt.initConfig({ //配置
+        pkg: grunt.file.readJSON('package.json'),
+        date: date,
         paths: { //配置各个项目的www路径 以该文件所在位置为根目录
             pinetheme: {
                 css: 'themes/pinetheme/source/css'
