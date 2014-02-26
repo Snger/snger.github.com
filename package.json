@@ -7,6 +7,9 @@
         "hexo-generator-feed": "*",
         "hexo-generator-sitemap": "*",
         "hexo-renderer-less": "*",
-        "hexo-livereload": "*"
+        "hexo-livereload": "*",
+        "grunt": "~0.4.1",
+        "grunt-contrib-cssmin": "~0.7.0",
+        "grunt-contrib-uglify": "~0.2.7"
     }
 }
