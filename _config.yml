@@ -84,7 +84,8 @@ exclude_generator:
 plugins:
 - hexo-generator-feed
 - hexo-generator-sitemap
-- Hexo-renderer-less
+- hexo-renderer-less
+- hexo-livereload
 
 # Markdown
 ## https://github.com/chjj/marked
