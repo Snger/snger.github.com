@@ -15,11 +15,11 @@ keywords: git diff vimdiff
 2. 因为只能显示不同点的上下几行，不够直观，不方便理解；
 3. 有遇到有的部分更改没显示的情况；
 
-可针对性地配合以下方式：
+####可针对性地配合以下方式：
 
 1. git diff --stat branch1 branch2   统计有哪些文件被改动，有多少行被改动
 2. git diff --shortstat branch1 branch2 只显示 --stat 中最后的行数修改添加移除统计。
-3.git diff --dirstat branch1 branch2  以百分比的方式统计文件夹的改动情况
+3. git diff --dirstat branch1 branch2  以百分比的方式统计文件夹的改动情况
 4. 使用 vimdiff 查看代码变更，具体操作如下：
 
 ------
