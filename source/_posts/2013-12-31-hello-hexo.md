@@ -100,4 +100,5 @@ To deploy your site with Hexo, you only need one command.
 2. 编码放在 pre code 中，才会自动有高亮，为了避免代码高亮第一行为空，需要把第一行代码直接跟在code后面；[hexo官方文档介绍的codeblock高亮方式](http://zespia.tw/hexo/docs/tag-plugins.html#code-block) 样式没处理好；
 3. table的宽度需要手动设定；
 4. 修改样式后，需要`hexo clean`，保证样式重新生成；
+5. 每次生成提交都会有大量的 git 记录，这个得想办法改进；
 
