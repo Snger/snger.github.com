@@ -2,7 +2,7 @@ title: 查看代码变更（或审查代码）的建议
 date: 2014-02-27 12:35:06
 comments: true
 categories: 工具
-tags: vim git vimdiff
+tags: [vim, git, vimdiff]
 description: 目前的工作流中，是使用branch来管理不同的功能点开发的，那么我们怎样能比较不同branch的不同呢？
 keywords: git diff vimdiff
 
