@@ -67,3 +67,5 @@ zc   重新折叠相同的文本行</code></pre>
 <pre><code>:set noscrollbind  关闭两侧文件的对齐（滚动不同步）</code></pre>
 
 可参考：【技巧：Vimdiff 使用】 https://www.ibm.com/developerworks/cn/linux/l-vimdiff/
+
+使用 git 做 code review 比较给力的模式应该参看[闲扯code review](http://tchen.me/posts/2014-02-24-codereview.html)这篇博文，注意这目前只是模型；
