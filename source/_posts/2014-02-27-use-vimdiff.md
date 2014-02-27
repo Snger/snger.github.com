@@ -7,7 +7,6 @@ description: 目前的工作流中，是使用branch来管理不同的功能点�
 keywords: git diff vimdiff
 
 ---
-##查看代码变更（或审查代码）的建议
 
 目前的工作流中，是使用branch来管理不同的功能点开发的，那么我们怎样能比较不同branch的不同呢？  
 在更新代码量不大的情况下使用 git diff  branch1 branch2 , 就可以了；但这个方法也有一些缺点：
