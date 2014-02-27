@@ -101,4 +101,5 @@ To deploy your site with Hexo, you only need one command.
 3. table的宽度需要手动设定；
 4. 修改样式后，需要`hexo clean`，保证样式重新生成；
 5. 每次生成提交都会有大量的 git 记录，这个得想办法改进；
+6. 多标签使用 `[vim, git, vimdiff]` 的方式；
 
