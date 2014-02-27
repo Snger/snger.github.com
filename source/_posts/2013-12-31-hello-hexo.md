@@ -99,4 +99,5 @@ To deploy your site with Hexo, you only need one command.
 1. 现在的主题设置，每一段文字都需要前后有空格，才能自动形成段落，不然变成行内 span（左侧没有间距）；
 2. 编码放在 pre code 中，才会自动有高亮，为了避免代码高亮第一行为空，需要把第一行代码直接跟在code后面；[hexo官方文档介绍的codeblock高亮方式](http://zespia.tw/hexo/docs/tag-plugins.html#code-block) 样式没处理好；
 3. table的宽度需要手动设定；
+4. 修改样式后，需要`hexo clean`，保证样式重新生成；
 
