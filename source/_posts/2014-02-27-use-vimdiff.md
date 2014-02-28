@@ -24,7 +24,7 @@ keywords: git diff vimdiff
 
 ------
 
-##使用 vimdiff 来审查代码；
+##使用 vimdiff 来审查代码:
 
 
 <pre><code>确认模式： git difftool -t vimdiff +对比两分支
@@ -62,6 +62,11 @@ gg   回到页首
 [c   跳转到上一个差异点
 zo   临时展开被折叠的相同的文本行
 zc   重新折叠相同的文本行</code></pre>
+
+###编辑
+
+<pre><code>u      撤销上一步的操作
+Ctrl+r 恢复上一步被撤销的操作</code></pre>
 
 ###其他设置：
 <pre><code>:set noscrollbind  关闭两侧文件的对齐（滚动不同步）</code></pre>
