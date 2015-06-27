@@ -1,0 +1,207 @@
+layout: false
+---
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>[前端分享]测试驱动开发 TDD -- 实战与模式解析</title>
+
+    <meta name="author" content="" />
+    <link href="impress.js/css/impress-demo.css" rel="stylesheet" />
+    <link href="impress.js/css/custom.css" rel="stylesheet" />
+</head>
+<body>
+
+<div id="impress" class="impress-not-supported">
+
+    <div class="fallback-message">
+        <p>你的浏览器<b>不支持</b> impress.js, 所以当前展示的是简化版。</p>
+        <p>为了获得更好的体验，请使用最新的 <b>Chrome</b>, <b>Safari</b> 或者 <b>Firefox</b> 浏览器。</p>
+    </div>
+
+
+    <div id="title" class="step" data-x="0" data-y="0" data-scale="4">
+        <h1 style="font-size:80px">测试驱动开发 TDD</h1>
+        <div style=""><sup>*</sup>实战与模式解析</div>
+        <span class="footnote">
+            <a href="#/list">概述</a>&nbsp;&nbsp;&nbsp;
+            <a href="#/intro">简介</a>&nbsp;&nbsp;&nbsp;
+            <a href="#/merit">优点</a> &nbsp;&nbsp;&nbsp;
+            <a href="#/process">开发过程</a> &nbsp;&nbsp;&nbsp;
+            <a href="#/demo">实例演示</a> &nbsp;&nbsp;&nbsp;<br/>
+            <a href="#/more">常用前端 JS 的测试用例</a> &nbsp;&nbsp;&nbsp;
+            <a href="#/negative">TDD的负面看法</a> &nbsp;&nbsp;&nbsp;
+            <a href="#/last">结语</a>
+        </span>
+    </div>
+
+
+    <!-- exp -->
+    <div id="list" class="step slide" data-x="-2500" data-y="0" data-rotate="90" data-rotate-y="-55">
+        <h2>概述：</h2>
+        <br/>
+        <p style="width:45%;float:left;">
+            Kent Beck 先生最早在其<a href="https://zh.wikipedia.org/wiki/%E6%9E%81%E9%99%90%E7%BC%96%E7%A8%8B" target="_blank">极限编程</a>（英语：Extreme programming，缩写为XP）方法论中，向大家推荐“<b>测试驱动</b>”这一最佳实践，还专门撰写了<a href="http://book.douban.com/subject/1230036/" target="_blank"><b>《测试驱动开发》</b></a>一书，详细说明如何实现。经过几年的迅猛发展，测试驱动开发已经成长为一门独立的软件开发技术，其名气甚至盖过了极限编程。
+        </p>
+        <img src="./intro-tdd/book-tdd.jpg" style="float:right;">
+    </div>
+
+
+    <div id="intro" class="step slide" data-x="-2500" data-y="1000" data-rotate="90" data-rotate-y="-55">
+        <h2>简介：</h2>
+        <br/>
+        <p>
+            <b>测试驱动开发（Test Driven Development,缩写TDD）</b>是极限编程的一个重要组成部分，它的<b>基本思想就是在开发功能代码之前，先编写测试代码。</b><br/>
+        </p>
+        <p style="width:45%;float:right;">
+            也就是说在明确要开发某个功能后，首先思考如何对这个功能进行测试，并完成测试代码的编写，然后编写相关的代码满足这些测试用例。然后循环进行添加其他功能，直到完成全部功能的开发。
+        </p>
+        <img src="./intro-tdd/comic.png" style="float:left;">
+    </div>
+
+
+    <div id="merit" class="step slide" data-x="-2500" data-y="2000" data-y="0" data-rotate="90" data-rotate-y="-55">
+        <h2>优点:</h2>
+        <br/>
+        <ol style="list-style:initial;">
+            <li><b>完工时完工</b>。表明开发人员可以很清楚的看到自己的这段工作已经结束了，而传统的方式很难知道什么时候编码工作结束了。</li>
+            <li><b>全面正确的认识代码和利用代码</b>，而传统的方式没有这个机会。 </li>
+            <li>开发小组间<b>降低了交流成本</b>，提高了相互信赖程度。 </li>
+            <li><b>避免了过渡设计</b>。</li>
+            <li>系统可以<b>与详尽的测试集一起发布</b>，从而对程序的将来版本的修改和扩展提供方便。</li>
+            <li>大部分时间代码处在高质量状态，<b>100％的时间里成果是可见的</b>。</li>
+            <li><b>为减少文档和代码之间存在的细微的差别</b>和由这种差别所引入的Bug。</li>
+            <li><b>在预先设计和紧急设计之间建立一种平衡点</b>，区分哪些设计该事先做、哪些设计该迭代时做提供了一个可靠的判断依据。</li>
+            <li>发现比传统测试方式更多的Bug</li>
+        </ol>
+    </div>
+
+
+    <div id="process" class="step slide" data-x="-2500" data-y="3000" data-y="0" data-rotate="90" data-rotate-y="-55">
+        <h2>开发过程:</h2>
+        <br/>
+        <ol style="list-style:initial;">
+            <li><b>明确当前要完成的功能</b>。可以记录成一个 TODO 列表。</li>
+            <li><b>快速完成</b>针对此功能的<b>测试用例</b>编写。</li>
+            <li>测试代码<b>编译不通过</b>。</li>
+            <li>编写对应的<b>功能代码</b>。</li>
+            <li><b>测试通过</b>。</li>
+            <li>对代码进行<b>重构</b>，并保证测试通过。</li>
+            <li><b>循环</b>完成所有功能的开发。</li>
+        </ol>
+        <br/>
+        <h2>更概括的来说，可以分为三部曲:</h2>
+        <ol style="list-style:initial;">
+            <li><b style="color:red;">红条模式</b>-----><b style="color:green;">绿条模式</b>-----><b>重构</b></li>
+        </ol>
+        <img src="./intro-tdd/simple.png" style="float:right;width:450px;margin-top:-80px;">
+    </div>
+
+    <div class="step slide" data-x="-2500" data-y="4000" data-y="0" data-rotate="90" data-rotate-y="-55">
+        <div style="width:100%;height:100%;overflow:hidden;">
+            <img src="./intro-tdd/without-tdd.png" width="100%" height="100%">
+        </div>
+    </div>
+
+    <div class="step slide" data-x="-2500" data-y="5000" data-y="0" data-rotate="90" data-rotate-y="-55">
+        <div style="width:100%;height:100%;overflow:hidden;">
+            <img src="./intro-tdd/tdd.png" width="100%" height="100%">
+        </div>
+    </div>
+
+    <div id="demo" class="step slide" data-x="-250" data-y="4800" data-rotate-x="110">
+        <p>实例演示 （<a href="http://jasmine.github.io/2.0/introduction.html">语法</a>）</p>
+        <pre class="codeblock2" style="margin-top:25px;">
+            describe("[Angular-Scope]", function() {
+
+                    describe("digest", function(){
+                            var scope;
+
+                            beforeEach(function(){
+                                scope = new Scope();
+                            });
+
+                            it("calls the listener function of a watch on first $digest", function() {
+
+                                    var watchFn    = function() { return 'wat'; };
+                                    var listenerFn = jasmine.createSpy();
+                                    scope.$watch(watchFn, listenerFn);
+
+                                    scope.$digest();
+
+                                    expect(listenerFn).toHaveBeenCalled();
+                            });
+                    });
+
+            });
+        </pre>
+    </div>
+
+    <div id="more" class="step slide" data-x="1900" data-y="4000" data-rotate="-90" data-rotate-y="70">
+        <q>常用前端 JS 的测试用例：</q>
+        <br/>
+        <ol style="list-style:initial;">
+            <li>
+                jquery: <a href="https://github.com/jquery/jquery/tree/master/test" target="_blank">jquery/test</a>
+            </li>
+            <li>
+                angular.js: <a href="https://github.com/angular/angular.js/tree/master/test" target="_blank">angular.js/test</a>
+            </li>
+            <li>
+                ember.js: <a href="https://github.com/emberjs/ember.js/tree/master/tests" target="_blank">ember.js/tests</a>
+            </li>
+        </ol>
+        <hr/>
+        <ol style="list-style:initial;">
+            <li>
+                avalon: <a href="https://github.com/RubyLouvre/avalon.test" target="_blank">avalon.test</a>
+            </li>
+            <li>
+                <a href="https://github.com/kissyteam/kissy/tree/1.4.x" target="_blank">kissy</a>: ?
+            </li>
+        </ol>
+    </div>
+
+    <div id="negative" class="step slide" data-x="1900" data-y="3000" data-rotate="-90" data-rotate-y="70">
+        <q>TDD的负面看法：</q>
+        <br/>
+        <ol style="list-style:initial;">
+            <li>某些TestCase并<b>不一定那么好写</b>，你可能<b>80%的时间</b>花在某个TestCase的编写和设计上，然而，<b>需求一变，你又得重写TestCase</b>，有时候，你会发现写Test Case其实和做实际设计没有差别，你同样要考虑你TestCase的正确性，扩展性，易读性，易维护性，甚至重用性。如果说我们开发的TestCase是用来保证我们代码实现的正确性，那么，谁又来<b>保证我们的TestCase的正确性呢？</b>编写TestCase也需要结对或是Code review吗？软件开发有点像长跑，<b>如果把能量花在了前半程，后半程再发力就很难了</b>。</li>
+        </ol>
+    </div>
+
+    <div class="step slide" data-x="1900" data-y="2000" data-rotate="-90" data-rotate-y="70">
+        <q>TDD的负面看法：</q>
+        <br/>
+        <ol style="list-style:initial;">
+            <li><b>测试驱动开发不能节省开发投入，也很少能够节省开发周期</b>。测试开发所编写的大量测试代码都是要投入时间与精力的，我现在的代码统计显示，<b>测试代码与实现代码的比例基本在3:2</b>，即使因为测试驱动开发能得到一个简洁的设计，也不能弥补测试代码的工作量。当然，测试代码可以一定程度保证高质量的实现代码，从而减少后期软件测试与修正缺陷的工作周期，并进一步在软件发布后减少代码修正维护的工作量。但至少在开发阶段，两相抵消，<b>开发周期并不能有明显改善</b>，如果是第一次采纳测试驱动开发，甚至会延长开发周期。</li>
+        </ol>
+    </div>
+
+    <div class="step slide" data-x="1900" data-y="1000" data-rotate="-90" data-rotate-y="70">
+
+        <q>TDD的负面看法：</q>
+        <br/>
+        <ol style="list-style:initial;">
+            <li>测试驱动开发<b>不可能让人立即具有设计出优美解决方案的能力</b>，或者说是优秀的分析与解决问题的能力。TDD不是Test Driven Design。<b>它只是一个过程</b>，也许可以帮助你发现并帮助你实现优美的解决方案，但是它不能变魔术一样，只要学会了就变出一个优美的设计出来，优秀的分析 问题与解决问题的能力还是要靠不断地学习与借鉴他人成就才能得到提高。</li>
+        </ol>
+    </div>
+
+
+    <div id="last" class="step" data-x="-200" data-y="3200" data-scale="3" data-rotate="720">
+        <q>That's all , thank you !</q>
+    </div>
+
+    <div id="overview" class="step" data-x="1000" data-y="2000" data-scale="10">
+    </div>
+
+</div>
+
+
+<script src="impress.js/js/impress.js"></script>
+<script>impress();</script>
+
+</body>
+</html>
