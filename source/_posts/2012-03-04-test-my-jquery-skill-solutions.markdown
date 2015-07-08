@@ -5,26 +5,26 @@ date: 2012-03-04 10:24
 comments: true
 categories: Web前端
 tags: [Web前端, 读书笔记]
-description: Test My jQuery Skill: Solutions
+description: Test My jQuery Skill - Solutions
 
 
 ---
-See it in my other blog : [Test My jQuery Skills: Solutions | The same summer.](http://thesamesummer.blogspot.com/2012/02/test-my-jquery-skills-solutions.html)  
-You can text it now : [Tuts+ Premium Course: 30 Days to Learn jQuery - Quiz #1: The Basics](http://tutsplus.com/lesson/jquery-30-days-quiz-1/)  
+See it in my other blog : [Test My jQuery Skills: Solutions | The same summer.](http://thesamesummer.blogspot.com/2012/02/test-my-jquery-skills-solutions.html)
+You can text it now : [Tuts+ Premium Course: 30 Days to Learn jQuery - Quiz #1: The Basics](http://tutsplus.com/lesson/jquery-30-days-quiz-1/)
 ---
 ###1.In addition to jQuery(), we can also use a shorter reference to the jQuery function. What is it?
 
-`jQ  $  $$  j`  
-####Additional Notes  
+`jQ  $  $$  j`
+####Additional Notes
 If you review the jQuery source (something you should always do), you will find that jQuery and $ can both be used interchangably. The former is most often used in situations when the $ can clash with existing code or libraries.
 
 ###2.True or False: the jQuery function accepts a CSS selector, which is used to query the DOM for the applicable elements.
 
- `True False`  
-####Additional Notes  
+ `True False`
+####Additional Notes
 Remember, you are not limited to mere CSS selectors; you can also pass DOM nodes, and even create elements. For instance, the following code will create a div and append it to the body: $("
 Hi there
-").appendTo("body");  
+").appendTo("body");
 
 ###3.Query the DOM for the div with an id of container and store a reference to it ("cache it") in a variable, called container.
 
@@ -64,7 +64,7 @@ closest will retrieve the first element that matches a provided selector. It beg
 
 ###9.The box (or div) below has a class of box. Listen for when this box is clicked. When it is, remove the box class. Hint: you will want to use jQuery'son() method.
 
-		$("div.box").on("click", function() { 
+		$("div.box").on("click", function() {
    			$(this).removeClass("box");
 		});
 
