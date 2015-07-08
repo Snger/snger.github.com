@@ -1,5 +1,3 @@
-layout: false
----
 <!doctype html>
 <html lang="en">
 <head>
@@ -24,13 +22,13 @@ layout: false
     <div id="title" class="step" data-x="0" data-y="0" data-scale="4">
         <span class="try">kissy/src/seed/</span>
         <h1>kissy.js<sup>*</sup></h1>
-        <span class="footnote"> <a href="#/list">目录结构</a>&nbsp;&nbsp;&nbsp;<a href="#/tip">tip</a>&nbsp;&nbsp;&nbsp;<a href="#/thk">构建思想</a> &nbsp;&nbsp;&nbsp;<a href="#/last">结语</a></span> 
+        <span class="footnote"> <a href="#/list">目录结构</a>&nbsp;&nbsp;&nbsp;<a href="#/tip">tip</a>&nbsp;&nbsp;&nbsp;<a href="#/thk">构建思想</a> &nbsp;&nbsp;&nbsp;<a href="#/last">结语</a></span>
     </div>
 
     <!-- exp -->
     <div id="list" class="step slide" data-x="-2500" data-y="0" data-rotate="90" data-rotate-y="-55">
         <p>项目地址：<a href="https://github.com/kissyteam/kissy" target="_blank">https://github.com/kissyteam/kissy</a></p><br/>
-        <p>分支：<img src="img/branch.png"></p><br>
+        <p>分支：<img src="introKissy/img/branch.png"></p><br>
         <div class="img-1">
             <div class="desc">
                 ------>&nbsp;&nbsp;构建好的发布文件<br/>
@@ -42,7 +40,7 @@ layout: false
 
     </div>
     <div class="step slide" data-x="-2500" data-y="1000" data-rotate="90" data-rotate-y="-55">
-        <p>seed目录：<img src="img/seed.png"></p><br>
+        <p>seed目录：<img src="introKissy/img/seed.png"></p><br>
         <div class="img-2">
             <div class="desc"></div>
         </div>
@@ -100,7 +98,7 @@ layout: false
         </pre>
         <div style="font-size:18px;float:right;margin-right:20px;width:358px;"><span class="red">贯穿在kissy.js中的一个最基本的函数就是mix(r, s, ov, wl)，其最基本的作用是将一个对象的成员拷贝到另一个对象中，</span>这里的拷贝指的是浅拷贝。这里函数参数的r指的是receiver，也就是拷贝接收对象，s指的是supplier，拷贝的对象提供者。通过ov参数（指的是override）可以将接收者中与提供者重名的属性（方法）覆盖，wl参数（指的是whitelist）可以只拷贝列表中指定的属性（方法）。<br>
             <span class="blue">例子：</span><br>
-            <a href="http://www.lzlu.com/blog/?p=443" target="_blank"><img src="img/mix-lg.png"></a>
+            <a href="http://www.lzlu.com/blog/?p=443" target="_blank"><img src="introKissy/img/mix-lg.png"></a>
         </div>
     </div>
 
@@ -115,8 +113,8 @@ layout: false
 
             <p>代码如下:</p>
             <pre class="codeblock2">
-                alert((1 && 3 || 0) && 4); //结果4 ① 
-                alert(1 && 3 || 0 && 4); //结果3 ② 
+                alert((1 && 3 || 0) && 4); //结果4 ①
+                alert(1 && 3 || 0 && 4); //结果3 ②
                 alert(0 && 3 || 1 && 4); //结果4 ③
             </pre>
             <p>分析：</p>
@@ -152,13 +150,13 @@ layout: false
 
     <div class="step slide" data-x="1900" data-y="2000" data-rotate="-90" data-rotate-y="70">
         <p>上述的逻辑在kissy.js中，描述得相当简单：</p><br>
-        <p class="fl" style="margin:0 40px 0 0;"><img src="img/mix-lg2.png"></p>
+        <p class="fl" style="margin:0 40px 0 0;"><img src="introKissy/img/mix-lg2.png"></p>
         <p style="font-size:22px;">这个系统初始化的时候，传入host与host中的系统名S。对于kissy来说，host是当前的系统环境，这里的this值，可以是javascript引擎的global，或浏览器环境的window，或某个函数或对象闭包内的当前this。而'KISSY'值，表现kissy系统在环境中的名字。<span class="red">按照javascript的语言约定，我们可以通过host[S]来找到既已经存在的kissy系统。
         按照此前的约定，一个mix构建的系统，必然有host和mix两个性质，因为它最原始的种子(seed)就必然包括这两种性质。</span>所以，既然我们上面是通过host[S]来访问一个“既已存在的kissy系统”，则无论该kissy系统经过了何种程度的演化，必然会包括这两种性质。</p>
     </div>
 
     <div class="step slide" data-x="1900" data-y="1000" data-rotate="-90" data-rotate-y="70">
-        <p class="fl" style="margin:0 40px 0 0;"><img src="img/mix-lg2.png"></p>
+        <p class="fl" style="margin:0 40px 0 0;"><img src="introKissy/img/mix-lg2.png"></p>
         <p style="font-size:22px;">上面的构建过程尝试寻找在host[S]中寻找这两种性质，如果其中之一不存在，则尝试初始化它。例如代码：</p>
         <p class="codeblock3">seed = (host && host[S]) || {}，</p>
         <p style="font-size:22px;">如果host[S]是存的，则假设它是一个seed，否则初始化为一个空的对象。接下来：</p>
@@ -168,7 +166,7 @@ layout: false
     </div>
 
     <div class="step slide" data-x="1900" data-y="0" data-rotate="-90" data-rotate-y="70">
-        <p class="fl" style="margin:0 40px 0 0;"><img src="img/mix-lg2.png"></p>
+        <p class="fl" style="margin:0 40px 0 0;"><img src="introKissy/img/mix-lg2.png"></p>
         <p style="font-size:22px;"><span class="red">元语言的特点是自描述的，meta.mix()可以向seed混入mix()，也可以使seed.mix()能混入其它系统或meta本身。</span>总之在mix()的构建中，meta只需要有mix这个方法，不需要更多，也不能更少。</p>
         <p style="font-size:22px;">上一行代码的结果，是：如果seed没有自已的mix()属性，则向seed混入meta的原始的mix()。</p>
         <p class="red" style="font-size:22px;">现在，我们再看seed，必然已经具有了host和mix()属性。它本身可能是一个空对象，也可能是一个庞大的既有系统，但无论如此，它具有了这两个性质，就可以作为seed进一步的衍生。</p>
@@ -177,7 +175,7 @@ layout: false
     </div>
 
     <div class="step slide" data-x="2700" data-y="0" data-rotate="-90" data-rotate-y="160">
-        <p class="fl" style="margin:0 40px 0 0;"><img src="img/simple-kissy.png"></p>
+        <p class="fl" style="margin:0 40px 0 0;"><img src="introKissy/img/simple-kissy.png"></p>
         <p class="fz-20">我们再整体看下kissy.js里面的代码组织，首先我们有了一个全局的接口对象S，然后我们有一个mix方法，现在我们便可以很方便地将各种属性、方法mix到S上面。<span class="red">那现在我们需要往KISSY这个对象上mix哪些东西呢？首先最基本的，版本信息，类库的配置信息（主要是是否开启debug模式，以及load加载相关参数），还有一个最重要的是类库的模块存储。</span>既然我们这前说过KISSY代码最基本的组织方式是以模块方式结合，比如有DOM模块，Event模块，Node模块等系统提供的模块，还有一些用户自定义添加的模板，那么他们都需要存储，那存储到哪里比较合适呢？很自然的想法就是在KISSY对象上开辟一个对象来存储他们，这里便是Env对象的作用，<span class="gray">(里面的mods存放了各种添加的模块，而_loadQueue则用于load机制的控制。)</span>有关模块的设计理念，组织和加载等，我们在后续讲到KISSY的load机制时再详细介绍。</p>
     </div>
 
@@ -196,11 +194,11 @@ layout: false
     </div>
 
     <div class="step slide" data-x="2700" data-y="2000" data-rotate="-90" data-rotate-y="160">
-        <p><img width="880" src="img/kissyjs-over.png"</p>
+        <p><img width="880" src="introKissy/img/kissyjs-over.png"</p>
     </div>
 
     <div id="last" class="step" data-x="-200" data-y="3200" data-scale="3" data-rotate="720">
-        <a style="display:block;padding:5px;width:724px;height:589px;" href="http://docs.kissyui.com/" target="_blank"><img src="img/kissyui.png"></a>
+        <a style="display:block;padding:5px;width:724px;height:589px;" href="http://docs.kissyui.com/" target="_blank"><img src="introKissy/img/kissyui.png"></a>
         <p style="font-size:16px;margin-top:10px;">拓展：<a href="http://www.cnblogs.com/yangjunhua/archive/2012/09/26/2704222.html" target="_blank">解析jQuery.extend和淘宝KISSY.mix方法源码</a></p>
     </div>
 

@@ -1,5 +1,3 @@
-layout: false
----
 <!DOCTYPE html>
 <html>
     <head>
@@ -12,13 +10,13 @@ layout: false
         <!-- Google Fonts Starts -->
         <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700' rel='stylesheet' type='text/css'>
-        <!-- Google Fonts Ends --> 
+        <!-- Google Fonts Ends -->
 
     </head>
     <body>
         <!-- <img src="http://www.thinkful.com/static/images/logo-audio.png" class="logo"> -->
         <h1>跟着街霸玩KISSY</h1>
-        
+
         <div class="author">
             Forked from <a href="https://github.com/carlsednaoui/intro-to-jquery" target="blank">carlsednaoui/intro-to-jqueryCreated</a> by <a href="https://twitter.com/carlsednaoui" target="blank">Carl Sednaoui</a>
             <a href="https://github.com/Snger/intro-to-kissy" target="blank">
@@ -27,13 +25,13 @@ layout: false
             Created by <a href="https://twitter.com/sjs_stef">Snger</a>
         </div>
         <div id="site-navbar" style="position: absolute; top: -4px; left: -3px; border: 0; z-index: 2000;padding:0;margin:0;"><a href="/" title="返回首页" style="background:none;"><img src="../img/return-back.png" style="padding:0;margin:0;border:0; -webkit-box-shadow: none;-moz-box-shadow: none;box-shadow: none;"></a></div>
-        
+
         <div class="section">
             <p>通过这个带交互的教程你将会对KISSY有一个基本的了解同时可以在你的项目中用上它。你将会学会如何选择元素、定义元素、以及使用一些十分酷的KISSY动画。</p>
 
             <p>开始教程前请确保你已经对HTML、CSS和CSS选择器有了基本的了解。如果你想要先"温故"再"知新"，可以先点击这里<a href="http://www.w3school.com.cn/index.html" target="_blank">w3cschool HTML教程</a>，<a href="http://learn.shayhowe.com/html-css/terminology-syntax-intro" target="blank">《Shay's intro to CSS & HTML》</a>.</p>
 
-            <p>概述: 本教程使用了街霸中的Ryu和它著名的波动拳(hadouken)作为例子。众所周知，Ryu和波动拳都是<a href="http://www.capcom.com/" target="blank">Capcom</a>的代表之作。</p> 
+            <p>概述: 本教程使用了街霸中的Ryu和它著名的波动拳(hadouken)作为例子。众所周知，Ryu和波动拳都是<a href="http://www.capcom.com/" target="blank">Capcom</a>的代表之作。</p>
 
             <p>准备好了吗？让我们开始吧！（基于 KISSY 1.4.x）</p>
         </div>
@@ -69,7 +67,7 @@ layout: false
             <div id="green-box"></div>
         </div>
 
-        <div class="section pulled">            
+        <div class="section pulled">
             <p>刚才发生了这些：</p>
             <ul>
                 <li><span class="code-review">$</span> 这个美元符号用过jQuery的应该很熟悉，在这里我再引入node模块后，用 <span class="code-review">var $=Node.all;</span> 定义。（与jQuery库对比：引入jQuery源文件后，可以直接使用$）</li>
@@ -112,14 +110,14 @@ layout: false
 
             <p>这是代码：</p>
             <pre><code>$('#green-box').html('&lt;img src="http://i.imgur.com/8NArGWZ.gif" /&gt;')</code></pre>
-            
+
             <p>注意: 注意类名和src的地址我们都使用一个双引号括住，因为我们是在<a href="http://en.wikipedia.org/wiki/Nested_quotation#In_JavaScript_programming" target="blank">内嵌</a>它们。</p>
-            
+
             <p>另一种加入波动拳的方法是使用<a href="http://docs.kissyui.com/1.4/docs/html/api/node/append.html" target="blank">KISSY's Append API</a>。</p>
             <pre><code>$('#green-box').append('&lt;img src="http://i.imgur.com/8NArGWZ.gif" />')</code></pre>
 
             <p><b>加分点:</b>你能猜到如果你不断敲击'append'指令数次会发生什么吗?现在不妨试试多次敲击以上代码试试...</p>
-            
+
             <p class="protip">不要忘了你可以用键盘上翻键"↑"来查找上一条代码哦。</p>
 
             <p>...</p>
@@ -142,10 +140,10 @@ layout: false
 
         <div class="section">
             <h2 id="stop-green-bottom">你的第一个KISSY项目</h2>
-            <p>你现在已经知道KISSY的一些基本操作了。不如来做一个小项目加深你对KISSY的认识？这是我(Carl Sednaoui)提出的项目：<a href="https://www.google.com/search?q=ryu+hadouken&tbm=isch" target="blank">让Ryu发射波动拳</a>。</p> 
+            <p>你现在已经知道KISSY的一些基本操作了。不如来做一个小项目加深你对KISSY的认识？这是我(Carl Sednaoui)提出的项目：<a href="https://www.google.com/search?q=ryu+hadouken&tbm=isch" target="blank">让Ryu发射波动拳</a>。</p>
 
             <p>这是我们做完项目后的样子，确保你已经鼠标移动到它身上并点击它。</p>
-            
+
             <div id="main-example-container" style="width:960px;">
                 <img id="main-example" src="intro-to-kissy/images/ryu_stand_still.png">
             </div>
@@ -177,7 +175,7 @@ layout: false
         <div class="section pulled">
 
             <img src="intro-to-kissy/images/code-along-2-kissy.png" class="screenshot">
-            
+
             <p>备注:你将会注意到我们最后一行的代码有一个"&#9654;"符号。这意味着里面隐藏了一些详细内容。如果你点击它你会看到&lt;div&gt;的扩展里面有我们新加的图片：</p>
             <img src="intro-to-kissy/images/code-along-3-kissy.png" class="screenshot">
 
@@ -240,9 +238,9 @@ $('#my-div img').on({
             <p>我们现在想要点击Ryu就改变姿势。为此我们继续使用<a href="http://docs.kissyui.com/1.4/docs/html/api/event/on.html#event.on" target="blank">KISSY's on API</a>中的“mousedown”事件,（与jQuery库对比：jQuery可以直接使用<a href="http://api.jquery.com/mousedown/" target="blank">jQuery's Mousedown API</a>）。mousedown事件的使用场景：当元素被点击的时候就会被触发。这是使用它的方法:</p>
 
 <pre><code>$('#my-div img').on('mousedown',function() {
-    this.src = 'http://i.imgur.com/Rfj0a80.png' 
+    this.src = 'http://i.imgur.com/Rfj0a80.png'
 })</code></pre>
-            
+
             <p>看看发生了什么:</p>
             <ul>
                 <li><span class="code-review">$('#my-div img')</span> 首先，我们选择了#my-div里面的img元素</li>
@@ -261,7 +259,7 @@ $('#my-div img').on({
     }
 })
 $('#my-div img').on('mousedown',function() {
-    this.src = 'http://i.imgur.com/Rfj0a80.png' 
+    this.src = 'http://i.imgur.com/Rfj0a80.png'
 })
 </code></pre>
 
@@ -298,7 +296,7 @@ $('#my-div img').on({
     }
 })
 $('#my-div img').on('mousedown',function() {
-    this.src = 'http://i.imgur.com/Rfj0a80.png' 
+    this.src = 'http://i.imgur.com/Rfj0a80.png'
 })
 $('#my-div img').on('mousedown',function() {
     $('#my-div').append(
@@ -340,7 +338,7 @@ $('#my-div img').on({
     }
 })
 $('#my-div img').on('mousedown',function() {
-    this.src = 'http://i.imgur.com/Rfj0a80.png' 
+    this.src = 'http://i.imgur.com/Rfj0a80.png'
 })
 $('#my-div img').on('mousedown',function() {
     $('#my-div').append(
@@ -381,7 +379,7 @@ $('#my-div img').on({
     }
 })
 $('#my-div img').on('mousedown',function() {
-    this.src = 'http://i.imgur.com/Rfj0a80.png' 
+    this.src = 'http://i.imgur.com/Rfj0a80.png'
 })
 $('#my-div img').on('mousedown',function() {
     $('#my-div').append(
@@ -399,7 +397,7 @@ $('#my-div img').on('mouseup',function() {
     this.src = 'http://i.imgur.com/nTj3Fxx.gif'
 })
 </code></pre>
-        
+
         <h3>额外加分</h3>
         <p>如果你点击Ryu 100次足够快的话，你会注意到波动拳会到处射。虽然这看起来十分酷，但是这是意料之外的影响，发生的原因是我们在添加新的波动拳前没有去掉已经存在的波动拳。要修复这个我们需要在发射波动拳前添加以下代码。</p>
 
@@ -419,7 +417,7 @@ $('#my-div img').on({
     }
 })
 $('#my-div img').on('mousedown',function() {
-    this.src = 'http://i.imgur.com/Rfj0a80.png' 
+    this.src = 'http://i.imgur.com/Rfj0a80.png'
 })
 $('#my-div img').on('mousedown',function() {
     $('.demo-hadouken').remove();
