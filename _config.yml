@@ -1,28 +1,32 @@
 # Hexo Configuration
-## Docs: http://zespia.tw/hexo/docs/configuration.html
-## Source: https://github.com/tommy351/hexo/
+## Docs: http://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
 
 # Site
 title: The Same Summer.
-subtitle: 
-description: 
+subtitle:
+description:
 author: Snger
-email:
+email: sjs.stef@gmail.com
 language: zh-CN
+timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://snger.github.io/
 root: /
 permalink: :year/:month/:day/:title/
-tag_dir: tags
-archive_dir: archives
-category_dir: categories
-code_dir: downloads/code
+permalink_defaults:
 
 # Directory
 source_dir: source
 public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
 
 # Writing
 new_post_name: :year-:month-:day-:title.md # File name of new posts
@@ -30,14 +34,15 @@ default_layout: post
 auto_spacing: true # Add spaces between asian characters and western characters
 titlecase: false # Transform title into titlecase
 external_link: true # Open external links in new tab
-max_open_file: 100
-multi_thread: true
 filename_case: 0
 render_drafts: false
 post_asset_folder: false
+relative_link: false
+future: true
 highlight:
   enable: true
   line_number: true
+  auto_detect: true
   tab_replace:
 
 # Category & Tag
@@ -77,8 +82,8 @@ pagination_dir: page
 disqus_shortname: snger
 
 # Extensions
-## Plugins: https://github.com/tommy351/hexo/wiki/Plugins
-## Themes: https://github.com/tommy351/hexo/wiki/Themes
+## Plugins: http://hexo.io/plugins/
+## Themes: http://hexo.io/themes/
 theme: pinetheme
 exclude_generator:
 plugins:
@@ -99,11 +104,10 @@ markdown:
   smartypants: true
 
 # Deployment
-## Docs: http://zespia.tw/hexo/docs/deployment.html
+## Docs: http://hexo.io/docs/deployment.html
 deploy:
   type: github
   repository: git@github.com:Snger/snger.github.com.git
   branch:
 
 # customize
-multi_thread: true
