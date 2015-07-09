@@ -106,8 +106,9 @@ markdown:
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
-  type: github
-  repository: git@github.com:Snger/snger.github.com.git
-  branch:
+  type: git
+  repo: git@github.com:Snger/snger.github.com.git
+  branch: hexo
+  message:
 
 # customize
