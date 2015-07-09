@@ -3,6 +3,7 @@ Thumbs.db
 
 #_deploy
 .deploy
+.deploy_git
 db.json
 node_modules
 debug.log
