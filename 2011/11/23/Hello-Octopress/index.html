@@ -1,0 +1,481 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  
+  <title>Hello-Octopress | The Same Summer.</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <meta name="author" content="Snger">
+  
+  <meta name="description" content="这个网站是使用 Octopress 架设，并使用免费的 GitHub Pages 网页空间。也是我第一次在Ubuntu操作系统下，使用GVIM及 Markdown语法 写博客。">
+  
+  
+  <meta property="og:title" content="Hello-Octopress"/>
+  <meta property="og:site_name" content="The Same Summer."/>
+  <link href="/favicon.ico" rel="icon" type="image/x-ico">
+  <link rel="alternate" href="/atom.xml" title="The Same Summer." type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.min.css" type="text/css">
+</head>
+
+<body>
+  <header>
+    <div class="clearfix">
+	<div id="logo">
+		<a href="/"><img src="/img/logo.svg" width="360" height="108" alt="Snger"/></a>
+		<hgroup>
+			<h1 class="site-name"><a href="/">The Same Summer.</a></h1>
+			<h2 class="blog-motto"></h2>
+		</hgroup>
+	 </div>
+	 <div class="navbar"><a class="navbutton" href="#"><i class="icon-menu"></i></a></div>
+	<nav>
+		<ul>
+		 
+			<li><a href="/">博客</a></li>
+		
+			<li><a href="/archives">存档</a></li>
+		
+			<li><a href="/about">关于</a></li>
+		
+			<li><a href="/projects">专题</a></li>
+		
+			<li><a href="/lab">实验室</a></li>
+		
+			<li> <a title="shall we talk" href='javascript:(
+function() {
+	function loadCss() {
+		var e = document.createElement("link");
+		e.setAttribute("type", "text/css");
+		e.setAttribute("rel", "stylesheet");
+		e.setAttribute("href", f);
+		e.setAttribute("class", l);
+		document.body.appendChild(e)
+	}
+ 
+	function removeCssClass() {
+		var e = document.getElementsByClassName(l);
+		for (var t = 0; t < e.length; t++) {
+			document.body.removeChild(e[t])
+		}
+	}
+ 
+	function showLight() {
+		var e = document.createElement("div");
+		e.setAttribute("class", a);
+		document.body.appendChild(e);
+		setTimeout(function() {
+			document.body.removeChild(e)
+		}, 100)
+	}
+ 
+	function getOffset(e) {
+		return {
+			height : e.offsetHeight,
+			width : e.offsetWidth
+		}
+	}
+ 
+	function elemFilter(i) {
+		var s = getOffset(i);
+		return s.height > e && s.height < n && s.width > t && s.width < r
+	}
+ 
+	function returnOffsetTop(e) {
+		var t = e;
+		var n = 0;
+		while (!!t) {
+			n += t.offsetTop;
+			t = t.offsetParent
+		}
+		return n
+	}
+ 
+	function g() {
+		var e = document.documentElement;
+		if (!!window.innerWidth) {
+			return window.innerHeight
+		} else if (e && !isNaN(e.clientHeight)) {
+			return e.clientHeight
+		}
+		return 0
+	}
+ 
+	function y() {
+		if (window.pageYOffset) {
+			return window.pageYOffset
+		}
+		return Math.max(document.documentElement.scrollTop, document.body.scrollTop)
+	}
+ 
+	function E(e) {
+		var t = returnOffsetTop(e);
+		return t >= w && t <= b + w
+	}
+ 
+	function S() {
+		var e = document.createElement("audio");
+		e.setAttribute("class", l);
+		e.src = i[parseInt(10*Math.random())];
+		e.loop = false;
+		e.addEventListener("canplay", function() {
+			setTimeout(function() {
+				x(k)
+			}, 500);
+			setTimeout(function() {
+				N();
+				showLight();
+				for (var e = 0; e < O.length; e++) {
+					T(O[e])
+				}
+			}, 15500)
+		}, true);
+		e.addEventListener("ended", function() {
+			N();
+			removeCssClass()
+		}, true);
+		e.innerHTML = " <p>If you are reading this, it is because your browser does not support the audio element. We recommend that you get a new browser.</p> <p>";
+		document.body.appendChild(e);
+		e.play()
+	}
+ 
+	function x(e) {
+		e.className += " " + s + " " + o
+	}
+ 
+	function T(e) {
+		e.className += " " + s + " " + u[Math.floor(Math.random() * u.length)]
+	}
+ 
+	function N() {
+		var e = document.getElementsByClassName(s);
+		var t = new RegExp("\\b" + s + "\\b");
+		for (var n = 0; n < e.length; ) {
+			e[n].className = e[n].className.replace(t, "")
+		}
+	}
+
+	function reset(){
+		N();removeCssClass();
+	}
+ 
+	var e = 30;
+	var t = 30;
+	var n = 350;
+	var r = 350;
+	var i = ["/music/again-yui.mp3","/music/AiCongLingKaiShi-syz.mp3","/music/BieLaiWuYang-xtf.mp3","/music/DangChe-eason.mp3","/music/HaoJiuBuJian-eason.mp3","/music/LifeForRent-Dido.mp3","/music/TongLei-syz.mp3","/music/WoHuaiNianDe-syz.mp3","/music/youAreBeautiful.mp3","/music/youngForYou.mp3"];
+	var s = "mw-harlem_shake_me";
+	var o = "im_first";
+	var u = ["im_drunk", "im_baked", "im_trippin", "im_blown"];
+	var a = "mw-strobe_light";
+	var f = "/css/harlem-shake-style.min.css";
+	var l = "mw_added_css";
+	var b = g();
+	var w = y();
+	var C = document.getElementsByTagName("*");
+	var k = null;
+	reset();
+	for (var L = 0; L < C.length; L++) {
+		var A = C[L];
+		if (elemFilter(A)) {
+			if (E(A)) {
+				k = A;
+				break
+			}
+		}
+	}
+	if (A === null) {
+		console.warn("Could not find a node of the right size. Please try a different page.");
+		return
+	}
+	loadCss();
+	S();
+	var O = [];
+	for (var L = 0; L < C.length; L++) {
+		var A = C[L];
+		if (elemFilter(A)) {
+			O.push(A)
+		}
+	}
+})()    '>>_<</a>
+			</li>
+			<li><form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
+				<label>Search</label>
+					<input type="search" name="q" id="search" autocomplete="off" autocorrect="off" autocapitalize="off" maxlength="20" placeholder="Search" />
+					<input type="hidden" name="q" value="site:snger.github.io">
+				</form>
+			</li>
+		</ul>
+	</nav>
+</div>
+<!-- var i = "//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake.mp3";
+	var f = "//s3.amazonaws.com/source/css/harlem-shake-style.css"; -->
+  </header>
+  <div id="container">
+    <div id="main" class="postpart">
+	<header class="clearfix">
+	  <h1><a href="/2011/11/23/Hello-Octopress/" title="Hello-Octopress">Hello-Octopress</a></h1>
+	  <p>By
+	  
+	 	 <a href="https://twitter.com/sjs_stef" title="Snger">Snger</a>
+	  
+	  on<time datetime="2011-11-23T10:42:00.000Z">Nov 23 2011</time></p>
+	</header>
+	<article>     
+	     <p>这个网站是使用<a href="http://octopress.org" title="Octopress" target="_blank" rel="external">Octopress</a>架设，并使用免费的<a href="http://pages.github.com" title="GitHub" target="_blank" rel="external">GitHub Pages</a>网页空间。也是我第一次在Ubuntu操作系统下，使用GVIM及<a href="http://markdown.tw/#link" title="Markdown" target="_blank" rel="external">Markdown语法</a>写博客。</p>
+<p>试用Octopress也是机缘：  </p>
+<blockquote>
+<p>1.原本只想建一个简单的技术博客，记录自己的菜鸟成长史，于是在国内算是知名的IT社区建了一个博客。十六天写了十五篇博文，转载五篇。没想到昨天一篇日志被删除了。在网路中，我最不能容忍的就是删文，于是离开。  <a id="more"></a><br>2.也刚好在昨天看到博文<a href="http://www.yangzhiping.com/psy/open-classroom.html" title="不上大学，你可以学些什么？" target="_blank" rel="external">不上大学，你可以学些什么？</a>中提到 </p>
+<blockquote>
+<p>你可以，开一个个人博客。如果是2011年才开建，建议采用octopress，记录个人的学习成长。<br>有点好奇，正想试试。<br>两因相加，于是有了这个博客。  </p>
+</blockquote>
+</blockquote>
+<p>使用Octopress后，发现至少可以训练以下知识：  </p>
+<blockquote>
+<p>1.GitHub<br>2.vim<br>3.基础建站知识<br>4.HTML+Markdown<br>5.使用英文搜索资料、看文档的能力  </p>
+</blockquote>
+<p>其实，最重要的是：<strong>自由</strong></p>
+<hr>
+<h2 id="感谢以下链接">感谢以下链接</h2><ul>
+<li><a href="http://hack.sslab.co/blog/2011/10/14/hello/" title="Hello,Octopress" target="_blank" rel="external">Hello,Octopress</a>  </li>
+<li><a href="http://markdown.tw/#list" title="Markdown.tw" target="_blank" rel="external">Markdown.tw</a>  </li>
+<li><a href="http://lyhdev.com/note:octopress" title="lyhdev.com" target="_blank" rel="external">思创软体技术分享</a>  </li>
+<li><a href="http://octopress.org" title="Octopress" target="_blank" rel="external">Octopress</a>  </li>
+<li><a href="https://github.com" title="GitHub" target="_blank" rel="external">GitHub</a>  </li>
+<li>当然，也感谢删我帖的那些网站，链接就不给出了。  </li>
+</ul>
+    
+	</article>
+	
+
+
+<div class="articletags">
+	<i class="icon-tag"></i>Tags: <a href="/tags/Octopress/">Octopress</a><a href="/tags/折腾/">折腾</a>
+	<i class="icon-folder"></i>categories:  <a href="/categories/博客相关/">博客相关</a>
+</div>
+
+	
+<div class="jiathis_style share">
+    <span class="jiathis_txt">分享到：</span>
+    <a class="jiathis_button_tsina">新浪微博</a>
+    <a class="jiathis_button_tqq">腾讯微博</a>
+    <a class="jiathis_button_weixin">微信</a>
+    <a class="jiathis_button_twitter">Twitter</a>
+    <a class="jiathis_button_googleplus">Google+</a>
+    <a class="jiathis_button_evernote">EverNote</a>
+    <a href="http://www.jiathis.com/share?uid=1501277" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+</div>
+<script type="text/javascript" >
+    var jiathis_config={
+    data_track_clickback:true,
+    sm:"copy,renren,cqq",
+    pic:"",
+    summary:"",
+     ralateuid:{"tsina":"1530558400"},hideMore:false}
+    
+  </script> 
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=
+" charset="utf-8"></script>      
+
+	<div class="pagepart clearfix">
+ 
+	<a href="/2011/11/24/try-again/" class="prev" title="Try again">Try again</a>
+ 
+ 
+	<a href="/2011/11/22/mobi-web/" class="next" title="移动平台WEB前端开发技巧汇总">移动平台WEB前端开发技巧汇总</a>
+ 
+</div>
+	
+<section id="comments">
+  <h1 class="title">交流区</h1>
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
+</div>  
+    <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏">
+        <i class="icon-menu"></i>
+      </a></div>
+    <div id="asidepart">
+    <div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"><i class="icon-menu"></i></a></div>
+    <aside>
+  
+<div class="categorieslist">
+	<p class="asidetitle">分类</p>
+		<ul>
+		
+			<li><a href="/categories/Linux/" title="Linux">Linux<sup>2</sup></a></li>
+		
+			<li><a href="/categories/Web前端/" title="Web前端">Web前端<sup>10</sup></a></li>
+		
+			<li><a href="/categories/php/" title="php">php<sup>1</sup></a></li>
+		
+			<li><a href="/categories/博客相关/" title="博客相关">博客相关<sup>6</sup></a></li>
+		
+			<li><a href="/categories/工具/" title="工具">工具<sup>4</sup></a></li>
+		
+			<li><a href="/categories/折腾/" title="折腾">折腾<sup>1</sup></a></li>
+		
+			<li><a href="/categories/读书笔记/" title="读书笔记">读书笔记<sup>2</sup></a></li>
+		
+			<li><a href="/categories/达者为师/" title="达者为师">达者为师<sup>2</sup></a></li>
+		
+		</ul>
+</div>
+
+
+  
+<div class="tagslist">
+	<p class="asidetitle">标签</p>
+		<ul class="clearfix">
+		
+			<li><a href="/tags/Linux/" title="Linux">Linux<sup>2</sup></a></li>
+		
+			<li><a href="/tags/Magento/" title="Magento">Magento<sup>1</sup></a></li>
+		
+			<li><a href="/tags/Octopress/" title="Octopress">Octopress<sup>5</sup></a></li>
+		
+			<li><a href="/tags/Web前端/" title="Web前端">Web前端<sup>10</sup></a></li>
+		
+			<li><a href="/tags/git/" title="git">git<sup>1</sup></a></li>
+		
+			<li><a href="/tags/hexo/" title="hexo">hexo<sup>1</sup></a></li>
+		
+			<li><a href="/tags/mp3tag/" title="mp3tag">mp3tag<sup>1</sup></a></li>
+		
+			<li><a href="/tags/php/" title="php">php<sup>1</sup></a></li>
+		
+			<li><a href="/tags/vim/" title="vim">vim<sup>2</sup></a></li>
+		
+			<li><a href="/tags/vimdiff/" title="vimdiff">vimdiff<sup>1</sup></a></li>
+		
+			<li><a href="/tags/工具/" title="工具">工具<sup>2</sup></a></li>
+		
+			<li><a href="/tags/折腾/" title="折腾">折腾<sup>5</sup></a></li>
+		
+			<li><a href="/tags/翻译/" title="翻译">翻译<sup>1</sup></a></li>
+		
+			<li><a href="/tags/读书笔记/" title="读书笔记">读书笔记<sup>7</sup></a></li>
+		
+			<li><a href="/tags/达者为师/" title="达者为师">达者为师<sup>5</sup></a></li>
+		
+		</ul>
+</div>
+
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="RSS 订阅"><i class="icon-rss"></i>RSS 订阅</a>
+</div>
+</aside>
+    </div>
+  </div>
+  <footer><div id="footer" >
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	<section class="info">
+		<p>在开源的世界学习了很多 <br/>
+		从具有开源精神的人身上学到更多……<br/>
+		</p>
+	</section>
+	<div class="social-font">
+		
+		<a href="http://weibo.com/snger" target="_blank" title="新浪微博"><i class="icon-sina-weibo"></i></a>
+		
+		
+		<a href="https://twitter.com/sjs_stef" target="_blank" title="twitter"><i class="icon-twitter"></i></a>
+		
+		
+		<a href="https://github.com/snger" target="_blank" title="github"><i class="icon-github"></i></a>
+		
+		
+	</div>
+	<p class="copyright">Powered by <a href="http://zespia.tw/hexo/" target="_blank" title="hexo">hexo</a> and Theme forked from <a href="https://github.com/A-limon/pacman" target="_blank" title="Pacman">Pacman</a> © 2015 
+	
+	<a href="http://snger.github.io" title="Snger">Snger</a>
+	
+	</p>
+</div>
+</footer>
+  <script src="/js/jquery-2.0.1.min.js"></script>
+<script src="/js/prettify.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function()         
+	{	
+		$('.navbar').click(function(){
+			$('header nav').slideToggle("slow");
+		});
+		var myWidth = 0;
+    	function getSize(){
+    		if( typeof( window.innerWidth ) == 'number' ) {
+    			myWidth = window.innerWidth;
+           	 } else if( document.documentElement && document.documentElement.clientWidth) {
+             	myWidth = document.documentElement.clientWidth;
+            };
+        };
+    	getSize(); 
+    	//document.getElementById("test").innerHTML =myWidth;
+        $(window).resize(function(){
+        	getSize(); 
+        	if (myWidth >= 1024||(document.activeElement.id=='search')) {
+        		$('nav').css('display', 'block') ;
+			}else{
+				$('nav').css('display', 'none') ;
+			}
+        });
+     $("pre").addClass("prettyprint linenums");
+     prettyPrint();
+     $('.closeaside').click(function(){
+            $('#asidepart').fadeOut();
+            $('#main').animate({
+                marginLeft: ['10%','swing'],
+                marginRight: ['10%','swing']
+            });
+            $('.openaside').fadeIn();  
+        });
+        $('.openaside').click(function(){
+            $('#asidepart').fadeIn();
+            $('#main').animate({
+                marginLeft: ['0%','swing'],
+                marginRight: ['0%','swing']
+            });
+            $('.openaside').fadeOut();  
+        });
+        $(window).scroll(function(){
+            $('.openaside').css("top",Math.max(50,260-$(this).scrollTop()));
+        });
+	});
+</script>
+
+<script>
+  var disqus_shortname = 'snger';
+  
+  var disqus_url = 'http://snger.github.io/2011/11/23/Hello-Octopress/';
+  
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//go.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-27385230-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</body>
+</html> 

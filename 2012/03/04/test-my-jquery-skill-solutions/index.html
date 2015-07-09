@@ -1,0 +1,485 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  
+  <title>Test My jQuery Skill: Solutions | The Same Summer.</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <meta name="author" content="Snger">
+  
+  <meta name="description" content="Test My jQuery Skill - Solutions">
+  
+  
+  <meta property="og:title" content="Test My jQuery Skill: Solutions"/>
+  <meta property="og:site_name" content="The Same Summer."/>
+  <link href="/favicon.ico" rel="icon" type="image/x-ico">
+  <link rel="alternate" href="/atom.xml" title="The Same Summer." type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.min.css" type="text/css">
+</head>
+
+<body>
+  <header>
+    <div class="clearfix">
+	<div id="logo">
+		<a href="/"><img src="/img/logo.svg" width="360" height="108" alt="Snger"/></a>
+		<hgroup>
+			<h1 class="site-name"><a href="/">The Same Summer.</a></h1>
+			<h2 class="blog-motto"></h2>
+		</hgroup>
+	 </div>
+	 <div class="navbar"><a class="navbutton" href="#"><i class="icon-menu"></i></a></div>
+	<nav>
+		<ul>
+		 
+			<li><a href="/">博客</a></li>
+		
+			<li><a href="/archives">存档</a></li>
+		
+			<li><a href="/about">关于</a></li>
+		
+			<li><a href="/projects">专题</a></li>
+		
+			<li><a href="/lab">实验室</a></li>
+		
+			<li> <a title="shall we talk" href='javascript:(
+function() {
+	function loadCss() {
+		var e = document.createElement("link");
+		e.setAttribute("type", "text/css");
+		e.setAttribute("rel", "stylesheet");
+		e.setAttribute("href", f);
+		e.setAttribute("class", l);
+		document.body.appendChild(e)
+	}
+ 
+	function removeCssClass() {
+		var e = document.getElementsByClassName(l);
+		for (var t = 0; t < e.length; t++) {
+			document.body.removeChild(e[t])
+		}
+	}
+ 
+	function showLight() {
+		var e = document.createElement("div");
+		e.setAttribute("class", a);
+		document.body.appendChild(e);
+		setTimeout(function() {
+			document.body.removeChild(e)
+		}, 100)
+	}
+ 
+	function getOffset(e) {
+		return {
+			height : e.offsetHeight,
+			width : e.offsetWidth
+		}
+	}
+ 
+	function elemFilter(i) {
+		var s = getOffset(i);
+		return s.height > e && s.height < n && s.width > t && s.width < r
+	}
+ 
+	function returnOffsetTop(e) {
+		var t = e;
+		var n = 0;
+		while (!!t) {
+			n += t.offsetTop;
+			t = t.offsetParent
+		}
+		return n
+	}
+ 
+	function g() {
+		var e = document.documentElement;
+		if (!!window.innerWidth) {
+			return window.innerHeight
+		} else if (e && !isNaN(e.clientHeight)) {
+			return e.clientHeight
+		}
+		return 0
+	}
+ 
+	function y() {
+		if (window.pageYOffset) {
+			return window.pageYOffset
+		}
+		return Math.max(document.documentElement.scrollTop, document.body.scrollTop)
+	}
+ 
+	function E(e) {
+		var t = returnOffsetTop(e);
+		return t >= w && t <= b + w
+	}
+ 
+	function S() {
+		var e = document.createElement("audio");
+		e.setAttribute("class", l);
+		e.src = i[parseInt(10*Math.random())];
+		e.loop = false;
+		e.addEventListener("canplay", function() {
+			setTimeout(function() {
+				x(k)
+			}, 500);
+			setTimeout(function() {
+				N();
+				showLight();
+				for (var e = 0; e < O.length; e++) {
+					T(O[e])
+				}
+			}, 15500)
+		}, true);
+		e.addEventListener("ended", function() {
+			N();
+			removeCssClass()
+		}, true);
+		e.innerHTML = " <p>If you are reading this, it is because your browser does not support the audio element. We recommend that you get a new browser.</p> <p>";
+		document.body.appendChild(e);
+		e.play()
+	}
+ 
+	function x(e) {
+		e.className += " " + s + " " + o
+	}
+ 
+	function T(e) {
+		e.className += " " + s + " " + u[Math.floor(Math.random() * u.length)]
+	}
+ 
+	function N() {
+		var e = document.getElementsByClassName(s);
+		var t = new RegExp("\\b" + s + "\\b");
+		for (var n = 0; n < e.length; ) {
+			e[n].className = e[n].className.replace(t, "")
+		}
+	}
+
+	function reset(){
+		N();removeCssClass();
+	}
+ 
+	var e = 30;
+	var t = 30;
+	var n = 350;
+	var r = 350;
+	var i = ["/music/again-yui.mp3","/music/AiCongLingKaiShi-syz.mp3","/music/BieLaiWuYang-xtf.mp3","/music/DangChe-eason.mp3","/music/HaoJiuBuJian-eason.mp3","/music/LifeForRent-Dido.mp3","/music/TongLei-syz.mp3","/music/WoHuaiNianDe-syz.mp3","/music/youAreBeautiful.mp3","/music/youngForYou.mp3"];
+	var s = "mw-harlem_shake_me";
+	var o = "im_first";
+	var u = ["im_drunk", "im_baked", "im_trippin", "im_blown"];
+	var a = "mw-strobe_light";
+	var f = "/css/harlem-shake-style.min.css";
+	var l = "mw_added_css";
+	var b = g();
+	var w = y();
+	var C = document.getElementsByTagName("*");
+	var k = null;
+	reset();
+	for (var L = 0; L < C.length; L++) {
+		var A = C[L];
+		if (elemFilter(A)) {
+			if (E(A)) {
+				k = A;
+				break
+			}
+		}
+	}
+	if (A === null) {
+		console.warn("Could not find a node of the right size. Please try a different page.");
+		return
+	}
+	loadCss();
+	S();
+	var O = [];
+	for (var L = 0; L < C.length; L++) {
+		var A = C[L];
+		if (elemFilter(A)) {
+			O.push(A)
+		}
+	}
+})()    '>>_<</a>
+			</li>
+			<li><form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
+				<label>Search</label>
+					<input type="search" name="q" id="search" autocomplete="off" autocorrect="off" autocapitalize="off" maxlength="20" placeholder="Search" />
+					<input type="hidden" name="q" value="site:snger.github.io">
+				</form>
+			</li>
+		</ul>
+	</nav>
+</div>
+<!-- var i = "//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake.mp3";
+	var f = "//s3.amazonaws.com/source/css/harlem-shake-style.css"; -->
+  </header>
+  <div id="container">
+    <div id="main" class="postpart">
+	<header class="clearfix">
+	  <h1><a href="/2012/03/04/test-my-jquery-skill-solutions/" title="Test My jQuery Skill: Solutions">Test My jQuery Skill: Solutions</a></h1>
+	  <p>By
+	  
+	 	 <a href="https://twitter.com/sjs_stef" title="Snger">Snger</a>
+	  
+	  on<time datetime="2012-03-04T02:24:00.000Z">Mar 4 2012</time></p>
+	</header>
+	<article>     
+	     <p>See it in my other blog : <a href="http://thesamesummer.blogspot.com/2012/02/test-my-jquery-skills-solutions.html" target="_blank" rel="external">Test My jQuery Skills: Solutions | The same summer.</a></p>
+<h2 id="You_can_text_it_now_:_Tuts+_Premium_Course:_30_Days_to_Learn_jQuery_-_Quiz_#1:_The_Basics">You can text it now : <a href="http://tutsplus.com/lesson/jquery-30-days-quiz-1/" target="_blank" rel="external">Tuts+ Premium Course: 30 Days to Learn jQuery - Quiz #1: The Basics</a></h2><h3 id="1-In_addition_to_jQuery(),_we_can_also_use_a_shorter_reference_to_the_jQuery_function-_What_is_it?">1.In addition to jQuery(), we can also use a shorter reference to the jQuery function. What is it?</h3><p><code>jQ  $  $$  j</code></p>
+<h4 id="Additional_Notes">Additional Notes</h4><p>If you review the jQuery source (something you should always do), you will find that jQuery and $ can both be used interchangably. The former is most often used in situations when the $ can clash with existing code or libraries.</p>
+<h3 id="2-True_or_False:_the_jQuery_function_accepts_a_CSS_selector,_which_is_used_to_query_the_DOM_for_the_applicable_elements-">2.True or False: the jQuery function accepts a CSS selector, which is used to query the DOM for the applicable elements.</h3><p> <code>True False</code></p>
+<h4 id="Additional_Notes-1">Additional Notes</h4><p>Remember, you are not limited to mere CSS selectors; you can also pass DOM nodes, and even create elements. For instance, the following code will create a div and append it to the body: $(“<br>Hi there<br>“).appendTo(“body”);</p>
+<h3 id="3-Query_the_DOM_for_the_div_with_an_id_of_container_and_store_a_reference_to_it_(“cache_it”)_in_a_variable,_called_container-">3.Query the DOM for the div with an id of container and store a reference to it (“cache it”) in a variable, called container.</h3><p><code>var container = $(&quot;#container&quot;);</code></p>
+<h4 id="Additional_Notes-2">Additional Notes</h4><p>Storing the results of a particular query in a variable is often referred to as “caching.” This way, we keep from having to dive into the DOM pool over and over to retrieve the same set of elements.</p>
+<h3 id="4-Query_the_DOM_for_the_ul,_and_add_a_class_of_alternate-">4.Query the DOM for the ul, and add a class of alternate.</h3><p><code>$(&quot;ul&quot;).addClass(&quot;alternate&quot;);</code></p>
+<h4 id="Additional_Notes-3">Additional Notes</h4><p>Technically, this code will add a class of alternate to all unordered lists in the DOM. If you need to be more specific, you can use an id, or a method like eq() or first() to fine-tune the results.</p>
+<h3 id="5-Which_of_the_following_is_not_a_valid_jQuery_method?">5.Which of the following is not a valid jQuery method?</h3><p><code>addClass  next  prev  grandparents</code></p>
+<h4 id="Additional_Notes-4">Additional Notes</h4><p>Don’t take the “parent-child” relationship idea too far. grandparents or grandchildren do not exist! Instead, you’d use parents(), closest(), and find().<a id="more"></a></p>
+<h3 id="6-True_or_False:_We_use_$(document)-ready(fn);_to_ensure_that_the_DOM_has_fully_loaded_before_proceeding-">6.True or False: We use $(document).ready(fn); to ensure that the DOM has fully loaded before proceeding.</h3><p> <code>True False</code></p>
+<h4 id="Additional_Notes-5">Additional Notes</h4><p>Alternatively, the same result can be achieved by passing an anonymous function to jQuery.</p>
+<h3 id="7-Use_jQuery’s_text_method_to_update_the_element-_Change_it_to_“Updated-”">7.Use jQuery’s text method to update the element. Change it to “Updated.”</h3><p><code>$(&quot;h1&quot;).text(&quot;Updated&quot;);</code></p>
+<h4 id="Additional_Notes-6">Additional Notes</h4><p>Should you need to insert actual HTML, you’d instead use the html method.</p>
+<h3 id="8-Which_method_will_return_the_nearest_element,_moving_up_the_DOM_chain,_that_matches_the_provided_selector?">8.Which method will return the nearest element, moving up the DOM chain, that matches the provided selector?</h3><p><code>ancestors()  closest()  nearest()  children()</code></p>
+<h4 id="Additional_Notes-7">Additional Notes</h4><p>closest will retrieve the first element that matches a provided selector. It begins at the current element, and works up through the DOM tree.</p>
+<h3 id="9-The_box_(or_div)_below_has_a_class_of_box-_Listen_for_when_this_box_is_clicked-_When_it_is,_remove_the_box_class-_Hint:_you_will_want_to_use_jQuery’son()_method-">9.The box (or div) below has a class of box. Listen for when this box is clicked. When it is, remove the box class. Hint: you will want to use jQuery’son() method.</h3><pre><code>$(<span class="string">"div.box"</span>).on(<span class="string">"click"</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>{
+       $(<span class="keyword">this</span>).removeClass(<span class="string">"box"</span>);
+});
+</code></pre><h4 id="Additional_Notes-8">Additional Notes</h4><p>In addition to on(), jQuery also provides a handful of “shortcut” methods, such as click() and hover().</p>
+<h3 id="10-Imagine_that_you’ve_selected_one_list_item,_and_now_need_to_select_all_other_list_items_on_that_same_level-_Which_method_should_use_to_accomplish_this?">10.Imagine that you’ve selected one list item, and now need to select all other list items on that same level. Which method should use to accomplish this?</h3><h4 id="Additional_Notes-9">Additional Notes</h4><p>Additionally, a selector can be passed to the siblings method. This allows you to filter the matches.</p>
+<h3 id="11-Select_the_fourth_list_item_below,_and_use_the_css_method_to_set_its_background_color_to_‘gray’-">11.Select the fourth list item below, and use the css method to set its background color to ‘gray’.</h3><p><code>$(&#39;li:nth-child(4)&#39;).css(&#39;background&#39;, &#39;gray&#39;);</code></p>
+<h4 id="Additional_Notes-10">Additional Notes</h4><p>There were lots of ways to handle this question. In addition to the provided solution, you could also use the eq()method: $(“li”).eq(3).css(“backgroundColor”, “gray”);. jQuery also allows you to use eq as a custom selectors: $(“li:eq(3)”);.</p>
+<h3 id="12-True_or_False:_jQuery_is_just_JavaScript-">12.True or False: jQuery is just JavaScript.</h3><p> <code>True False</code></p>
+<h4 id="Additional_Notes-11">Additional Notes</h4><p>Sometimes, it’s easy to think of JavaScript and jQuery as entirely separate languages, but they aren’t! At its core, jQuery is just JavaScript.</p>
+    
+	</article>
+	
+
+
+<div class="articletags">
+	<i class="icon-tag"></i>Tags: <a href="/tags/Web前端/">Web前端</a><a href="/tags/读书笔记/">读书笔记</a>
+	<i class="icon-folder"></i>categories:  <a href="/categories/Web前端/">Web前端</a>
+</div>
+
+	
+<div class="jiathis_style share">
+    <span class="jiathis_txt">分享到：</span>
+    <a class="jiathis_button_tsina">新浪微博</a>
+    <a class="jiathis_button_tqq">腾讯微博</a>
+    <a class="jiathis_button_weixin">微信</a>
+    <a class="jiathis_button_twitter">Twitter</a>
+    <a class="jiathis_button_googleplus">Google+</a>
+    <a class="jiathis_button_evernote">EverNote</a>
+    <a href="http://www.jiathis.com/share?uid=1501277" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+</div>
+<script type="text/javascript" >
+    var jiathis_config={
+    data_track_clickback:true,
+    sm:"copy,renren,cqq",
+    pic:"",
+    summary:"",
+     ralateuid:{"tsina":"1530558400"},hideMore:false}
+    
+  </script> 
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=
+" charset="utf-8"></script>      
+
+	<div class="pagepart clearfix">
+ 
+	<a href="/2012/04/30/comeback/" class="prev" title="Octopress再上线">Octopress再上线</a>
+ 
+ 
+	<a href="/2011/12/27/taobao-pages/" class="next" title="一些在github中开源的淘宝项目">一些在github中开源的淘宝项目</a>
+ 
+</div>
+	
+<section id="comments">
+  <h1 class="title">交流区</h1>
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
+</div>  
+    <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏">
+        <i class="icon-menu"></i>
+      </a></div>
+    <div id="asidepart">
+    <div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"><i class="icon-menu"></i></a></div>
+    <aside>
+  
+<div class="categorieslist">
+	<p class="asidetitle">分类</p>
+		<ul>
+		
+			<li><a href="/categories/Linux/" title="Linux">Linux<sup>2</sup></a></li>
+		
+			<li><a href="/categories/Web前端/" title="Web前端">Web前端<sup>10</sup></a></li>
+		
+			<li><a href="/categories/php/" title="php">php<sup>1</sup></a></li>
+		
+			<li><a href="/categories/博客相关/" title="博客相关">博客相关<sup>6</sup></a></li>
+		
+			<li><a href="/categories/工具/" title="工具">工具<sup>4</sup></a></li>
+		
+			<li><a href="/categories/折腾/" title="折腾">折腾<sup>1</sup></a></li>
+		
+			<li><a href="/categories/读书笔记/" title="读书笔记">读书笔记<sup>2</sup></a></li>
+		
+			<li><a href="/categories/达者为师/" title="达者为师">达者为师<sup>2</sup></a></li>
+		
+		</ul>
+</div>
+
+
+  
+<div class="tagslist">
+	<p class="asidetitle">标签</p>
+		<ul class="clearfix">
+		
+			<li><a href="/tags/Linux/" title="Linux">Linux<sup>2</sup></a></li>
+		
+			<li><a href="/tags/Magento/" title="Magento">Magento<sup>1</sup></a></li>
+		
+			<li><a href="/tags/Octopress/" title="Octopress">Octopress<sup>5</sup></a></li>
+		
+			<li><a href="/tags/Web前端/" title="Web前端">Web前端<sup>10</sup></a></li>
+		
+			<li><a href="/tags/git/" title="git">git<sup>1</sup></a></li>
+		
+			<li><a href="/tags/hexo/" title="hexo">hexo<sup>1</sup></a></li>
+		
+			<li><a href="/tags/mp3tag/" title="mp3tag">mp3tag<sup>1</sup></a></li>
+		
+			<li><a href="/tags/php/" title="php">php<sup>1</sup></a></li>
+		
+			<li><a href="/tags/vim/" title="vim">vim<sup>2</sup></a></li>
+		
+			<li><a href="/tags/vimdiff/" title="vimdiff">vimdiff<sup>1</sup></a></li>
+		
+			<li><a href="/tags/工具/" title="工具">工具<sup>2</sup></a></li>
+		
+			<li><a href="/tags/折腾/" title="折腾">折腾<sup>5</sup></a></li>
+		
+			<li><a href="/tags/翻译/" title="翻译">翻译<sup>1</sup></a></li>
+		
+			<li><a href="/tags/读书笔记/" title="读书笔记">读书笔记<sup>7</sup></a></li>
+		
+			<li><a href="/tags/达者为师/" title="达者为师">达者为师<sup>5</sup></a></li>
+		
+		</ul>
+</div>
+
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="RSS 订阅"><i class="icon-rss"></i>RSS 订阅</a>
+</div>
+</aside>
+    </div>
+  </div>
+  <footer><div id="footer" >
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	<section class="info">
+		<p>在开源的世界学习了很多 <br/>
+		从具有开源精神的人身上学到更多……<br/>
+		</p>
+	</section>
+	<div class="social-font">
+		
+		<a href="http://weibo.com/snger" target="_blank" title="新浪微博"><i class="icon-sina-weibo"></i></a>
+		
+		
+		<a href="https://twitter.com/sjs_stef" target="_blank" title="twitter"><i class="icon-twitter"></i></a>
+		
+		
+		<a href="https://github.com/snger" target="_blank" title="github"><i class="icon-github"></i></a>
+		
+		
+	</div>
+	<p class="copyright">Powered by <a href="http://zespia.tw/hexo/" target="_blank" title="hexo">hexo</a> and Theme forked from <a href="https://github.com/A-limon/pacman" target="_blank" title="Pacman">Pacman</a> © 2015 
+	
+	<a href="http://snger.github.io" title="Snger">Snger</a>
+	
+	</p>
+</div>
+</footer>
+  <script src="/js/jquery-2.0.1.min.js"></script>
+<script src="/js/prettify.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function()         
+	{	
+		$('.navbar').click(function(){
+			$('header nav').slideToggle("slow");
+		});
+		var myWidth = 0;
+    	function getSize(){
+    		if( typeof( window.innerWidth ) == 'number' ) {
+    			myWidth = window.innerWidth;
+           	 } else if( document.documentElement && document.documentElement.clientWidth) {
+             	myWidth = document.documentElement.clientWidth;
+            };
+        };
+    	getSize(); 
+    	//document.getElementById("test").innerHTML =myWidth;
+        $(window).resize(function(){
+        	getSize(); 
+        	if (myWidth >= 1024||(document.activeElement.id=='search')) {
+        		$('nav').css('display', 'block') ;
+			}else{
+				$('nav').css('display', 'none') ;
+			}
+        });
+     $("pre").addClass("prettyprint linenums");
+     prettyPrint();
+     $('.closeaside').click(function(){
+            $('#asidepart').fadeOut();
+            $('#main').animate({
+                marginLeft: ['10%','swing'],
+                marginRight: ['10%','swing']
+            });
+            $('.openaside').fadeIn();  
+        });
+        $('.openaside').click(function(){
+            $('#asidepart').fadeIn();
+            $('#main').animate({
+                marginLeft: ['0%','swing'],
+                marginRight: ['0%','swing']
+            });
+            $('.openaside').fadeOut();  
+        });
+        $(window).scroll(function(){
+            $('.openaside').css("top",Math.max(50,260-$(this).scrollTop()));
+        });
+	});
+</script>
+
+<script>
+  var disqus_shortname = 'snger';
+  
+  var disqus_url = 'http://snger.github.io/2012/03/04/test-my-jquery-skill-solutions/';
+  
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//go.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-27385230-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</body>
+</html> 

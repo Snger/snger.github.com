@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>[前端分享]seed/kissy.js 的源码分析（学习）</title>
+
+    <meta name="author" content="" />
+    <link href="impress.js/css/impress-demo.css" rel="stylesheet" />
+    <link href="impress.js/css/custom.css" rel="stylesheet" />
+</head>
+<body>
+
+<div id="impress" class="impress-not-supported">
+
+    <div class="fallback-message">
+        <p>你的浏览器<b>不支持</b> impress.js, 所以当前展示的是简化版。</p>
+        <p>为了获得更好的体验，请使用最新的 <b>Chrome</b>, <b>Safari</b> 或者 <b>Firefox</b> 浏览器。</p>
+    </div>
+
+    <div id="title" class="step" data-x="0" data-y="0" data-scale="4">
+        <span class="try">kissy/src/seed/</span>
+        <h1>kissy.js<sup>*</sup></h1>
+        <span class="footnote"> <a href="#/list">目录结构</a>&nbsp;&nbsp;&nbsp;<a href="#/tip">tip</a>&nbsp;&nbsp;&nbsp;<a href="#/thk">构建思想</a> &nbsp;&nbsp;&nbsp;<a href="#/last">结语</a></span>
+    </div>
+
+    <!-- exp -->
+    <div id="list" class="step slide" data-x="-2500" data-y="0" data-rotate="90" data-rotate-y="-55">
+        <p>项目地址：<a href="https://github.com/kissyteam/kissy" target="_blank">https://github.com/kissyteam/kissy</a></p><br/>
+        <p>分支：<img src="introKissy/img/branch.png"></p><br>
+        <div class="img-1">
+            <div class="desc">
+                ------>&nbsp;&nbsp;构建好的发布文件<br/>
+                ------>&nbsp;&nbsp;API 文档<br/>
+                ------>&nbsp;&nbsp;源码、测试等开发资源<br/>
+                ------>&nbsp;&nbsp;打包压缩等自动化工具
+            </div>
+        </div>
+
+    </div>
+    <div class="step slide" data-x="-2500" data-y="1000" data-rotate="90" data-rotate-y="-55">
+        <p>seed目录：<img src="introKissy/img/seed.png"></p><br>
+        <div class="img-2">
+            <div class="desc"></div>
+        </div>
+        <br>
+        <p>入口文件：<a href="https://github.com/kissyteam/kissy/blob/1.1.x/src/seed/kissy.js" target="_blank">kissy.js</a></p>
+        <br>
+        <p>简化版：<a href="kissy.js-1.1.x.html" target="_blank">kissy.js</a></p>
+    </div>
+    <div class="step slide" data-x="-2500" data-y="2000" data-rotate="90" data-rotate-y="-55">
+        <pre class="codeblock">
+            (function(host, S, undef) {
+                ...
+                return S;
+            })(this, 'KISSY');
+        </pre>
+        <div style="font-size:18px;">首先，KISSY也是要做到对全局对象最小的污染，因此只暴露了一个接口到全局对象中——KISSY，任何KISSY的模块都依附在这个对象上。<span class="red">同时KISSY只提供了弱沙箱的支持，也就是我们直接使用的就是KISSY这个对象，而不是它的一个实例，也就是对于KISSY对象的任何修改都会在全局内产生影响，简单点儿说，例如有KISSY.DOM这样一个DOM相关的模块，但是如果我在自己的代码中不小心将 <span class="codeblock3">KISSY.DOM = null</span> ，这样置空了之后，那么可想而知，后面任何和DOM相关的方法都会报错，这就是弱沙箱的含义。</span>相反，如果我们想像KISSY这是一个类，每次使用前我们需要实例化出一个实例来使用，例如： <span class="codeblock3">var ks = new KISSY();</span>，那么ks这个对象相当于和KISSY这个类产生了隔离，我在ks上的任何操作都不会影响KISSY这个全局的类，这就是所谓的强沙箱，YUI3的设计理念正式如此。但 由于KISSY的愿景一样：“小巧灵活，简洁实用，使用起来让人感觉愉悦”，弱沙箱的设置正是权衡之后的提现，在后续的代码分析中，我们会逐渐感受到KISSY这种实用主义的设计理念。</div>
+    </div>
+    <div class="step slide" data-x="-2500" data-y="3000" data-rotate="90" data-rotate-y="-55">
+        <pre class="codeblock">
+            (function(host, S, undef) {
+                ...
+                return S;
+            })(this, 'KISSY');
+        </pre>
+        <div style="font-size:18px;">源代码中，<span class="red">全部的kissy.js代码都是放到一个(function() {})();匿名函数的闭包中，这就是一个很简单的沙箱，保证了其中的变量不会溢出到全局作用域中，</span>同时我们注意到你们函数的参数列表传入了host, S, undef几个参数，其中host是window对象（浏览器），S是'KISSY'字符串，也就是我们暴露到全局对象中的唯一接口的名称，undef参数实际作用就是指代undefined，这样写的好处是：1.我们在调用你们函数的时候没有给undef参数传值，那么其值就是undefined；2.避免函数体内的undefined被外部重写；（ECMAScript3中，undefined不是关键字——ECMAScriptV3中规定了名为undefined的全局变量，初始值为undefined。这意味着undefined是可以被赋值的。）3.使用undefined这个形参，即减少作用域链的查询时间，又<a href="http://www.75team.com/archives/257" target="_blank">提高压缩率。</a></div>
+    </div>
+    <div class="step slide" data-x="-2500" data-y="4000" data-rotate="90" data-rotate-y="-55">
+        <pre class="codeblock2" style="float:left;">
+            var meta = {
+                mix: function(r, s, ov, wl) {
+                    if (!s || !r) return r;
+                    if (ov === undef) ov = true;
+                    var i, p, len;
+
+                    if (wl && (len = wl.length)) {
+                        for (i = 0; i < len; i++) {
+                            p = wl[i];
+                            if (p in s) {
+                                _mix(p, r, s, ov);
+                            }
+                        }
+                    } else {
+                        for (p in s) {
+                            _mix(p, r, s, ov);
+                        }
+                    }
+                    return r;
+                }
+            },
+            _mix = function(p, r, s, ov) {
+                if (ov || !(p in r)) {
+                    r[p] = s[p];
+                }
+            }
+        </pre>
+        <div style="font-size:18px;float:right;margin-right:20px;width:358px;"><span class="red">贯穿在kissy.js中的一个最基本的函数就是mix(r, s, ov, wl)，其最基本的作用是将一个对象的成员拷贝到另一个对象中，</span>这里的拷贝指的是浅拷贝。这里函数参数的r指的是receiver，也就是拷贝接收对象，s指的是supplier，拷贝的对象提供者。通过ov参数（指的是override）可以将接收者中与提供者重名的属性（方法）覆盖，wl参数（指的是whitelist）可以只拷贝列表中指定的属性（方法）。<br>
+            <span class="blue">例子：</span><br>
+            <a href="http://www.lzlu.com/blog/?p=443" target="_blank"><img src="introKissy/img/mix-lg.png"></a>
+        </div>
+    </div>
+
+    <div id="tip" class="step slide" data-x="-250" data-y="4800" data-rotate-x="110">
+        <p>javascript &&和||运算法的使用技巧</p><br>
+        <div style="font-size:18px;">
+            <p>&&和||在 js库或框架的源代码中（例如JQuery）使用广泛：</p>
+            <p>&& 优先级高于 || ｛资料来源：<a href="http://msdn.microsoft.com/zh-cn/library/ie/z3ks45k7(v=vs.94).aspx" target="_blank">MSDN</a>，<a href="https://developer.mozilla.org/zh-CN/docs/JavaScript/Reference/Operators/Operator_Precedence" target="_blank">MOZILLA 开发者网络</a>｝</p>
+
+            <p>1. <span class="red">a() && b()</span> :如果执行a()后返回true，则执行b()并返回b的值；如果执行a()后返回false，则整个表达式返回a()的值，b()不执行；</p>
+            <p>2. <span class="red">a() || b()</span> :如果执行a()后返回true，则整个表达式返回a()的值，b()不执行；如果执行a()后返回false，则执行b()并返回b()的值；</p>
+
+            <p>代码如下:</p>
+            <pre class="codeblock2">
+                alert((1 && 3 || 0) && 4); //结果4 ①
+                alert(1 && 3 || 0 && 4); //结果3 ②
+                alert(0 && 3 || 1 && 4); //结果4 ③
+            </pre>
+            <p>分析：</p>
+            <p>语句①：1&&3 返回3 => 3 || 0 返回 3 => 3&&4 返回 4</p>
+            <p>语句②：先执行1&&3 返回3，在执行0&&4返回0，最后执行结果比较 3||0 返回 3</p>
+            <p>语句③：先执行0&&3 返回0，在执行1&&4返回4，最后执行结果比较 0||4 返回 4</p>
+
+            <p>注：非0的整数都为true，undefined、null和空字符串"" 为false。</p>
+        </div>
+    </div>
+
+    <div id="thk" class="step slide" data-x="1900" data-y="4000" data-rotate="-90" data-rotate-y="70">
+        <q>常见的复杂js应用的构建方式：</q>
+        <ul style="padding-left:40px;">
+            <li style="padding:60px 40px 40px;">过程范式</li>
+            <li style="padding:40px;">对象范式
+                <span style="padding-left:30px;">(三种继承方式，即原型、类和元类。)</span>
+            </li>
+            <li style="padding:40px;">函数范式</li>
+        </ul>
+    </div>
+
+    <div class="step slide" data-x="1900" data-y="3000" data-rotate="-90" data-rotate-y="70">
+        <a href="http://blog.csdn.net/aimingoo/article/details/6062997" target="_blank"><p>舍弃“继承”这种方式不谈，系统构建还有其它的什么方法吗？</p></a><br>
+        <p><span class="red">kissy提供了另外一种可能性，即mix()，混合。</span>在kissy系统的核心部分，为一个系统提出了三个概念：</p>
+        <ul style="padding-left:40px;">
+            <li style="padding:10px 0 0;"><span class="red">1、原子(meta)</span>，一个系统具有至少一个原子，原子是具有mix()能力的一个对象；</li>
+            <li style="padding:10px 0 0;"><span class="red">2、宿主(host)</span>，一个系统有一个依赖的宿主，表明系统的外部环境，系统只是其宿主环境中的部分内容，可以由特定的名称来区别于其它；</li>
+            <li style="padding:10px 0 0;"><span class="red">3、种子(seed)</span>，一个系统诞生自一个种子，种子描述系统上述的meta和host两个方面的特性。</li>
+        </ul><br>
+        <p><span class="red">kissy约定，一个系统诞生自一个种子，该种子通过不停地mix()而成长，变成一个复杂的系统。</span>由种子培育成为系统的整个环境，只需要能够理解mix与host，即可以基于seed来构建任意复杂的系统。</p>
+    </div>
+
+    <div class="step slide" data-x="1900" data-y="2000" data-rotate="-90" data-rotate-y="70">
+        <p>上述的逻辑在kissy.js中，描述得相当简单：</p><br>
+        <p class="fl" style="margin:0 40px 0 0;"><img src="introKissy/img/mix-lg2.png"></p>
+        <p style="font-size:22px;">这个系统初始化的时候，传入host与host中的系统名S。对于kissy来说，host是当前的系统环境，这里的this值，可以是javascript引擎的global，或浏览器环境的window，或某个函数或对象闭包内的当前this。而'KISSY'值，表现kissy系统在环境中的名字。<span class="red">按照javascript的语言约定，我们可以通过host[S]来找到既已经存在的kissy系统。
+        按照此前的约定，一个mix构建的系统，必然有host和mix两个性质，因为它最原始的种子(seed)就必然包括这两种性质。</span>所以，既然我们上面是通过host[S]来访问一个“既已存在的kissy系统”，则无论该kissy系统经过了何种程度的演化，必然会包括这两种性质。</p>
+    </div>
+
+    <div class="step slide" data-x="1900" data-y="1000" data-rotate="-90" data-rotate-y="70">
+        <p class="fl" style="margin:0 40px 0 0;"><img src="introKissy/img/mix-lg2.png"></p>
+        <p style="font-size:22px;">上面的构建过程尝试寻找在host[S]中寻找这两种性质，如果其中之一不存在，则尝试初始化它。例如代码：</p>
+        <p class="codeblock3">seed = (host && host[S]) || {}，</p>
+        <p style="font-size:22px;">如果host[S]是存的，则假设它是一个seed，否则初始化为一个空的对象。接下来：</p>
+        <p class="codeblock3">host = seed.__HOST || (seed.__HOST = host || {}) ;</p>
+        <p style="font-size:22px;">如果上述的种子seed有host属性，则使用它既有的__HOST，如果没有，则置为当前环境下的host，或一个空的对象。现在我们看到的seed，必然已经具有host属性。但是，它还“可能”缺少一个性质，即最最重要的mix()。mix()的作用其实很简单，就是从对象B将属性抄写到对象A的一个方法。<span class="red">而这里，之所以说是“可能”缺少，是因为如果seed是既有的mix系统，则他已经有mix()属性；如果它是第三方系统，则可能没有mix，或有一个不同的mix等等。下面的一行代码尝试用元语言的思想构建它，即：</span></p>
+        <p class="codeblock3">meta.mix(seed, meta, false);  // false值表明不覆盖</p>
+    </div>
+
+    <div class="step slide" data-x="1900" data-y="0" data-rotate="-90" data-rotate-y="70">
+        <p class="fl" style="margin:0 40px 0 0;"><img src="introKissy/img/mix-lg2.png"></p>
+        <p style="font-size:22px;"><span class="red">元语言的特点是自描述的，meta.mix()可以向seed混入mix()，也可以使seed.mix()能混入其它系统或meta本身。</span>总之在mix()的构建中，meta只需要有mix这个方法，不需要更多，也不能更少。</p>
+        <p style="font-size:22px;">上一行代码的结果，是：如果seed没有自已的mix()属性，则向seed混入meta的原始的mix()。</p>
+        <p class="red" style="font-size:22px;">现在，我们再看seed，必然已经具有了host和mix()属性。它本身可能是一个空对象，也可能是一个庞大的既有系统，但无论如此，它具有了这两个性质，就可以作为seed进一步的衍生。</p>
+        <p style="font-size:22px;">在这一切之前，下面的代码保证它位于HOST[S]，并返回这个系统：</p>
+        <p class="codeblock3">S = host[S] = meta.mix(seed, meta, false);<br>return S;</p>
+    </div>
+
+    <div class="step slide" data-x="2700" data-y="0" data-rotate="-90" data-rotate-y="160">
+        <p class="fl" style="margin:0 40px 0 0;"><img src="introKissy/img/simple-kissy.png"></p>
+        <p class="fz-20">我们再整体看下kissy.js里面的代码组织，首先我们有了一个全局的接口对象S，然后我们有一个mix方法，现在我们便可以很方便地将各种属性、方法mix到S上面。<span class="red">那现在我们需要往KISSY这个对象上mix哪些东西呢？首先最基本的，版本信息，类库的配置信息（主要是是否开启debug模式，以及load加载相关参数），还有一个最重要的是类库的模块存储。</span>既然我们这前说过KISSY代码最基本的组织方式是以模块方式结合，比如有DOM模块，Event模块，Node模块等系统提供的模块，还有一些用户自定义添加的模板，那么他们都需要存储，那存储到哪里比较合适呢？很自然的想法就是在KISSY对象上开辟一个对象来存储他们，这里便是Env对象的作用，<span class="gray">(里面的mods存放了各种添加的模块，而_loadQueue则用于load机制的控制。)</span>有关模块的设计理念，组织和加载等，我们在后续讲到KISSY的load机制时再详细介绍。</p>
+    </div>
+
+    <div class="step slide" data-x="2700" data-y="1000" data-rotate="-90" data-rotate-y="160">
+        <p>mix()系统构建中的其它概念</p><br>
+        <p class="fz-20">kissy除了实现基本的mix系统之外，在core部分加入了除mix()之外的两种混入方法：</p>
+        <p class="fz-20"><span class="b">- augment，扩充。</span>用mix方法，将另一些子系统s[i]的原型，混入目标子系统r的原型。</p>
+        <p class="fz-20"><span class="b">- merge，合并。</span>用mix方法，将另一些子系统s[i]，混入当前子系统S。</p>
+        <p class="fz-20">基本上来说，<span class="red">augment是通过mix来对javascript的原型系统进行扩充的方法，或是在应用系统中，结合原型机制与混入机制来构建系统。而merge只是mix方法的一个批量工具。</span></p>
+        <p class="fz-20">另外，<span class="red">考虑到面向对象系统中的继承特性，kissy也实现了extend(派生)方法，以提供传统的面向对象编程能力。</span></p>
+        <p class="fz-20">除了语言级别的概念之外，kissy也提供系统框架级别的一些构建能力。包括：</p>
+        <p class="fz-20"><span class="b">- app，应用。</span>与host[S]并列的，具有同等能力的其它应用，app('XXX', ...)可以在host['XXX']上组织应用。</p>
+        <p class="fz-20"><span class="b">- namespace，命名空间。</span>即可以组织出host[XXX].YYY.ZZZ这样的，在不同子系统中的，不同命名空间下的系统。</p>
+        <p class="fz-20">最后，kissy在内核中也提供简单的调试支持（ S.log(),S.error() ）。</p>
+        <p class="fz-20">显然的，基于mix的原则，任何一个第三方的系统可以通过混入kissy来修改上述的概念，例如覆盖extend()来实现自己的对象系统构建原则，或覆盖app()来实现自己的应用组织原则。第三方系统也可以将kissy混入自身，在保障自身特性的情况下，使用kissy，以及更大规模的kissy ui系统带来的好处。</p>
+    </div>
+
+    <div class="step slide" data-x="2700" data-y="2000" data-rotate="-90" data-rotate-y="160">
+        <p><img width="880" src="introKissy/img/kissyjs-over.png"</p>
+    </div>
+
+    <div id="last" class="step" data-x="-200" data-y="3200" data-scale="3" data-rotate="720">
+        <a style="display:block;padding:5px;width:724px;height:589px;" href="http://docs.kissyui.com/" target="_blank"><img src="introKissy/img/kissyui.png"></a>
+        <p style="font-size:16px;margin-top:10px;">拓展：<a href="http://www.cnblogs.com/yangjunhua/archive/2012/09/26/2704222.html" target="_blank">解析jQuery.extend和淘宝KISSY.mix方法源码</a></p>
+    </div>
+
+    <div id="overview" class="step" data-x="1000" data-y="2000" data-scale="10">
+    </div>
+
+</div>
+
+
+<script src="impress.js/js/impress.js"></script>
+<script>impress();</script>
+
+</body>
+</html>
