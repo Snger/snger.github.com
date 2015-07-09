@@ -91,7 +91,7 @@ Ctrl+r 恢复上一步被撤销的操作</code></pre>
     <link href="http://snger.github.io/2014/02/20/record-page-num/"/>
     <id>http://snger.github.io/2014/02/20/record-page-num/</id>
     <published>2014-02-20T05:54:29.000Z</published>
-    <updated>2015-07-09T03:11:20.000Z</updated>
+    <updated>2015-07-09T03:46:25.000Z</updated>
     <content type="html"><![CDATA[<p>需求描述：“异步获取列表的，如果点击列表的某一行进入详情页，在详情页处理完要返回列表页的时候，能否返回之前所在的分页？ ”</p>
 <p>现有有两个可行的方案：1.使用 url参数 来记录之前的分页数；2.使用 HTML5 sessionStorage 记录之前的分页数；</p>
 <p><strong>方案1：</strong>特点是可以特定某些链接跳回列表页时回到之前所在分页；缺点是改动文件多，改动量大，容易出错；宝贝-标题优化已使用这种方式；</p>
@@ -563,7 +563,7 @@ Categories=Application
     <link href="http://snger.github.io/2012/03/04/test-my-jquery-skill-solutions/"/>
     <id>http://snger.github.io/2012/03/04/test-my-jquery-skill-solutions/</id>
     <published>2012-03-04T02:24:00.000Z</published>
-    <updated>2015-07-08T06:34:01.000Z</updated>
+    <updated>2015-07-09T03:46:25.000Z</updated>
     <content type="html"><![CDATA[<p>See it in my other blog : <a href="http://thesamesummer.blogspot.com/2012/02/test-my-jquery-skills-solutions.html" target="_blank" rel="external">Test My jQuery Skills: Solutions | The same summer.</a></p>
 <h2 id="You_can_text_it_now_:_Tuts+_Premium_Course:_30_Days_to_Learn_jQuery_-_Quiz_#1:_The_Basics">You can text it now : <a href="http://tutsplus.com/lesson/jquery-30-days-quiz-1/" target="_blank" rel="external">Tuts+ Premium Course: 30 Days to Learn jQuery - Quiz #1: The Basics</a></h2><h3 id="1-In_addition_to_jQuery(),_we_can_also_use_a_shorter_reference_to_the_jQuery_function-_What_is_it?">1.In addition to jQuery(), we can also use a shorter reference to the jQuery function. What is it?</h3><p><code>jQ  $  $$  j</code></p>
 <h4 id="Additional_Notes">Additional Notes</h4><p>If you review the jQuery source (something you should always do), you will find that jQuery and $ can both be used interchangably. The former is most often used in situations when the $ can clash with existing code or libraries.</p>

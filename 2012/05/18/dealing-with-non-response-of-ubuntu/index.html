@@ -4,15 +4,15 @@
 <head>
   <meta charset="UTF-8">
   
-  <title>实验室 | The Same Summer.</title>
+  <title>Ubuntu无响应的处理方法 | The Same Summer.</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
   <meta name="author" content="Snger">
   
-  <meta name="description" content="1.seed/kissy.js 的源码分析（学习） power by impress.js2.跟着街霸玩KISSY3.测试驱动开发 TDD — 实战与模式解析">
+  <meta name="description" content="Ubuntu无响应的处理方法">
   
   
-  <meta property="og:title" content="实验室"/>
+  <meta property="og:title" content="Ubuntu无响应的处理方法"/>
   <meta property="og:site_name" content="The Same Summer."/>
   <link href="/favicon.ico" rel="icon" type="image/x-ico">
   <link rel="alternate" href="/atom.xml" title="The Same Summer." type="application/atom+xml">
@@ -215,18 +215,31 @@ function() {
   <div id="container">
     <div id="main" class="postpart">
 	<header class="clearfix">
-	  <h1><a href="/lab/index.html" title="实验室">实验室</a></h1>
+	  <h1><a href="/2012/05/18/dealing-with-non-response-of-ubuntu/" title="Ubuntu无响应的处理方法">Ubuntu无响应的处理方法</a></h1>
 	  <p>By
 	  
 	 	 <a href="https://twitter.com/sjs_stef" title="Snger">Snger</a>
 	  
-	  on<time datetime="2015-07-09T03:46:25.000Z">Jul 9 2015</time></p>
+	  on<time datetime="2012-05-18T14:10:00.000Z">May 18 2012</time></p>
 	</header>
 	<article>     
-	     <p>1.<a href="./introKissy.html">seed/kissy.js 的源码分析（学习）</a> power by impress.js<br>2.<a href="./intro-to-kissy.html">跟着街霸玩KISSY</a><br>3.<a href="./intro-tdd.html">测试驱动开发 TDD — 实战与模式解析</a></p>
+	     <p>在更新了Ubuntu12.04后，经常遇到电脑无响应的状态，一般的症状是：鼠标可以移动，键盘却无法操作，点击笔记本的音量控制键，指示灯有变化，音量却没变化，很是无奈。<br>症状一般发生在使用 Flash 、使用 Chrome 浏览一些页面没优化好的网页、Chrome 开15+网页的时候。<br>尝试过使用 Gnome Classic 假死的情况基本上不出现，不过后来 Gnome 和 Unity 有些冲突，又切回 Unity，于是这状况又出现了。<br>搜索了下，发现一些人更新显卡驱动后，情况好转。关于显卡安装，<a href="http://forum.ubuntu.org.cn/viewtopic.php?t=140531" target="_blank" rel="external">请点这里</a><br>另外，<a href="http://fgqiblog.appspot.com/?p=43001" target="_blank" rel="external">这篇文章介绍了Ubuntu死机、无响应的处理方法</a>,比较推荐的方法是：</p>
+<ol>
+<li>按Ctrl-Alt-(F1～F6)，进入控制台进行相关的操作</li>
+<li>用户名和密码登录，然后运行 top 命令，查看正在运行的程序，记下占 CPU 高的程序的 PID </li>
+<li>输入 kill + PID ,结束相应的进程</li>
+<li>Alt + F7 切换回图形界面</li>
+</ol>
+<p>5月20更新：发现 kill 相关进程后，切换回图形界面还是呈现卡死状态，又不想重启电脑，于是使用<br><code>sudo skill -KILL -u 图形界面登录的用户名</code><br>去重启图形界面。</p>
     
 	</article>
 	
+
+
+<div class="articletags">
+	<i class="icon-tag"></i>Tags: <a href="/tags/Linux/">Linux</a>
+	<i class="icon-folder"></i>categories:  <a href="/categories/Linux/">Linux</a>
+</div>
 
 	
 <div class="jiathis_style share">
@@ -253,6 +266,10 @@ function() {
 
 	<div class="pagepart clearfix">
  
+	<a href="/2012/05/20/use-k2pdfopt-from-ubuntu/" class="prev" title="Ubuntu使用K2pdfopt转换pdf">Ubuntu使用K2pdfopt转换pdf</a>
+ 
+ 
+	<a href="/2012/05/18/theessenceoftheactual/" class="next" title="认清实际">认清实际</a>
  
 </div>
 	
@@ -422,7 +439,7 @@ function() {
 <script>
   var disqus_shortname = 'snger';
   
-  var disqus_url = 'http://snger.github.io/lab/index.html';
+  var disqus_url = 'http://snger.github.io/2012/05/18/dealing-with-non-response-of-ubuntu/';
   
   (function(){
     var dsq = document.createElement('script');

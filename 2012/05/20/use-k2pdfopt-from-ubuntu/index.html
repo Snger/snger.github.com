@@ -4,15 +4,15 @@
 <head>
   <meta charset="UTF-8">
   
-  <title>实验室 | The Same Summer.</title>
+  <title>Ubuntu使用K2pdfopt转换pdf | The Same Summer.</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
   <meta name="author" content="Snger">
   
-  <meta name="description" content="1.seed/kissy.js 的源码分析（学习） power by impress.js2.跟着街霸玩KISSY3.测试驱动开发 TDD — 实战与模式解析">
+  <meta name="description" content="用K2PDFopt重排版面，随手解救扫描PDF">
   
   
-  <meta property="og:title" content="实验室"/>
+  <meta property="og:title" content="Ubuntu使用K2pdfopt转换pdf"/>
   <meta property="og:site_name" content="The Same Summer."/>
   <link href="/favicon.ico" rel="icon" type="image/x-ico">
   <link rel="alternate" href="/atom.xml" title="The Same Summer." type="application/atom+xml">
@@ -215,18 +215,49 @@ function() {
   <div id="container">
     <div id="main" class="postpart">
 	<header class="clearfix">
-	  <h1><a href="/lab/index.html" title="实验室">实验室</a></h1>
+	  <h1><a href="/2012/05/20/use-k2pdfopt-from-ubuntu/" title="Ubuntu使用K2pdfopt转换pdf">Ubuntu使用K2pdfopt转换pdf</a></h1>
 	  <p>By
 	  
 	 	 <a href="https://twitter.com/sjs_stef" title="Snger">Snger</a>
 	  
-	  on<time datetime="2015-07-09T03:46:25.000Z">Jul 9 2015</time></p>
+	  on<time datetime="2012-05-20T06:36:00.000Z">May 20 2012</time></p>
 	</header>
 	<article>     
-	     <p>1.<a href="./introKissy.html">seed/kissy.js 的源码分析（学习）</a> power by impress.js<br>2.<a href="./intro-to-kissy.html">跟着街霸玩KISSY</a><br>3.<a href="./intro-tdd.html">测试驱动开发 TDD — 实战与模式解析</a></p>
+	     <blockquote>
+<p>“喜欢阅读电子书的朋友，特别是拥有Kindle等电纸书的朋友谈到扫描PDF(Scanned PDF)，大多是又爱又恨，”爱”在大量书籍、尤其是发行较早或外文原版的一些经典书籍，多由热心人士私下扫描成PDF发布在网络上，可以方便地下载到硬盘里(摆在那儿心里就踏实，看不看就另说了)；”恨”在扫描PDF(Scanned PDF)”骨头”太硬，不能像原生PDF(Native PDF)那样转换成各种格式。小小6寸屏，甚至3、4寸屏，纵然有满腔阅读热情，眼睛挤着挤着就吃不消了。由<a href="http://www.willus.com/author/" target="_blank" rel="external">Willus</a>开发的<a href="http://www.willus.com/k2pdfopt/" target="_blank" rel="external">免费PDF处理软件K2PDFopt</a>很好地解决了这个问题，可以让大家硬盘里堆积如山的扫描PDF真正重见天日。”—<a href="http://note1day.com/2011/12/k2pdfopt/" target="_blank" rel="external">用K2PDFopt重排版面，随手解救扫描PDF</a>  </p>
+</blockquote>
+<p>在 ubuntu 安装也十分简单，主要是这几个步骤：</p>
+<ol>
+<li>去 <a href="http://willus.com/k2pdfopt/download/" target="_blank" rel="external">K2pdfopt Download</a> 下载相应的版本</li>
+<li>在文件所在的下载目录（一般是 Downloads ），右键所下载文件，把文件移动到主目录（家目录 Home）</li>
+<li><p>Ctrl + Alt + T 进入命令行，依次输入如下代码：</p>
+<pre><code>sudo mv k2pdfopt /usr/<span class="keyword">local</span>/bin
+(输入你的密码)
+chmod a+x /usr/<span class="keyword">local</span>/bin/k2pdfopt
+<span class="keyword">mkdir</span> .<span class="keyword">local</span>/share/applications
+<span class="keyword">cat</span> &gt; .<span class="keyword">local</span>/share/applications/k2pdfopt.desktop
+[Desktop Entry]
+Name=k2pdfopt
+Exec=/usr/<span class="keyword">local</span>/bin/k2pdfopt %<span class="literal">f</span>
+Terminal=true
+<span class="keyword">Type</span>=Application
+Categories=Application
+(按下组合键 &lt;Ctrl-<span class="keyword">D</span>&gt;)
+<span class="keyword">exit</span>
+</code></pre></li>
+<li><p>完成前三步后，你就可以在任意 .pdf 文件右击，在 “更多应用程序” 中找到 k2pdfopt, 选择后你就可以看到 k2pdfopt 的功能界面了。</p>
+</li>
+</ol>
+<p>喜欢看图示的朋友可以看看 <a href="http://www.willus.com/k2pdfopt/help/ubuntu.shtml" target="_blank" rel="external">GETTING STARTED: UBUNTU DESKTOP 11.1</a><br>更多技巧，可以看看 <a href="http://note1day.com/2011/12/k2pdfopt-faq/" target="_blank" rel="external">K2pdfopt使用常见问题</a></p>
     
 	</article>
 	
+
+
+<div class="articletags">
+	<i class="icon-tag"></i>Tags: <a href="/tags/工具/">工具</a>
+	<i class="icon-folder"></i>categories:  <a href="/categories/工具/">工具</a>
+</div>
 
 	
 <div class="jiathis_style share">
@@ -253,6 +284,10 @@ function() {
 
 	<div class="pagepart clearfix">
  
+	<a href="/2012/05/22/magentoinstallationinubuntu/" class="prev" title="在Ubuntu系统安装Magento">在Ubuntu系统安装Magento</a>
+ 
+ 
+	<a href="/2012/05/18/dealing-with-non-response-of-ubuntu/" class="next" title="Ubuntu无响应的处理方法">Ubuntu无响应的处理方法</a>
  
 </div>
 	
@@ -422,7 +457,7 @@ function() {
 <script>
   var disqus_shortname = 'snger';
   
-  var disqus_url = 'http://snger.github.io/lab/index.html';
+  var disqus_url = 'http://snger.github.io/2012/05/20/use-k2pdfopt-from-ubuntu/';
   
   (function(){
     var dsq = document.createElement('script');

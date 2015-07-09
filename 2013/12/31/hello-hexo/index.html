@@ -4,15 +4,15 @@
 <head>
   <meta charset="UTF-8">
   
-  <title>实验室 | The Same Summer.</title>
+  <title>Hello Hexo | The Same Summer.</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
   <meta name="author" content="Snger">
   
-  <meta name="description" content="1.seed/kissy.js 的源码分析（学习） power by impress.js2.跟着街霸玩KISSY3.测试驱动开发 TDD — 实战与模式解析">
+  <meta name="description" content="hexo是由Node.js驱动的一款快速、简单且功能强大的博客框架。">
   
   
-  <meta property="og:title" content="实验室"/>
+  <meta property="og:title" content="Hello Hexo"/>
   <meta property="og:site_name" content="The Same Summer."/>
   <link href="/favicon.ico" rel="icon" type="image/x-ico">
   <link rel="alternate" href="/atom.xml" title="The Same Summer." type="application/atom+xml">
@@ -215,18 +215,84 @@ function() {
   <div id="container">
     <div id="main" class="postpart">
 	<header class="clearfix">
-	  <h1><a href="/lab/index.html" title="实验室">实验室</a></h1>
+	  <h1><a href="/2013/12/31/hello-hexo/" title="Hello Hexo">Hello Hexo</a></h1>
 	  <p>By
 	  
 	 	 <a href="https://twitter.com/sjs_stef" title="Snger">Snger</a>
 	  
-	  on<time datetime="2015-07-09T03:46:25.000Z">Jul 9 2015</time></p>
+	  on<time datetime="2013-12-31T06:04:44.000Z">Dec 31 2013</time></p>
 	</header>
 	<article>     
-	     <p>1.<a href="./introKissy.html">seed/kissy.js 的源码分析（学习）</a> power by impress.js<br>2.<a href="./intro-to-kissy.html">跟着街霸玩KISSY</a><br>3.<a href="./intro-tdd.html">测试驱动开发 TDD — 实战与模式解析</a></p>
+	     <p>Welcome to <a href="http://zespia.tw/hexo" target="_blank" rel="external">Hexo</a>! Check <a href="http://zespia.tw/hexo/docs" target="_blank" rel="external">documentation</a> to learn how to use.</p>
+<p>hexo是由Node.js驱动的一款快速、简单且功能强大的博客框架。它和jekyll相比，更快，更轻量。之前在Github上托管的博客就是使用jekyll搭建的，官方的Github Pages同样推荐使用它。但是jekyll目前有不少缺点，包括生成速度尤其是文章多了以后的生成速度让人无法接受，默认引擎Redcarpet解析Markdown时对中文支持不好，而且在Windows上使用问题多多，之前被严重坑过，虽然有解决的办法但是实在是耗费精力。<a href="http://yangjian.me/workspace/building-blog-with-hexo/" target="_blank" rel="external">via alimon</a>  </p>
+<hr>
+<h2 id="Create_a_New_Post">Create a New Post</h2><p><code>$ hexo new [layout] &lt;title&gt;</code></p>
+<p>Hexo has 3 default layouts: post, page and draft.<table style="width:400px;"><tr><th>Layout</th><th>Destination</th></tr></table></p>
+<p><tr><td>post (Default)</td><td>    source/_posts</td></tr></p>
+<p><tr><td>page</td><td>    source</td></tr></p>
+<p><tr><td>draft    </td><td>source/_drafts</td></tr></p>
+<h3 id="Example">Example</h3><pre><code>$ hexo new "New Post"
+# => The file will be created at source/_posts/new-post.md
+$ hexo new page "New Page"
+# => The file will be created at source/new-page/index.html
+$ hexo new draft "New Draft"
+# => The file will be created at source/_drafts/new-draft.md
+</code></pre>
+
+<h2 id="Code_Highlighting">Code Highlighting</h2><pre><code>&lt;pre&gt;&lt;code&gt;
+code snippet
+&lt;/code&gt;&lt;/pre&gt;
+</code></pre>
+
+<h2 id="Generating">Generating</h2><p>Generate static files with Hexo is quite easy and fast.</p>
+<pre><code>$ hexo generate</code></pre>
+
+<h3 id="Watch_for_File_Changes">Watch for File Changes</h3><p>Hexo can watch for file changes and regenerate files immediately.</p>
+<pre><code>$ hexo generate --watch</code></pre>
+
+<h3 id="Deploy_After_Generating">Deploy After Generating</h3><p>To deploy after generating, you can run one of the following commands. Both of them are equaled.</p>
+<pre><code>$ hexo generate --deploy
+$ hexo deploy --generate</code></pre>
+
+<p>or</p>
+<pre><code>hexo clean
+hexo generate
+hexo deploy
+</code></pre>
+
+<hr>
+<h2 id="server">server</h2><p>To start server, run the following command:</p>
+<pre><code>$ hexo server</code></pre>
+
+<p>Your website will running at <code>http://localhost:4000</code></p>
+<p>安装 hexo-livereload 插件后，文件修改会自动刷新页面；</p>
+<h3 id="Static_Mode">Static Mode</h3><p>In static mode, only files in public folder will be served and file watching is disabled. You have to run hexo generate before starting the server. Usually used in production.</p>
+<pre><code>$ hexo server -s</code></pre>
+
+<h3 id="Drafts">Drafts</h3><p>In draft mode, drafts will be served as normal posts. You can preview your drafts on the server. All changes you made on drafts will be updated at once.</p>
+<pre><code>$ hexo server -d</code></pre>
+
+<h2 id="deployment">deployment</h2><p>To deploy your site with Hexo, you only need one command.</p>
+<pre><code>$ hexo deploy</code></pre>
+
+<hr>
+<h3 id="markdown书写注意事项">markdown书写注意事项</h3><ol>
+<li>现在的主题设置，每一段文字都需要前后有空格，才能自动形成段落，不然变成行内 span（左侧没有间距）；</li>
+<li>编码放在 pre code 中，才会自动有高亮，为了避免代码高亮第一行为空，需要把第一行代码直接跟在code后面；<a href="http://zespia.tw/hexo/docs/tag-plugins.html#code-block" target="_blank" rel="external">hexo官方文档介绍的codeblock高亮方式</a> 样式没处理好；</li>
+<li>table的宽度需要手动设定；</li>
+<li>修改样式后，需要<code>hexo clean</code>，保证样式重新生成；</li>
+<li>每次生成提交都会有大量的 git 记录，这个得想办法改进；</li>
+<li>多标签使用 <code>[vim, git, vimdiff]</code> 的方式；</li>
+</ol>
     
 	</article>
 	
+
+
+<div class="articletags">
+	<i class="icon-tag"></i>Tags: <a href="/tags/hexo/">hexo</a>
+	<i class="icon-folder"></i>categories:  <a href="/categories/博客相关/">博客相关</a>
+</div>
 
 	
 <div class="jiathis_style share">
@@ -253,6 +319,10 @@ function() {
 
 	<div class="pagepart clearfix">
  
+	<a href="/2014/02/20/record-page-num/" class="prev" title="记录上次列表所在分页数">记录上次列表所在分页数</a>
+ 
+ 
+	<a href="/2012/05/26/never-fear-enyo-is-here/" class="next" title="别担忧，Enyo在这呢">别担忧，Enyo在这呢</a>
  
 </div>
 	
@@ -422,7 +492,7 @@ function() {
 <script>
   var disqus_shortname = 'snger';
   
-  var disqus_url = 'http://snger.github.io/lab/index.html';
+  var disqus_url = 'http://snger.github.io/2013/12/31/hello-hexo/';
   
   (function(){
     var dsq = document.createElement('script');
