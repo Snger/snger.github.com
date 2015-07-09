@@ -1,4 +1,4 @@
-title: record page num
+title: 记录上次列表所在分页数
 date: 2014-02-20 13:54:29
 comments: true
 categories: 
@@ -28,7 +28,7 @@ c.前端完成后发现无需（囧）：素材关联列表（所有）-》制�
 ####步骤：
 
 1. 列表所在的 phtml 页面，添加
- <pre><code><input type="hidden" id="J_PageId" value="<?php echo $this->getRequest()->getParam('page_id','1');?>" /></code></pre>
+<pre><code>&lt;input type="hidden" id="J_PageId" value="<?php echo $this->getRequest()->getParam('page_id','1');?>" /></code></pre>
 2. 在异步加载的（block）html，给需要跳转链接记住上次所在分页的<a>上加 `class= J_LiA`；如果此链接不是使用 href 跳转而是用 onclick 控制，则分解 onclick 事件：链接放到 data-url 属性中；在第3步 a 中处理onclick 事件；
 3. 列表所在的 js 页面：
 	a. 对象中加入分页记录属性：
@@ -36,52 +36,60 @@ c.前端完成后发现无需（囧）：素材关联列表（所有）-》制�
 
 	b. 渲染异步列表后，用 js 给链接加分页参数，（例如在 renderItems() 方法中）
 		1.如果第2步使用 href 跳转：
-var liA = DOM.query('#J_MaterialItems .J_LiA');
+
+<pre>
+<code>var liA = DOM.query('#J_MaterialItems .J_LiA');
 
 S.later(function(){
 
-                    for(var i=0;i<liA.length;i++){
+    for(var i=0;i<liA.length;i++){
 
-                        var oldLink = DOM.attr(liA[i],'href');
+        var oldLink = DOM.attr(liA[i],'href');
 
-                        var newLink = oldLink+'&page_id='+listControl.pageId;
+        var newLink = oldLink+'&page_id='+listControl.pageId;
 
-                        DOM.attr(liA[i],'href',newLink);
+        DOM.attr(liA[i],'href',newLink);
 
-                    }
+    }
 
-                },100)
+},100)
+</code></pre>
+
 
 如果第2步使用 onclick 跳转：
-Event.on('.J_LiA','click',function(ev){
 
-                    if(!showPermissions('editor_material','促销素材')){return ;}
+<pre>
+<code>Event.on('.J_LiA','click',function(ev){
 
-                    var link = DOM.attr(ev.currentTarget,'data-url');
+    if(!showPermissions('editor_material','促销素材')){return ;}
+
+    var link = DOM.attr(ev.currentTarget,'data-url');
 
 window.location.href=link+'&page_id='+templet.pageId;
-                    //window.open(link+'&page_id='+templet.pageId);
+    //window.open(link+'&page_id='+templet.pageId);
 
-                })
+})
+</code></pre>
 
 加载列表的方法（例如：searchPutItems() ），第一行加入 
-var pageId = listControl.pageId;
+`var pageId = listControl.pageId;`
 加载列表的方法，发送的请求中多加参数
- +"&page_id="+pageId
+` +"&page_id="+pageId `
 加载列表的方法，成功后的回调（例如：submitHandle() ），渲染完分页后，再指定分页跳转；例如：
-if(pageId > 1){
 
+<pre>
+<code>if(pageId > 1){
     listControl.paginator.setPage(pageId).setPageCount(pageCount).printHtml('#J_Paging',2);
-
 }
+</code></pre>
 
 分页操作的方法第一行加入：
-listControl.pageId  = turnTo;
+`listControl.pageId  = turnTo;`
 在列表页跳出的操作页面，给需要跳回上次所在分页的链接所在的 php echo 方法中加入
-,array('page_id'=>$this->getRequest()->getParam('page_id','1'))
+`,array('page_id'=>$this->getRequest()->getParam('page_id','1'))`
 例如：
 
-<a href="<?php echo $this->getUrl('material/show/index',array('page_id'=>$this->getRequest()->getParam('page_id','1')))?>">
+  <pre><code>&lt;a href="<?php echo $this->getUrl('material/show/index',array('page_id'=>$this->getRequest()->getParam('page_id','1')))?>"></a></code></pre>
 
 
 
@@ -92,36 +100,42 @@ listControl.pageId  = turnTo;
 步骤：
 
 分页控制方法中，把分页存入 sessionStorage：
-if(window.sessionStorage){
 
-                var ss = window.sessionStorage;
+<pre>
+<code>if(window.sessionStorage){
+  var ss = window.sessionStorage;
+  var last_pagination = {'udp_item_index' : turnTo};
 
-                var last_pagination = {'udp_item_index' : turnTo};
+  ss.setItem("hlg_ss_tbv3",JSON.stringify(last_pagination));
 
-                ss.setItem("hlg_ss_tbv3",JSON.stringify(last_pagination));
-
-            }
+}
+</code></pre>
 
 加载列表的方法中，读取 sessionStorage，并指定分页数：
 a.获取分页数：
 
-var ss = window.sessionStorage;
-      var hlg_ss = JSON.parse(ss['hlg_ss_tbv3']);
-               if(ss && ss.getItem('hlg_ss_tbv3') && hlg_ss['udp_item_index']){
+<pre>
+<code>var ss = window.sessionStorage;
+var hlg_ss = JSON.parse(ss['hlg_ss_tbv3']);
 
-                   var pageId = parseInt(hlg_ss['udp_item_index']);
+if(ss && ss.getItem('hlg_ss_tbv3') && hlg_ss['udp_item_index']){
 
-               }else{
+  var pageId = parseInt(hlg_ss['udp_item_index']);
 
-                   var pageId = 1;
+ }else{
 
-               }
-b.传参：data += "&page_id="+pageId;
+  var pageId = 1;
+
+}
+</code></pre>
+
+b.传参：`data += "&page_id="+pageId;`
 
 c.请求成功后跳转：
 
-if(pageId > 1){
-
-      	list.paginator.setPage(pageId).setPageCount(pageCount).printHtml('#J_Paging',2);
-
+<pre>
+<code>if(pageId > 1){
+    list.paginator.setPage(pageId).setPageCount(pageCount).printHtml('#J_Paging',2);
 }
+</code></pre>
+
