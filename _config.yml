@@ -108,7 +108,7 @@ markdown:
 deploy:
   type: git
   repo: git@github.com:Snger/snger.github.com.git
-  branch: hexo
+  branch: master
   message:
 
 # customize
