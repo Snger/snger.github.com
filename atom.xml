@@ -5,7 +5,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://snger.github.io//"/>
-  <updated>2015-07-12T12:52:35.000Z</updated>
+  <updated>2015-07-12T13:13:50.000Z</updated>
   <id>http://snger.github.io//</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://snger.github.io/2015/06/02/Fixing-AngularJS-problems-in-IE8/"/>
     <id>http://snger.github.io/2015/06/02/Fixing-AngularJS-problems-in-IE8/</id>
     <published>2015-06-02T06:58:22.000Z</published>
-    <updated>2015-07-12T12:52:35.000Z</updated>
+    <updated>2015-07-12T13:13:50.000Z</updated>
     <content type="html"><![CDATA[<h2 id="项目背景">项目背景</h2><p>项目最早使用的是 angularjs 1.3.x 版本，功能开发完成后，发现使用者中 IE8 用户占比为 ，而且因为项目特质，必须解决用户的 IE8 使用场景，于是乎，有了此文。</p>
 <h2 id="目标">目标</h2><p>使用 angularjs 并兼容 IE8 （注：本文不考虑兼容低于 IE8 浏览器的情况）</p>
 <h2 id="AngularJS兼容低版本IE文档">AngularJS兼容低版本IE文档</h2><p><a href="https://docs.angularjs.org/guide/ie" target="_blank" rel="external">docs.angularjs.org:Internet Explorer Compatibility</a>:</p>
@@ -48,7 +48,13 @@
 <h3 id="Angularjs语法">Angularjs语法</h3><ul>
 <li>给根元素添加 <code>id=”ng-app”</code> 属性与 <code>ng-app</code> 属性结合起来。</li>
 </ul>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="doctype">&lt;!doctype html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">html</span> <span class="attribute">xmlns:ng</span>=<span class="value">"http://angularjs.org"</span> <span class="attribute">id</span>=<span class="value">"ng-app"</span> <span class="attribute">ng-app</span>=<span class="value">"optionalModuleName"</span>&gt;</span></span><br><span class="line">  ...</span><br><span class="line"><span class="tag">&lt;/<span class="title">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<pre>
+<code>&lt;!doctype html>
+&lt;html xmlns:ng="http://angularjs.org" id="ng-app" ng-app="optionalModuleName">
+  ...
+&lt;/html>
+</code></pre>
+
 <ul>
 <li>使用 <code>ng-style</code> 标签来取代 <code>style=””</code></li>
 <li>angular 1.2 $route 没有 <code>updateParams</code> 方法，使用 <code>$location.search</code>;(翻页组件)</li>
@@ -81,8 +87,8 @@
 </ul>
 ]]></content>
     <summary type="html">
-    <![CDATA[<h2 id="项目背景">项目背景</h2><p>项目最早使用的是 angularjs 1.3.x 版本，功能开发完成后，发现使用者中 IE8 用户占比为 ，而且因为项目特质，必须解决用户的 IE8 使用场景，于是乎，有了此文。</p>
-<h2 id="目标">目标</h2><]]>
+    <![CDATA[本文记录了使用 angularjs 并兼容 IE8 相关内容]]>
+    
     </summary>
     
       <category term="Web前端" scheme="http://snger.github.io/tags/Web%E5%89%8D%E7%AB%AF/"/>
@@ -167,7 +173,7 @@ Ctrl+r 恢复上一步被撤销的操作</code></pre>
     <link href="http://snger.github.io/2014/02/20/record-page-num/"/>
     <id>http://snger.github.io/2014/02/20/record-page-num/</id>
     <published>2014-02-20T05:54:29.000Z</published>
-    <updated>2015-07-09T03:46:25.000Z</updated>
+    <updated>2015-07-12T13:14:14.000Z</updated>
     <content type="html"><![CDATA[<p>需求描述：“异步获取列表的，如果点击列表的某一行进入详情页，在详情页处理完要返回列表页的时候，能否返回之前所在的分页？ ”</p>
 <p>现有有两个可行的方案：1.使用 url参数 来记录之前的分页数；2.使用 HTML5 sessionStorage 记录之前的分页数；</p>
 <p><strong>方案1：</strong>特点是可以特定某些链接跳回列表页时回到之前所在分页；缺点是改动文件多，改动量大，容易出错；宝贝-标题优化已使用这种方式；</p>
@@ -259,8 +265,8 @@ if(ss && ss.getItem('hlg_ss_tbv3') && hlg_ss['udp_item_index']){
 
 ]]></content>
     <summary type="html">
-    <![CDATA[<p>需求描述：“异步获取列表的，如果点击列表的某一行进入详情页，在详情页处理完要返回列表页的时候，能否返回之前所在的分页？ ”</p>
-<p>现有有两个可行的方案：1.使用 url参数 来记录之前的分页数；2.使用 HTML5 sessionStorage 记录之前的分页数；<]]>
+    <![CDATA[需求描述：“异步获取列表的，如果点击列表的某一行进入详情页，在详情页处理完要返回列表页的时候，能否返回之前所在的分页？ ”]]>
+    
     </summary>
     
   </entry>

@@ -9,9 +9,7 @@
   
   <meta name="author" content="Snger">
   
-  <meta name="description" content="项目背景项目最早使用的是 angularjs 1.3.x 版本，功能开发完成后，发现使用者中 IE8 用户占比为 ，而且因为项目特质，必须解决用户的 IE8 使用场景，于是乎，有了此文。
-目标使用 angularjs 并兼容 IE8 （注：本文不考虑兼容低于 IE8 浏览器的情况）
-AngularJ">
+  <meta name="description" content="本文记录了使用 angularjs 并兼容 IE8 相关内容">
   
   <meta name="keywords" content="angularjs">
   <meta property="og:title" content="处理 Angularjs 兼容 IE8 问题"/>
@@ -252,7 +250,13 @@ function() {
 <h3 id="Angularjs语法">Angularjs语法</h3><ul>
 <li>给根元素添加 <code>id=”ng-app”</code> 属性与 <code>ng-app</code> 属性结合起来。</li>
 </ul>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="doctype">&lt;!doctype html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">html</span> <span class="attribute">xmlns:ng</span>=<span class="value">"http://angularjs.org"</span> <span class="attribute">id</span>=<span class="value">"ng-app"</span> <span class="attribute">ng-app</span>=<span class="value">"optionalModuleName"</span>&gt;</span></span><br><span class="line">  ...</span><br><span class="line"><span class="tag">&lt;/<span class="title">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<pre>
+<code>&lt;!doctype html>
+&lt;html xmlns:ng="http://angularjs.org" id="ng-app" ng-app="optionalModuleName">
+  ...
+&lt;/html>
+</code></pre>
+
 <ul>
 <li>使用 <code>ng-style</code> 标签来取代 <code>style=””</code></li>
 <li>angular 1.2 $route 没有 <code>updateParams</code> 方法，使用 <code>$location.search</code>;(翻页组件)</li>
