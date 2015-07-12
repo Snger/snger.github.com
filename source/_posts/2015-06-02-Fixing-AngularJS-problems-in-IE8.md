@@ -3,7 +3,7 @@ comments: true
 date: 2015-06-02 14:58:22
 categories: [Web前端]
 tags: Web前端
-description: 
+description: 本文记录了使用 angularjs 并兼容 IE8 相关内容
 keywords: angularjs
 ---
 ##项目背景

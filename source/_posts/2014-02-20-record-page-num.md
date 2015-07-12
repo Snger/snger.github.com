@@ -3,7 +3,7 @@ date: 2014-02-20 13:54:29
 comments: true
 categories: 
 tags: 
-description: 
+description: 需求描述：“异步获取列表的，如果点击列表的某一行进入详情页，在详情页处理完要返回列表页的时候，能否返回之前所在的分页？ ”
 keywords: 
 
 ---
